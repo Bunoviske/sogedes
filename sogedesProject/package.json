@@ -1,0 +1,23 @@
+{
+    "name": "sogedes",
+    "version": "1.0.0",
+    "description": "Simple GET API that returns a json file",
+    "main": "main.js",
+    "author": "Bruno Carvalho",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "start": "node_modules/.bin/babel-node main.js"
+    },
+    "dependencies": {
+        "@types/node": "^12.0.0",
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "body-parser": "^1.19.0",
+        "express": "^4.16.4",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "jsdoc": "^3.6.1"
+    }
+}

@@ -1,2 +1,0 @@
-# sogedes
-Sogedes Technical Test

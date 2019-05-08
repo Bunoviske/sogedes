@@ -1,0 +1,91 @@
+{
+  "data": {
+    "directory":[
+      {
+        "app" : [
+          {
+            "services":[
+              {
+                "main.service":{
+                  "type": "TypeScript",
+                  "date": "06.05.2019",
+                  "changed": "06.05.2019",
+                  "size": 300
+                }
+              },
+              {
+                "help.service":{
+                  "type": "TypeScript",
+                  "date": "05.05.2019",
+                  "changed": "07.05.2019",
+                  "size": 325
+                }
+              }
+            ]
+          },{
+            "components":[
+              {
+                "app.component":{
+                  "type": "TypeScript",
+                  "date": "01.05.2019",
+                  "changed": "07.05.2019",
+                  "size": 120
+                }
+              },{
+                "app.module":{
+                  "type": "TypeScript",
+                  "date": "01.05.2019",
+                  "changed": "01.05.2019",
+                  "size": 90
+                }
+              },{
+                "app.component":{
+                  "type": "Sass",
+                  "date": "01.05.2019",
+                  "changed": "07.05.2019",
+                  "size": 521
+                }
+              }
+            ]
+          }
+        ]
+      },{
+        "assets":[
+          {
+            "img":[
+              {
+                "logo":{
+                  "type": "png",
+                  "date": "01.05.2019",
+                  "changed": "01.05.2019",
+                  "size": 387
+                }
+              },              {
+                "background":{
+                  "type": "jpg",
+                  "date": "01.05.2019",
+                  "changed": "01.05.2019",
+                  "size": 789
+                }
+              }
+            ]
+          },{
+            "txt":[
+              {
+                "alarms":{
+                  "type": "txt",
+                  "date": "01.05.2019",
+                  "changed": "07.05.2019",
+                  "size": 5
+                }
+              }
+            ]
+          },{
+            "styles":[
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
