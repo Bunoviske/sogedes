@@ -26,6 +26,7 @@ pdfParser.loadPDF(filePath);
 *********************************/
 
 const htmlFile = "/documents/scannedGehaltHtml_Page1.htm";
+
 const txtPosProc = require("./textPosProcessing");
 const txtPreProc = require("./textPreProcessing");
 const htmlPosProc = require("./htmlPosProcessing");
@@ -35,9 +36,9 @@ const pdfreader = require("pdfreader");
 main(); //start the code here
 async function main() {
 
-    let htmlObject = await htmlParser.parseFile(htmlFile); //first thing is waiting to parse the html file. then begin the pdf parsing
+    //let htmlObject = await htmlParser.parseFile(htmlFile); //first thing is waiting to parse the html file. then begin the pdf parsing
 
-    txtPosProc.initializePosProcessing(); //add event bus listener to receive the response from luis
+    txtPosProc.initializePosProcessing(filePath); //add event bus listener to receive the response from luis
 
     new pdfreader.PdfReader().parseFileItems(filePath, function (err, item) { //read the pdf and preprocess the text
 
@@ -45,7 +46,6 @@ async function main() {
             console.log("Error: " + err);
             return;
         }
-
         else if (!item) { //finished parsing every item element in the pdf document
             txtPreProc.printRows();
 
@@ -54,7 +54,7 @@ async function main() {
             });
             console.log("End of pdf parse");
 
-            htmlPosProc.getTextByHtmlSections(htmlObject, txtPreProc.getPdfItemsArrayYFiltered());
+           // htmlPosProc.getTextByHtmlSections(htmlObject, txtPreProc.getPdfItemsArrayYFiltered());
 
             if (txtPreProc.DEBUG) { //enable this mode in you want to find specific text in the pdf and then find the key value pair
 
@@ -80,7 +80,7 @@ async function main() {
         else if (item.text) {
             // accumulate text items into rows object, per line
             txtPreProc.addPdfItem(item);
-            htmlPosProc.getPdfReferenceCoordinates(item);
+            //htmlPosProc.getPdfReferenceCoordinates(item);
         }
     });
 }

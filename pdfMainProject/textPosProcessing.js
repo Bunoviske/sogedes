@@ -8,9 +8,18 @@
 const fs = require('fs');
 const luis = require('./luis');
 
-function initializePosProcessing() {
+function initializePosProcessing(filePath) {
 
-    fs.writeFile(__dirname + "/luisResponse.json", "No best results!!!", (err) => {
+    var filename = filePath.replace(/^.*[\\\/]/, '');
+    var dirname1 = filePath.substring(0, filePath.lastIndexOf("/")) + "/results";
+    var dirname2 = filePath.substring(0, filePath.lastIndexOf("\\")) + "\\results";
+    var dirname = dirname1.length > dirname2.length ? dirname1 : dirname2; //test the substring with the two separators and get the dirname that is bigger
+
+    if (!fs.existsSync(dirname)){ //create subfolder /results if it doesn't exist. 
+        fs.mkdirSync(dirname);
+    }
+
+    fs.writeFile(dirname + '/' + filename + "-luisResponse.json", "Nothing", (err) => { //create a result json file for this pdf document
         if (err) throw err;
     });
 
