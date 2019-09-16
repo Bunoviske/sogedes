@@ -110,7 +110,6 @@ function javascriptClientSelection() {
 }
 
 const puppeteer = require('puppeteer');
-let htmlTableWidth, htmlTableHeight, htmlSections = [];
 async function parseFile(htmlFile) {
     console.log("Starting html parse");
     const browser = await puppeteer.launch();
