@@ -1,0 +1,6 @@
+Div.Sectionhead { position: relative; top: 0pt;}
+Div.Boxlist { position: relative; top: 0pt;}
+Div.Box { position: absolute; overflow: visible; background-color: #000000;}
+Div.Boxlistheight { position: relative; overflow: auto; visibility: hidden;}
+.Normal { font-style: normal; font-weight: normal; font-size: 10pt; letter-spacing: 0.370000pt;}
+.Normal { font-style: normal; font-weight: normal; font-size: 10pt; letter-spacing: 0.370000pt; text-align: left; text-indent: 0px; line-height: normal ; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;}
