@@ -8,7 +8,6 @@ let bestResults = [];
 const https = require('https');
 const querystring = require("querystring");
 
-
 const fs = require('fs');
 const { PerformanceObserver, performance } = require('perf_hooks');
 let t0 = performance.now();
@@ -17,7 +16,6 @@ let t0 = performance.now();
 const EventEmitter = require('events');
 class MyEmitter extends EventEmitter { }
 const eventBus = new MyEmitter();
-let cont = 0;
 
 function callLuis(query, luisSentenceMap) {
 
