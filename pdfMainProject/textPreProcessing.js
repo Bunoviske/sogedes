@@ -1,6 +1,7 @@
 
 const luis = require('./luis');
-const DEBUG = true;
+const utils = require('./utils');
+const DEBUG = false;
 
 let rows = {}; // indexed by y-position
 let cols = {}; // indexed by x-position
@@ -11,17 +12,6 @@ let pdfTxt = "";
 let luisSentence = "";
 let luisSentenceMap = {};
 let sameLineThreshold = 0.5;
-
-
-function hasManyNumbers(myString) {
-    let digitCount = (myString.match(/\d/g) || []).length;
-    let alphaNumCount = (myString.match(/\w/g) || []).length;
-    //console.log(alphaNumCount + " " + myString.length + " " + myString);
-    return digitCount / alphaNumCount > 0.5; //if 50% or more of the string are numbers, dont add to luis sentence
-}
-function hasNumber(myString) {
-    return /\d/.test(myString);
-}
 
 function callLuis() {
     // console.log("\n\n" + luisSentence + "\n\n");
@@ -50,7 +40,7 @@ function addLuisSentence(pdfItem) {
         // console.log(luisSentence.length);
         callLuis();
     }
-    if (fontSize > 7.5 && !hasManyNumbers(substr) && substr.length > 1) { //good candidates are big, not numbers (label only) and are not a singular char
+    if (fontSize > 7.5 && !utils.hasManyNumbers(substr) && substr.length > 1) { //good candidates are big, not numbers (label only) and are not a singular char
         // console.log(text);
         luisSentenceMap[luisSentence.length] = pdfItem;
         luisSentence += text;

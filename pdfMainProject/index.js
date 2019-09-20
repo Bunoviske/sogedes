@@ -38,7 +38,8 @@ async function main() {
 
     //let htmlObject = await htmlParser.parseFile(htmlFile); //first thing is waiting to parse the html file. then begin the pdf parsing
 
-    txtPosProc.initializePosProcessing(filePath); //add event bus listener to receive the response from luis
+    //add event bus listener to receive the response from luis and store the pointer of the array containing the pdf items    
+    txtPosProc.initializePosProcessing(filePath, txtPreProc.getPdfItemsArrayYFiltered()); 
 
     new pdfreader.PdfReader().parseFileItems(filePath, function (err, item) { //read the pdf and preprocess the text
 

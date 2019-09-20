@@ -6,9 +6,13 @@
 // });
 
 const luis = require('./luis');
+const utils = require('./utils');
 
-function initializePosProcessing(filePath) {
+let pdfItemsArrayYFiltered;
 
+function initializePosProcessing(filePath, externPdfItemsArrayYFiltered) {
+
+    pdfItemsArrayYFiltered = externPdfItemsArrayYFiltered;
     luis.createOutputJsonFile(filePath);
     luis.eventBus.on('receivedLuisResponse', (pdfItems) => { //receive pdf items that luis identified as good labels
 
@@ -73,7 +77,7 @@ function searchValueRight(label) {
     console.log("\n\nRight values");
     foundElems.forEach((elem) => {
         // console.log(elem);
-        if (elem.x < bestCandidate.x && hasManyNumbers(elem.text)) { //get the element that the closest x. for now, only search for texts that have many numbers  
+        if (elem.x < bestCandidate.x && utils.hasManyNumbers(elem.text)) { //get the element that the closest x. for now, only search for texts that have many numbers  
             bestCandidate = elem;
         }
     });
@@ -128,7 +132,7 @@ function searchValueBelow(label) {
 
         if (elem.y <= bestCandidate.y //get the element with many numbers that has the closest y. TODO - check if there is text string between value and label? 
             && Math.abs(xCenterElement - xCenterLabel) < Math.abs(xCenterBestCandidate - xCenterLabel) //elem.x is closer to the label.x than bestCandidate.x
-            && hasManyNumbers(elem.text)) {// for now, only search for texts that have many numbers  
+            && utils.hasManyNumbers(elem.text)) {// for now, only search for texts that have many numbers  
             bestCandidate = elem;
         }
     });
