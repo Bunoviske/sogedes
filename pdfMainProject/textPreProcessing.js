@@ -1,7 +1,7 @@
 
 const luis = require('./luis');
 const utils = require('./utils');
-const DEBUG = true;
+const DEBUG = false;
 
 let rows = {}; // indexed by y-position
 let cols = {}; // indexed by x-position

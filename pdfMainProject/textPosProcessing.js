@@ -10,7 +10,9 @@ const fs = require('fs');
 var rimraf = require("rimraf");
 const utils = require('./utils');
 
+let outputFile;
 let pdfItemsArrayYFiltered;
+let posProcessingResult = {};
 
 function initializePosProcessing(filePath, externPdfItemsArrayYFiltered) {
 
@@ -25,10 +27,10 @@ function initializePosProcessing(filePath, externPdfItemsArrayYFiltered) {
     });
 }
 
-function createEmptyResultFiles(filePath){
+function createEmptyResultFiles(filePath) {
     let resultDirPath = utils.getResultDirPath(filePath);
     let filename = utils.getFileName(filePath);
-    
+
     if (fs.existsSync(resultDirPath)) { //delete if exists
         rimraf.sync(resultDirPath);
     }
@@ -37,9 +39,19 @@ function createEmptyResultFiles(filePath){
     luis.createOutputJsonFile(resultDirPath, filename);
 }
 
-function createPosProcessingOutputFile(resultDirPath, filename){
+function createPosProcessingOutputFile(resultDirPath, filename) {
     outputFile = resultDirPath + '/' + filename + "-posprocessingResult.json";
     fs.writeFile(outputFile, "{\"Result\": \"Nothing\"}", (err) => { //create a result json file for this pdf document
+        if (err) throw err;
+    });
+}
+
+function saveResultInJsonFile(label, value){
+    posProcessingResult[label] = value; 
+    // TODO - for now, I dont process the probability of luisResponse, so if there is two or more equal labels, the last value will take place in the javascript object
+
+    console.log(posProcessingResult);
+    fs.writeFile(outputFile, JSON.stringify(posProcessingResult), (err) => {
         if (err) throw err;
     });
 }
@@ -53,20 +65,28 @@ function findKeyValuePair(label) {
 
     if (bestValueCandidateBelow == false && bestValueCandidateRight == false)
         console.log("No value for " + label.text);
-    else if (bestValueCandidateRight == false)
+    else if (bestValueCandidateRight == false){
         console.log(bestValueCandidateBelow.text + " value for " + label.text);
-    else if (bestValueCandidateBelow == false)
+        saveResultInJsonFile(label.text,bestValueCandidateBelow.text);
+    }
+    else if (bestValueCandidateBelow == false){
         console.log(bestValueCandidateRight.text + " value for " + label.text);
+        saveResultInJsonFile(label.text,bestValueCandidateRight.text);
+    }
     else {
         //take the one that is closest.
         //TODO - Is this the best decision? Or the value that is on the right has preference? 
         //Maybe there is a value below that is near the label compared to the value on the right
 
         if (cartesianDistance(getXCenterCoordinate(bestValueCandidateRight), getXCenterCoordinate(label), bestValueCandidateRight.y, label.y) <=
-            cartesianDistance(getXCenterCoordinate(bestValueCandidateBelow), getXCenterCoordinate(label), bestValueCandidateBelow.y, label.y))
+            cartesianDistance(getXCenterCoordinate(bestValueCandidateBelow), getXCenterCoordinate(label), bestValueCandidateBelow.y, label.y)) {
             console.log(bestValueCandidateRight.text + " value for " + label.text);
-        else
+            saveResultInJsonFile(label.text,bestValueCandidateRight.text);
+        }
+        else {
             console.log(bestValueCandidateBelow.text + " value for " + label.text);
+            saveResultInJsonFile(label.text,bestValueCandidateBelow.text);
+        }
     }
 }
 
