@@ -57,7 +57,6 @@ async function main() {
            // htmlPosProc.getTextByHtmlSections(htmlObject, txtPreProc.getPdfItemsArrayYFiltered());
 
             if (txtPreProc.DEBUG) { //enable this mode in you want to find specific text in the pdf and then find the key value pair
-
                 const searchVariable = "";
                 // const searchVariable = "SV-Nr.";
                 // const searchVariable = "Geb.tag";

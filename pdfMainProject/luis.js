@@ -2,9 +2,6 @@
  HTTP REQUEST
 *********************************/
 
-let responseCounter = 0;
-let bestResults = [];
-
 const https = require('https');
 const querystring = require("querystring");
 
@@ -12,10 +9,30 @@ const fs = require('fs');
 const { PerformanceObserver, performance } = require('perf_hooks');
 let t0 = performance.now();
 
+let responseCounter = 0;
+let bestResults = [];
+let outputJsonFile;
+
 //create event bus
 const EventEmitter = require('events');
 class MyEmitter extends EventEmitter { }
 const eventBus = new MyEmitter();
+
+function createOutputJsonFile(filePath){
+    var filename = filePath.replace(/^.*[\\\/]/, '');
+    var dirname1 = filePath.substring(0, filePath.lastIndexOf("/")) + "/results";
+    var dirname2 = filePath.substring(0, filePath.lastIndexOf("\\")) + "\\results";
+    var dirname = dirname1.length > dirname2.length ? dirname1 : dirname2; //test the substring with the two separators and get the dirname that is bigger
+
+    if (!fs.existsSync(dirname)){ //create subfolder /results if it doesn't exist. 
+        fs.mkdirSync(dirname);
+    }
+
+    outputJsonFile = dirname + '/' + filename + "-luisResponse.json";
+    fs.writeFile(outputJsonFile, "{\"Result\": \"Nothing\"}", (err) => { //create a result json file for this pdf document
+        if (err) throw err;
+    });
+}
 
 function callLuis(query, luisSentenceMap) {
 
@@ -70,7 +87,7 @@ function analyseResponse(jsonRes, luisSentenceMap) {
 
         }
     });
-    fs.writeFile(__dirname + "/luisResponse.json", JSON.stringify(bestResults), (err) => {
+    fs.writeFile(outputJsonFile, JSON.stringify(bestResults), (err) => {
         if (err) throw err;
     });
     eventBus.emit('receivedLuisResponse', pdfItems);
@@ -78,5 +95,6 @@ function analyseResponse(jsonRes, luisSentenceMap) {
 
 module.exports = {
     callLuis: callLuis,
+    createOutputJsonFile: createOutputJsonFile,
     eventBus: eventBus
 }
