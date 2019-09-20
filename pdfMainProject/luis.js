@@ -18,17 +18,9 @@ const EventEmitter = require('events');
 class MyEmitter extends EventEmitter { }
 const eventBus = new MyEmitter();
 
-function createOutputJsonFile(filePath){
-    var filename = filePath.replace(/^.*[\\\/]/, '');
-    var dirname1 = filePath.substring(0, filePath.lastIndexOf("/")) + "/results";
-    var dirname2 = filePath.substring(0, filePath.lastIndexOf("\\")) + "\\results";
-    var dirname = dirname1.length > dirname2.length ? dirname1 : dirname2; //test the substring with the two separators and get the dirname that is bigger
+function createOutputJsonFile(resultDirPath, filename){
 
-    if (!fs.existsSync(dirname)){ //create subfolder /results if it doesn't exist. 
-        fs.mkdirSync(dirname);
-    }
-
-    outputJsonFile = dirname + '/' + filename + "-luisResponse.json";
+    outputJsonFile = resultDirPath + '/' + filename + "-luisResponse.json";
     fs.writeFile(outputJsonFile, "{\"Result\": \"Nothing\"}", (err) => { //create a result json file for this pdf document
         if (err) throw err;
     });

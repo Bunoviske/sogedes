@@ -6,6 +6,8 @@
 // });
 
 const luis = require('./luis');
+const fs = require('fs');
+var rimraf = require("rimraf");
 const utils = require('./utils');
 
 let pdfItemsArrayYFiltered;
@@ -13,12 +15,32 @@ let pdfItemsArrayYFiltered;
 function initializePosProcessing(filePath, externPdfItemsArrayYFiltered) {
 
     pdfItemsArrayYFiltered = externPdfItemsArrayYFiltered;
-    luis.createOutputJsonFile(filePath);
-    luis.eventBus.on('receivedLuisResponse', (pdfItems) => { //receive pdf items that luis identified as good labels
 
+    createEmptyResultFiles(filePath);
+
+    luis.eventBus.on('receivedLuisResponse', (pdfItems) => { //receive pdf items that luis identified as good labels
         pdfItems.forEach(function (item) {
             findKeyValuePair(item);
         });
+    });
+}
+
+function createEmptyResultFiles(filePath){
+    let resultDirPath = utils.getResultDirPath(filePath);
+    let filename = utils.getFileName(filePath);
+    
+    if (fs.existsSync(resultDirPath)) { //delete if exists
+        rimraf.sync(resultDirPath);
+    }
+    fs.mkdirSync(resultDirPath); //create subfolder /results 
+    createPosProcessingOutputFile(resultDirPath, filename);
+    luis.createOutputJsonFile(resultDirPath, filename);
+}
+
+function createPosProcessingOutputFile(resultDirPath, filename){
+    outputFile = resultDirPath + '/' + filename + "-posprocessingResult.json";
+    fs.writeFile(outputFile, "{\"Result\": \"Nothing\"}", (err) => { //create a result json file for this pdf document
+        if (err) throw err;
     });
 }
 
