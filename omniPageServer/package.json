@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "i": "^0.3.6",
+    "iconv-lite": "^0.5.0",
     "request": "^2.88.0",
     "utf8": "^3.0.0",
     "xml2js": "^0.4.22"

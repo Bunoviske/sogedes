@@ -3,6 +3,7 @@ module.exports = {
 }
 const bus = require('./eventBus');
 const sysHandler = require('./fileSystemHandler/fileSystemHandler');
+const documentUnderstanding = require('./documentUnderstanding/docUnderstanding');
 
 function init() {
     bus.addEventListener("parseXml", xmlParser);
@@ -20,15 +21,12 @@ function readFile(xmlFile) {
 }
 
 function parseFile(xmlContent) {
-    // var utf8 = require('utf8');
-    // console.log(utf8.decode(xmlContent));
-    // console.log(xmlContent);
 
-    var parseXmlString = require('xml2js').parseString;
+    // console.log(xmlContent);
+    let parseXmlString = require('xml2js').parseString;
     parseXmlString(xmlContent, function (err, result) {
         if (err) { return console.log(err); }
-        console.log(result.document.page[0].zones[0].textZone); //array of textZones
-        console.log(result.document.page[0].zones[0].tableZone); //array of tableZones
+        documentUnderstanding.run(result);
     });
 }
 

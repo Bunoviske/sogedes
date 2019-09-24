@@ -2,7 +2,7 @@
 const utils = require('./commonUtils');
 const fs = require('fs');
 const path = require('path');
-
+const utf8 = require('utf8');
 //imitation of a class (javascript object)
 let xmlFileHandler = {
 
@@ -19,8 +19,13 @@ let xmlFileHandler = {
         return xmlPath;
     },
 
-    readXmlFile(file){
-        return fs.readFileSync(file, {encoding: 'utf8'});
+    readXmlFile(file) {
+        let content = fs.readFileSync(file).toString();
+        // let iconv = require('iconv-lite');        
+        // let buf = iconv.decode(content, '');
+        // console.log(content);
+        // console.log(content.search('Be-/Abzüge'));
+        return content;
     }
 }
 
