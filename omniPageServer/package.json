@@ -1,0 +1,17 @@
+{
+  "name": "omnipageserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i": "^0.3.6",
+    "request": "^2.88.0",
+    "utf8": "^3.0.0",
+    "xml2js": "^0.4.22"
+  }
+}
