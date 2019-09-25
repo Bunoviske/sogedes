@@ -18,7 +18,7 @@ const EventEmitter = require('events');
 class MyEmitter extends EventEmitter { }
 const eventBus = new MyEmitter();
 
-function createOutputJsonFile(resultDirPath, filename){
+function createOutputJsonFile(resultDirPath, filename) {
 
     outputJsonFile = resultDirPath + '/' + filename + "-luisResponse.json";
     fs.writeFile(outputJsonFile, "{\"Result\": \"Nothing\"}", (err) => { //create a result json file for this pdf document
@@ -32,7 +32,7 @@ function callLuis(query, luisSentenceMap) {
     var urlLuis = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e396e0f0-076c-4d27-aa64-9811cd3a93b7?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
     // query = 'überweisung $1650,00';
 
-    https.get(urlLuis + querystring.escape(query) , (resp) => { //convert query to URL encoding
+    https.get(urlLuis + querystring.escape(query), (resp) => { //convert query to URL encoding
 
         let data = '';
         // A chunk of data has been recieved.
@@ -61,6 +61,9 @@ function analyseResponse(jsonRes, luisSentenceMap) {
     let arr = JSON.parse(jsonRes);
     let pdfItems = [];
 
+    if (typeof arr.entities == "undefined")
+        return;
+
     arr.entities.forEach(element => {
         if (element.type == "TotalBrutto" || element.type == "TotalNetto" || element.type == "SV-nummer" || element.type == "Steuer-ID" ||
             element.type == "Geburtstag") {
@@ -74,9 +77,10 @@ function analyseResponse(jsonRes, luisSentenceMap) {
                     endIndex: element.endIndex
                 }
             );
-            //console.log(luisSentenceMap[element.startIndex]);
-            pdfItems.push(luisSentenceMap[element.startIndex]);
-
+            // console.log(luisSentenceMap[element.startIndex]);
+            if (typeof luisSentenceMap[element.startIndex] != "undefined") 
+            //TODO - Sometimes luis detect a label that has not (x,y) coordinates, so the luisSentenceMap will not work for these cases (undefined variable)
+                pdfItems.push(luisSentenceMap[element.startIndex]);
         }
     });
     fs.writeFile(outputJsonFile, JSON.stringify(bestResults), (err) => {
