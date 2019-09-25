@@ -1,0 +1,2427 @@
+<?xml version="1.0"?>
+<!--XML document generated using OCR technology from Nuance Communications, Inc.-->
+<document xmlns="http://www.scansoft.com/omnipage/xml/ssdoc-schema3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<summary>
+</summary>
+<page ocr-vers="OmniPageCSDK20" app-vers="Nuance OmniPage Server">
+<description backColor="ffffff">
+<source file="C:\WINDOWS\TEMP\DCS\16301113ea9147769cf1d5a2eb1ef321\JobInput\input000" dpix="286" dpiy="286" sizex="2364" sizey="3345"/>
+<theoreticalPage size="Custom" marginLeft="0" marginTop="0" marginRight="0" marginBottom="0" width="2364" height="3345"/>
+<language>de</language>
+</description>
+<zones>
+<textZone l="952" t="473" r="5070" b="720" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="952" t="473" r="5065" b="715" baseLine="660" bold="true" underlined="none" fontSize="1100">
+<wd l="952" t="473" r="2306" b="715"><run backColor="ffffff" language="de">Abrechnung</run>
+</wd>
+<space width="86"/>
+<wd l="2392" t="498" r="2749" b="675"><run backColor="ffffff" language="de">der</run>
+</wd>
+<space width="76"/>
+<wd l="2825" t="498" r="3494" b="670"><run backColor="ffffff" language="de">Brutto</run>
+</wd>
+<wd l="3509" t="483" r="4169" b="660"><run backColor="ffffff" language="de">-Netto</run>
+</wd>
+<wd l="4184" t="478" r="5065" b="700"><run backColor="ffffff" language="de">-Bez&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9597" t="488" r="10951" b="710" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9597" t="488" r="10946" b="705" baseLine="660" bold="true" underlined="none" fontSize="1100">
+<wd l="9597" t="493" r="10382" b="705"><run backColor="ffffff" language="de">August</run>
+</wd>
+<space width="70"/>
+<wd l="10453" t="498" r="10946" b="660"><run backColor="ffffff" language="de">2019</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<tableZone l="886" t="881" r="6007" b="1385" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<gridTable>
+<gridCol>806</gridCol>
+<gridCol>921</gridCol>
+<gridCol>1732</gridCol>
+<gridCol>866</gridCol>
+<gridCol>796</gridCol>
+<gridRow>222</gridRow>
+<gridRow>281</gridRow>
+</gridTable>
+<cellZone l="886" t="881" r="1692" b="1103" gridColFrom="0" gridColTill="0" gridRowFrom="0" gridRowTill="0">
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="957" t="931" r="1500" b="1042" baseLine="1037" underlined="none" fontSize="800">
+<wd l="957" t="931" r="1500" b="1042"><run language="de">Pers.-Nr.</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="1692" t="881" r="2613" b="1103" gridColFrom="1" gridColTill="1" gridRowFrom="0" gridRowTill="0">
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2412" t="947" r="2553" b="1047" baseLine="1047" underlined="none" fontSize="800">
+<wd l="2412" t="947" r="2553" b="1047"><run language="de">63</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2613" t="881" r="4345" b="1103" gridColFrom="2" gridColTill="2" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2669" t="937" r="3278" b="1067" baseLine="1042" underlined="none" fontSize="800">
+<wd l="2669" t="937" r="3278" b="1067"><run language="de">Abteilung</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="4345" t="881" r="5211" b="1103" gridColFrom="3" gridColTill="3" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4401" t="931" r="4854" b="1042" baseLine="1037" underlined="none" fontSize="800">
+<wd l="4401" t="931" r="4854" b="1042"><run language="de">Kst.-St.</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5211" t="881" r="6007" b="1103" gridColFrom="4" gridColTill="4" gridRowFrom="0" gridRowTill="0">
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="886" t="1103" r="1692" b="1384" gridColFrom="0" gridColTill="0" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="957" t="1218" r="1375" b="1329" baseLine="1319" underlined="none" fontSize="800">
+<wd l="957" t="1218" r="1375" b="1329"><run language="de">Eintritt</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="1692" t="1103" r="2613" b="1384" gridColFrom="1" gridColTill="1" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1883" t="1213" r="2548" b="1324" baseLine="1319" underlined="none" fontSize="800">
+<wd l="1883" t="1213" r="2548" b="1324"><run language="de">07.08.2019</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2613" t="1103" r="4345" b="1384" gridColFrom="2" gridColTill="2" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2669" t="1213" r="3137" b="1319" baseLine="1319" underlined="none" fontSize="800">
+<wd l="2669" t="1213" r="3137" b="1319"><run language="de">Austritt</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="4345" t="1103" r="5211" b="1384" gridColFrom="3" gridColTill="3" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4401" t="1213" r="5080" b="1324" baseLine="1324" underlined="none" fontSize="800">
+<wd l="4401" t="1213" r="5080" b="1324"><run language="de">Geb.datum</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5211" t="1103" r="6007" b="1384" gridColFrom="4" gridColTill="4" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5347" t="1213" r="6007" b="1329" baseLine="1324" underlined="none" fontSize="800">
+<wd l="5347" t="1213" r="6007" b="1329"><run language="de">29.09.1996</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+</tableZone>
+<textZone l="947" t="5287" r="1410" b="5403" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="947" t="5287" r="1405" b="5397" baseLine="5392" underlined="none" fontSize="800">
+<wd l="947" t="5287" r="1405" b="5397"><run backColor="ffffff" language="de">Lohnart</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1269" t="5543" r="1349" b="5669" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1269" t="5543" r="1344" b="5664" baseLine="5664" underlined="none" fontSize="800">
+<wd l="1269" t="5543" r="1344" b="5664"><run backColor="ffffff" language="de">2</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1546" t="2533" r="3998" b="2890" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1546" t="2533" r="2487" b="2674" baseLine="2643" underlined="none" fontSize="800">
+<wd l="1546" t="2533" r="2064" b="2674"><run backColor="ffffff" language="de">Sogedes</run>
+</wd>
+<space width="45"/>
+<wd l="2110" t="2533" r="2487" b="2643"><run backColor="ffffff" language="de">GmbH</run>
+</wd>
+<space/>
+</ln>
+<ln l="1551" t="2759" r="3993" b="2885" baseLine="2875" underlined="none" fontSize="800">
+<wd l="1551" t="2759" r="2487" b="2875"><run backColor="ffffff" language="de">FabrIkstationstr.</run>
+</wd>
+<space width="50"/>
+<wd l="2538" t="2764" r="2905" b="2885"><run backColor="ffffff" language="de">45-49,</run>
+</wd>
+<space width="50"/>
+<wd l="2956" t="2764" r="3323" b="2880"><run backColor="ffffff" language="de">68163</run>
+</wd>
+<space width="45"/>
+<wd l="3368" t="2769" r="3993" b="2885"><run backColor="ffffff" language="de">Mannhelm</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="4401" t="1495" r="5987" b="1641" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="4401" t="1495" r="5982" b="1636" baseLine="1601" underlined="none" fontSize="800">
+<wd l="4401" t="1495" r="5448" b="1636"><run backColor="ffffff" language="de">Personengruppe</run>
+</wd>
+<space width="347"/>
+<wd l="5795" t="1495" r="5982" b="1606"><run backColor="ffffff" language="de">101</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1561" t="3283" r="3922" b="4693" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1561" t="3283" r="3665" b="3479" baseLine="3444" bold="true" underlined="none" fontSize="1000">
+<wd l="1561" t="3283" r="2512" b="3479"><run backColor="ffffff" language="de">pers&#246;nlich</run>
+</wd>
+<space width="65"/>
+<wd l="2578" t="3288" r="2628" b="3449"><run backColor="ffffff" language="de">/</run>
+</wd>
+<space width="60"/>
+<wd l="2689" t="3298" r="3665" b="3454"><run backColor="ffffff" language="de">vertraulich</run>
+</wd>
+<space/>
+</ln>
+<ln l="1566" t="3600" r="2029" b="3756" baseLine="3751" underlined="none" fontSize="1000">
+<wd l="1566" t="3600" r="2029" b="3756"><run backColor="ffffff" language="de">Herrn</run>
+</wd>
+<space/>
+</ln>
+<ln l="1566" t="3917" r="3917" b="4073" baseLine="4068" underlined="none" fontSize="1000">
+<wd l="1566" t="3917" r="2064" b="4068"><run backColor="ffffff" language="de">Bruno</run>
+</wd>
+<space width="126"/>
+<wd l="2190" t="3917" r="3091" b="4073"><run backColor="ffffff" language="de">Fernandes</run>
+</wd>
+<space width="70"/>
+<wd l="3162" t="3922" r="3917" b="4073"><run backColor="ffffff" language="de">Carvalho</run>
+</wd>
+<space/>
+</ln>
+<ln l="1571" t="4229" r="3066" b="4380" baseLine="4380" underlined="none" fontSize="1000">
+<wd l="1571" t="4229" r="2563" b="4380"><run backColor="ffffff" language="de">Neckarauer</run>
+</wd>
+<space width="55"/>
+<wd l="2618" t="4229" r="2900" b="4380"><run backColor="ffffff" language="de">Str.</run>
+</wd>
+<space width="76"/>
+<wd l="2976" t="4239" r="3066" b="4380"><run backColor="ffffff" language="de">7</run>
+</wd>
+<space/>
+</ln>
+<ln l="1571" t="4537" r="3031" b="4688" baseLine="4683" underlined="none" fontSize="1000">
+<wd l="1571" t="4542" r="2095" b="4688"><run backColor="ffffff" language="de">68199</run>
+</wd>
+<space width="65"/>
+<wd l="2160" t="4537" r="3031" b="4688"><run backColor="ffffff" language="de">Mannheim</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="2905" t="5282" r="3665" b="5418" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="2905" t="5282" r="3660" b="5413" baseLine="5382" underlined="none" fontSize="800">
+<wd l="2905" t="5282" r="3660" b="5413"><run backColor="ffffff" language="de">Bezeichnung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1465" t="5538" r="1913" b="5669" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1465" t="5538" r="1908" b="5664" baseLine="5659" underlined="none" fontSize="800">
+<wd l="1465" t="5538" r="1908" b="5664"><run backColor="ffffff" language="de">Gehalt</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="962" t="8051" r="3983" b="8272" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="962" t="8051" r="3978" b="8267" baseLine="8227" bold="true" underlined="none" fontSize="1100">
+<wd l="962" t="8061" r="1677" b="8237"><run backColor="ffffff" language="de">Steuer</run>
+</wd>
+<space width="60"/>
+<wd l="1737" t="8056" r="1803" b="8237"><run backColor="ffffff" language="de">/</run>
+</wd>
+<space width="76"/>
+<wd l="1878" t="8051" r="3978" b="8267"><run backColor="ffffff" language="de">Sozialversicherung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6128" t="926" r="8625" b="1047" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6128" t="926" r="8620" b="1042" baseLine="1037" underlined="none" fontSize="800">
+<wd l="6128" t="931" r="6893" b="1042"><run backColor="ffffff" language="de">SV-Nummer</run>
+</wd>
+<space width="856"/>
+<wd l="7749" t="926" r="8620" b="1042"><run backColor="ffffff" language="de">24290996F001</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6123" t="1208" r="8640" b="1329" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6123" t="1208" r="8635" b="1324" baseLine="1314" underlined="none" fontSize="800">
+<wd l="6123" t="1213" r="6505" b="1324"><run backColor="ffffff" language="de">Kasse</run>
+</wd>
+<space width="760"/>
+<wd l="7265" t="1213" r="7547" b="1319"><run backColor="ffffff" language="de">AOK</run>
+</wd>
+<space width="45"/>
+<wd l="7593" t="1208" r="8635" b="1319"><run backColor="ffffff" language="de">Baden-W&#252;rttemb.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6123" t="1485" r="8640" b="1631" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6123" t="1485" r="8635" b="1626" baseLine="1596" underlined="none" fontSize="800">
+<wd l="6123" t="1495" r="6299" b="1601"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space width="40"/>
+<wd l="6339" t="1490" r="6591" b="1606"><run backColor="ffffff" language="de">/AN</run>
+</wd>
+<wd l="6611" t="1495" r="7104" b="1626"><run backColor="ffffff" language="de">-Beitrag</run>
+</wd>
+<space width="50"/>
+<wd l="7155" t="1490" r="7331" b="1601"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space width="378"/>
+<wd l="7709" t="1485" r="8137" b="1611"><run backColor="ffffff" language="de">14,60%</run>
+</wd>
+<space width="45"/>
+<wd l="8182" t="1485" r="8635" b="1601"><run backColor="ffffff" language="de">/7,75%</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6123" t="1777" r="6923" b="1918" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6123" t="1777" r="6918" b="1913" baseLine="1888" underlined="none" fontSize="800">
+<wd l="6123" t="1777" r="6918" b="1913"><run backColor="ffffff" language="de">PV-Zuschlag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8232" t="1757" r="8645" b="1883" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8232" t="1757" r="8640" b="1878" baseLine="1873" underlined="none" fontSize="800">
+<wd l="8232" t="1762" r="8479" b="1878"><run backColor="ffffff" language="de">nein</run>
+</wd>
+<space width="40"/>
+<wd l="8519" t="1757" r="8559" b="1873"><run backColor="ffffff" language="de">/</run>
+</wd>
+<space width="35"/>
+<wd l="8595" t="1818" r="8640" b="1843"><run backColor="ffffff" language="de">-</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6123" t="2034" r="7804" b="2205" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6123" t="2034" r="7799" b="2200" baseLine="2165" underlined="none" fontSize="800">
+<wd l="6123" t="2034" r="7276" b="2200"><run backColor="ffffff" language="de">&#220;bergangsbereich</run>
+</wd>
+<space width="287"/>
+<wd l="7563" t="2059" r="7799" b="2165"><run backColor="ffffff" language="de">nein</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7920" t="2049" r="8630" b="2165" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7920" t="2049" r="8625" b="2160" baseLine="2155" underlined="none" fontSize="800">
+<wd l="7920" t="2049" r="8197" b="2160"><run backColor="ffffff" language="de">MFB</run>
+</wd>
+<space width="181"/>
+<wd l="8378" t="2049" r="8625" b="2155"><run backColor="ffffff" language="de">nein</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8761" t="926" r="11107" b="1037" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8761" t="926" r="11102" b="1032" baseLine="1027" underlined="none" fontSize="800">
+<wd l="8761" t="931" r="9174" b="1032"><run backColor="ffffff" language="de">Steuer</run>
+</wd>
+<space width="45"/>
+<wd l="9219" t="931" r="9340" b="1032"><run backColor="ffffff" language="de">ID</run>
+</wd>
+<space width="45"/>
+<wd l="9385" t="931" r="9561" b="1032"><run backColor="ffffff" language="de">Nr.</run>
+</wd>
+<space width="735"/>
+<wd l="10297" t="931" r="11102" b="1032"><run backColor="ffffff" language="de">75421013182</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8761" t="1198" r="11112" b="1344" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8761" t="1198" r="11107" b="1339" baseLine="1304" underlined="none" fontSize="800">
+<wd l="8761" t="1203" r="9093" b="1314"><run backColor="ffffff" language="de">SLKI.</run>
+</wd>
+<space width="45"/>
+<wd l="9138" t="1198" r="9707" b="1339"><run backColor="ffffff" language="de">(Faktor)/</run>
+</wd>
+<space width="40"/>
+<wd l="9748" t="1203" r="10166" b="1304"><run backColor="ffffff" language="de">Kinder</run>
+</wd>
+<space width="594"/>
+<wd l="10760" t="1203" r="10800" b="1304"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space width="55"/>
+<wd l="10855" t="1203" r="10896" b="1304"><run backColor="ffffff" language="de">/</run>
+</wd>
+<space width="35"/>
+<wd l="10931" t="1203" r="11107" b="1319"><run backColor="ffffff" language="de">0,0</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8761" t="1475" r="9481" b="1591" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8761" t="1475" r="9476" b="1586" baseLine="1581" underlined="none" fontSize="800">
+<wd l="8761" t="1475" r="9476" b="1586"><run backColor="ffffff" language="de">Konfession</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8761" t="1747" r="10120" b="1893" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8761" t="1747" r="10115" b="1888" baseLine="1858" underlined="none" fontSize="800">
+<wd l="8761" t="1757" r="9400" b="1888"><run backColor="ffffff" language="de">Freibetrag</run>
+</wd>
+<space width="55"/>
+<wd l="9456" t="1747" r="9763" b="1863"><run backColor="ffffff" language="de">mtl.!</run>
+</wd>
+<space width="30"/>
+<wd l="9793" t="1747" r="10115" b="1883"><run backColor="ffffff" language="de">j&#228;hrl.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8756" t="2029" r="10145" b="2170" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8756" t="2029" r="10140" b="2165" baseLine="2140" underlined="none" fontSize="800">
+<wd l="8756" t="2039" r="9430" b="2150"><run backColor="ffffff" language="de">HInzurech.</run>
+</wd>
+<space width="50"/>
+<wd l="9481" t="2034" r="9712" b="2140"><run backColor="ffffff" language="de">mtl.</run>
+</wd>
+<space width="45"/>
+<wd l="9758" t="2029" r="10140" b="2165"><run backColor="ffffff" language="de">/j&#228;hr!.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7099" t="2341" r="7552" b="2482" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7099" t="2341" r="7547" b="2477" baseLine="2452" underlined="none" fontSize="800">
+<wd l="7099" t="2341" r="7547" b="2477"><run backColor="ffffff" language="de">SV-Tag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7195" t="2628" r="7381" b="2739" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7195" t="2628" r="7376" b="2734" baseLine="2734" underlined="none" fontSize="800">
+<wd l="7195" t="2628" r="7376" b="2734"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7744" t="2618" r="7925" b="2739" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7744" t="2618" r="7920" b="2734" baseLine="2729" underlined="none" fontSize="800">
+<wd l="7744" t="2618" r="7920" b="2734"><run backColor="ffffff" language="de">RV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8288" t="2613" r="8479" b="2729" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8288" t="2613" r="8474" b="2724" baseLine="2724" underlined="none" fontSize="800">
+<wd l="8288" t="2613" r="8474" b="2724"><run backColor="ffffff" language="de">AV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8851" t="2608" r="9038" b="2724" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8851" t="2608" r="9033" b="2719" baseLine="2719" underlined="none" fontSize="800">
+<wd l="8851" t="2608" r="9033" b="2719"><run backColor="ffffff" language="de">PV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9446" t="2316" r="9969" b="2452" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9446" t="2316" r="9964" b="2447" baseLine="2422" underlined="none" fontSize="800">
+<wd l="9446" t="2316" r="9602" b="2427"><run backColor="ffffff" language="de">St.</run>
+</wd>
+<wd l="9612" t="2316" r="9964" b="2447"><run backColor="ffffff" language="de">-Tage</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6112" t="2905" r="6732" b="3026" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6112" t="2905" r="6727" b="3021" baseLine="3016" underlined="none" fontSize="800">
+<wd l="6112" t="2905" r="6727" b="3021"><run backColor="ffffff" language="de">monatlich</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7215" t="2905" r="7356" b="3021" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7215" t="2905" r="7351" b="3016" baseLine="3016" underlined="none" fontSize="800">
+<wd l="7215" t="2905" r="7351" b="3016"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7759" t="2905" r="7900" b="3016" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7759" t="2905" r="7895" b="3011" baseLine="3006" underlined="none" fontSize="800">
+<wd l="7759" t="2905" r="7895" b="3011"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8308" t="2895" r="8454" b="3011" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8308" t="2895" r="8449" b="3006" baseLine="3001" underlined="none" fontSize="800">
+<wd l="8308" t="2895" r="8449" b="3006"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8867" t="2890" r="9013" b="3001" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8867" t="2895" r="9008" b="2996" baseLine="2996" underlined="none" fontSize="800">
+<wd l="8867" t="2895" r="9008" b="2996"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9622" t="2885" r="9768" b="2996" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9622" t="2885" r="9763" b="2991" baseLine="2986" underlined="none" fontSize="800">
+<wd l="9622" t="2885" r="9763" b="2991"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6112" t="3192" r="6707" b="3308" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6112" t="3192" r="6702" b="3303" baseLine="3303" underlined="none" fontSize="800">
+<wd l="6112" t="3192" r="6702" b="3303"><run backColor="ffffff" language="de">kumuliert</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7210" t="3187" r="7356" b="3303" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7210" t="3187" r="7351" b="3298" baseLine="3298" underlined="none" fontSize="800">
+<wd l="7210" t="3187" r="7351" b="3298"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7759" t="3182" r="7895" b="3298" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7759" t="3182" r="7890" b="3293" baseLine="3293" underlined="none" fontSize="800">
+<wd l="7759" t="3182" r="7890" b="3293"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8303" t="3177" r="8449" b="3293" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8303" t="3177" r="8444" b="3288" baseLine="3288" underlined="none" fontSize="800">
+<wd l="8303" t="3177" r="8444" b="3288"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8862" t="3172" r="9008" b="3288" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8862" t="3172" r="9003" b="3283" baseLine="3283" underlined="none" fontSize="800">
+<wd l="8862" t="3172" r="9003" b="3283"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6112" t="3479" r="6399" b="3590" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6112" t="3479" r="6394" b="3585" baseLine="3585" underlined="none" fontSize="800">
+<wd l="6112" t="3479" r="6394" b="3585"><run backColor="ffffff" language="de">BGR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7255" t="3464" r="7301" b="3585" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7255" t="3469" r="7296" b="3580" baseLine="3580" underlined="none" fontSize="800">
+<wd l="7255" t="3469" r="7296" b="3580"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7799" t="3464" r="7844" b="3575" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7799" t="3469" r="7839" b="3570" baseLine="3570" underlined="none" fontSize="800">
+<wd l="7799" t="3469" r="7839" b="3570"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6112" t="3746" r="8061" b="3897" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6112" t="3746" r="8056" b="3892" baseLine="3862" underlined="none" fontSize="800">
+<wd l="6112" t="3761" r="6520" b="3867"><run backColor="ffffff" language="de">Urlaub</run>
+</wd>
+<space width="40"/>
+<wd l="6561" t="3756" r="7029" b="3892"><run backColor="ffffff" language="de">Vorjahr</run>
+</wd>
+<space width="780"/>
+<wd l="7809" t="3746" r="8056" b="3872"><run backColor="ffffff" language="de">0,00</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6107" t="4028" r="8066" b="4174" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6107" t="4028" r="8061" b="4169" baseLine="4144" underlined="none" fontSize="800">
+<wd l="6107" t="4033" r="7190" b="4169"><run backColor="ffffff" language="de">Urlaubsanspruch</run>
+</wd>
+<space width="624"/>
+<wd l="7814" t="4028" r="8061" b="4154"><run backColor="ffffff" language="de">0,00</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8348" t="3459" r="8393" b="3580" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8348" t="3464" r="8388" b="3575" baseLine="3575" underlined="none" fontSize="800">
+<wd l="8348" t="3464" r="8388" b="3575"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8907" t="3454" r="8952" b="3570" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8907" t="3459" r="8947" b="3565" baseLine="3565" underlined="none" fontSize="800">
+<wd l="8907" t="3459" r="8947" b="3565"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9622" t="3162" r="9768" b="3278" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9622" t="3162" r="9763" b="3273" baseLine="3268" underlined="none" fontSize="800">
+<wd l="9622" t="3162" r="9763" b="3273"><run backColor="ffffff" language="de">25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8182" t="3716" r="11112" b="3872" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8182" t="3746" r="8600" b="3852" baseLine="3852" underlined="none" fontSize="800">
+<wd l="8182" t="3746" r="8600" b="3852"><run backColor="ffffff" language="de">Urlaub</run>
+</wd>
+<wd l="8640" t="3796" r="8685" b="3827"><run backColor="ffffff" language="de">-</run>
+</wd>
+</ln>
+<ln l="8731" t="3716" r="11107" b="3867" baseLine="3837" underlined="none" fontSize="800">
+<wd l="8731" t="3736" r="9355" b="3847"><run backColor="ffffff" language="de">monatlich</run>
+</wd>
+<space width="40"/>
+<wd l="9395" t="3751" r="10110" b="3867"><run backColor="ffffff" language="de">genommen</run>
+</wd>
+<space width="750"/>
+<wd l="10860" t="3716" r="11107" b="3837"><run backColor="ffffff" language="de">0,00</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8177" t="4023" r="8877" b="4139" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8177" t="4023" r="8872" b="4134" baseLine="4134" underlined="none" fontSize="800">
+<wd l="8177" t="4023" r="8872" b="4134"><run backColor="ffffff" language="de">Resturlaub</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10850" t="3993" r="11112" b="4129" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10850" t="3998" r="11107" b="4124" baseLine="4103" underlined="none" fontSize="800">
+<wd l="10850" t="3998" r="11107" b="4124"><run backColor="ffffff" language="de">0,00</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6072" t="5262" r="7004" b="5403" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6072" t="5262" r="6999" b="5397" baseLine="5372" underlined="none" fontSize="800">
+<wd l="6072" t="5272" r="6561" b="5372"><run backColor="ffffff" language="de">bezahlte</run>
+</wd>
+<space width="45"/>
+<wd l="6606" t="5267" r="6999" b="5397"><run backColor="ffffff" language="de">Menge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7200" t="5257" r="7573" b="5377" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7200" t="5262" r="7568" b="5372" baseLine="5367" underlined="none" fontSize="800">
+<wd l="7200" t="5262" r="7568" b="5372"><run backColor="ffffff" language="de">Faktor</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7764" t="5257" r="8464" b="5397" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7764" t="5262" r="8459" b="5392" baseLine="5367" underlined="none" fontSize="800">
+<wd l="7764" t="5262" r="8459" b="5392"><run backColor="ffffff" language="de">%-Zuschlag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8575" t="5251" r="8756" b="5367" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8575" t="5257" r="8751" b="5362" baseLine="5362" underlined="none" fontSize="800">
+<wd l="8575" t="5257" r="8751" b="5362"><run backColor="ffffff" language="de">St&apos;</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8877" t="5251" r="9113" b="5367" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8877" t="5251" r="9108" b="5362" baseLine="5362" underlined="none" fontSize="800">
+<wd l="8877" t="5251" r="9108" b="5362"><run backColor="ffffff" language="de">SV*</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9204" t="5241" r="10432" b="5382" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9204" t="5246" r="10427" b="5377" baseLine="5352" underlined="none" fontSize="800">
+<wd l="9204" t="5246" r="9441" b="5362"><run backColor="ffffff" language="de">GB*</run>
+</wd>
+<space width="604"/>
+<wd l="10045" t="5246" r="10427" b="5377"><run backColor="ffffff" language="de">Betrag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<tableZone l="876" t="8464" r="9405" b="10443" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<gridTable>
+<gridCol>1385</gridCol>
+<gridCol>287</gridCol>
+<gridCol>1132</gridCol>
+<gridCol>1410</gridCol>
+<gridCol>1420</gridCol>
+<gridCol>262</gridCol>
+<gridCol>1093</gridCol>
+<gridCol>276</gridCol>
+<gridCol>1264</gridCol>
+<gridRow>201</gridRow>
+<gridRow>438</gridRow>
+<gridRow>338</gridRow>
+<gridRow>221</gridRow>
+<gridRow>443</gridRow>
+<gridRow>338</gridRow>
+</gridTable>
+<cellZone l="876" t="8464" r="2261" b="8665" gridColFrom="0" gridColTill="0" gridRowFrom="0" gridRowTill="0">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1148" t="8504" r="2009" b="8620" baseLine="8615" underlined="none" fontSize="800">
+<wd l="1148" t="8509" r="1546" b="8620"><run language="de">Steuer</run>
+</wd>
+<space width="30"/>
+<wd l="1576" t="8570" r="1626" b="8590"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="1667" t="8509" r="2009" b="8615"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="8464" r="2548" b="8665" gridColFrom="1" gridColTill="1" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="2548" t="8464" r="3680" b="8665" gridColFrom="2" gridColTill="2" gridRowFrom="0" gridRowTill="0">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2648" t="8504" r="3308" b="8610" baseLine="8610" underlined="none" fontSize="800">
+<wd l="2648" t="8504" r="3308" b="8610"><run language="de">Lohnsteuer</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="8464" r="5090" b="8665" gridColFrom="3" gridColTill="3" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3998" t="8499" r="4803" b="8605" baseLine="8600" underlined="none" fontSize="800">
+<wd l="3998" t="8499" r="4803" b="8605"><run language="de">Kirchensteuer</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="8464" r="6510" b="8665" gridColFrom="4" gridColTill="4" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5674" t="8489" r="5941" b="8595" baseLine="8595" underlined="none" fontSize="800">
+<wd l="5674" t="8489" r="5941" b="8595"><run language="de">SolZ</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="8464" r="6772" b="8665" gridColFrom="5" gridColTill="5" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="6772" t="8464" r="7865" b="8665" gridColFrom="6" gridColTill="6" gridRowFrom="0" gridRowTill="0">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6878" t="8484" r="7512" b="8590" baseLine="8590" underlined="none" fontSize="800">
+<wd l="6878" t="8489" r="7044" b="8590"><run language="de">KV</run>
+</wd>
+<space width="40"/>
+<wd l="7084" t="8544" r="7124" b="8564"><run language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="7170" t="8489" r="7512" b="8590"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="8464" r="8141" b="8665" gridColFrom="7" gridColTill="7" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="8141" t="8464" r="9405" b="8665" gridColFrom="8" gridColTill="8" gridRowFrom="0" gridRowTill="0">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8257" t="8484" r="8917" b="8595" baseLine="8590" underlined="none" fontSize="800">
+<wd l="8257" t="8484" r="8917" b="8595"><run language="de">PV-Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="876" t="8665" r="2261" b="9103" gridColFrom="0" gridColTill="0" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1244" t="8731" r="2195" b="8872" baseLine="8851" underlined="none" fontSize="800">
+<wd l="1244" t="8736" r="1823" b="8872"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="1888" t="8731" r="2195" b="8851"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="8665" r="2548" b="9103" gridColFrom="1" gridColTill="1" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="2548" t="8665" r="3680" b="9103" gridColFrom="2" gridColTill="2" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2865" t="8695" r="3665" b="8867" baseLine="8841" underlined="none" fontSize="800">
+<wd l="2865" t="8731" r="3243" b="8867"><run language="de">77,75</run>
+</wd>
+<space width="65"/>
+<wd l="3308" t="8695" r="3665" b="8846"><run language="de">EUR</run>
+<run subsuperscript="subscript" language="de">I</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="8665" r="5090" b="9103" gridColFrom="3" gridColTill="3" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4380" t="8716" r="5035" b="8851" baseLine="8831" underlined="none" fontSize="800">
+<wd l="4380" t="8721" r="4662" b="8851"><run language="de">0,00</run>
+</wd>
+<space width="70"/>
+<wd l="4733" t="8716" r="5035" b="8836"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="8665" r="6510" b="9103" gridColFrom="4" gridColTill="4" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5785" t="8716" r="6450" b="8851" baseLine="8831" underlined="none" fontSize="800">
+<wd l="5785" t="8716" r="6077" b="8851"><run language="de">2,00</run>
+</wd>
+<space width="65"/>
+<wd l="6143" t="8716" r="6450" b="8831"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="8665" r="6772" b="9103" gridColFrom="5" gridColTill="5" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="6772" t="8665" r="7865" b="9103" gridColFrom="6" gridColTill="6" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6863" t="8710" r="7804" b="8846" baseLine="8826" underlined="none" fontSize="800">
+<wd l="6863" t="8710" r="7432" b="8846"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="7497" t="8710" r="7804" b="8826"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="8665" r="8141" b="9103" gridColFrom="7" gridColTill="7" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="8141" t="8665" r="9405" b="9103" gridColFrom="8" gridColTill="8" gridRowFrom="1" gridRowTill="1">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8439" t="8710" r="9405" b="8846" baseLine="8826" underlined="none" fontSize="800">
+<wd l="8439" t="8710" r="9023" b="8846"><run language="de">1.333,33</run>
+</wd>
+<space width="76"/>
+<wd l="9098" t="8710" r="9405" b="8826"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="876" t="9103" r="2261" b="9441" gridColFrom="0" gridColTill="0" gridRowFrom="2" gridRowTill="2">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1007" t="9229" r="2195" b="9365" baseLine="9350" underlined="none" fontSize="800">
+<wd l="1007" t="9249" r="1093" b="9365"><run language="de">E</run>
+</wd>
+<space width="151"/>
+<wd l="1244" t="9229" r="1818" b="9365"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="1883" t="9229" r="2195" b="9350"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="9103" r="2548" b="9441" gridColFrom="1" gridColTill="1" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2371" t="9244" r="2457" b="9355" baseLine="9355" underlined="none" fontSize="800">
+<wd l="2371" t="9244" r="2457" b="9355"><run language="de">E</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2548" t="9103" r="3680" b="9441" gridColFrom="2" gridColTill="2" gridRowFrom="2" gridRowTill="2">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2865" t="9219" r="3615" b="9360" baseLine="9340" underlined="none" fontSize="800">
+<wd l="2865" t="9224" r="3243" b="9360"><run language="de">77,75</run>
+</wd>
+<space width="60"/>
+<wd l="3303" t="9219" r="3615" b="9340"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="9103" r="5090" b="9441" gridColFrom="3" gridColTill="3" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4370" t="9214" r="5035" b="9350" baseLine="9330" underlined="none" fontSize="800">
+<wd l="4370" t="9219" r="4662" b="9350"><run language="de">0,00</run>
+</wd>
+<space width="65"/>
+<wd l="4728" t="9214" r="5035" b="9330"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="9103" r="6510" b="9441" gridColFrom="4" gridColTill="4" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5785" t="9204" r="6445" b="9340" baseLine="9325" underlined="none" fontSize="800">
+<wd l="5785" t="9209" r="6072" b="9340"><run language="de">2,00</run>
+</wd>
+<space width="70"/>
+<wd l="6143" t="9204" r="6445" b="9325"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="9103" r="6772" b="9441" gridColFrom="5" gridColTill="5" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6621" t="9224" r="6712" b="9335" baseLine="9330" underlined="none" fontSize="800">
+<wd l="6621" t="9224" r="6712" b="9335"><run language="de">E</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6772" t="9103" r="7865" b="9441" gridColFrom="6" gridColTill="6" gridRowFrom="2" gridRowTill="2">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6858" t="9204" r="7804" b="9345" baseLine="9325" underlined="none" fontSize="800">
+<wd l="6858" t="9204" r="7432" b="9345"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="7497" t="9209" r="7804" b="9325"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="9103" r="8141" b="9441" gridColFrom="7" gridColTill="7" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="7980" t="9224" r="8066" b="9330" baseLine="9325" underlined="none" fontSize="800">
+<wd l="7980" t="9224" r="8066" b="9330"><run language="de">E</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="8141" t="9103" r="9405" b="9441" gridColFrom="8" gridColTill="8" gridRowFrom="2" gridRowTill="2">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8434" t="9209" r="9405" b="9345" baseLine="9330" underlined="none" fontSize="800">
+<wd l="8434" t="9209" r="9023" b="9345"><run language="de">1.333,33</run>
+</wd>
+<space width="70"/>
+<wd l="9093" t="9209" r="9405" b="9330"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="876" t="9441" r="2261" b="9662" gridColFrom="0" gridColTill="0" gridRowFrom="3" gridRowTill="3">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1254" t="9501" r="1903" b="9612" baseLine="9607" underlined="none" fontSize="800">
+<wd l="1254" t="9501" r="1435" b="9612"><run language="de">RV</run>
+</wd>
+<wd l="1470" t="9501" r="1903" b="9612"><run language="de">-Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="9441" r="2548" b="9662" gridColFrom="1" gridColTill="1" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="2548" t="9441" r="3680" b="9662" gridColFrom="2" gridColTill="2" gridRowFrom="3" gridRowTill="3">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2638" t="9491" r="3288" b="9602" baseLine="9602" underlined="none" fontSize="800">
+<wd l="2638" t="9496" r="2820" b="9602"><run language="de">AV</run>
+</wd>
+<space width="35"/>
+<wd l="2855" t="9496" r="3288" b="9602"><run language="de">-Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="9441" r="5090" b="9662" gridColFrom="3" gridColTill="3" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4038" t="9486" r="4743" b="9617" baseLine="9592" underlined="none" fontSize="800">
+<wd l="4038" t="9491" r="4214" b="9592"><run language="de">KV</run>
+</wd>
+<space width="35"/>
+<wd l="4250" t="9546" r="4295" b="9561"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="4335" t="9491" r="4743" b="9617"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="9441" r="6510" b="9662" gridColFrom="4" gridColTill="4" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5448" t="9476" r="6158" b="9612" baseLine="9587" underlined="none" fontSize="800">
+<wd l="5448" t="9481" r="5619" b="9587"><run language="de">PV</run>
+</wd>
+<space width="45"/>
+<wd l="5664" t="9536" r="5705" b="9556"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="5745" t="9481" r="6158" b="9612"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="9441" r="6772" b="9662" gridColFrom="5" gridColTill="5" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="6772" t="9441" r="7865" b="9662" gridColFrom="6" gridColTill="6" gridRowFrom="3" gridRowTill="3">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6832" t="9471" r="7542" b="9612" baseLine="9582" underlined="none" fontSize="800">
+<wd l="6832" t="9476" r="7009" b="9582"><run language="de">RV</run>
+</wd>
+<space width="40"/>
+<wd l="7049" t="9536" r="7089" b="9556"><run language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="7135" t="9481" r="7542" b="9612"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="9441" r="8141" b="9662" gridColFrom="7" gridColTill="7" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="8141" t="9441" r="9405" b="9662" gridColFrom="8" gridColTill="8" gridRowFrom="3" gridRowTill="3">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8217" t="9476" r="8942" b="9617" baseLine="9582" underlined="none" fontSize="800">
+<wd l="8217" t="9481" r="8398" b="9587"><run language="de">AV</run>
+</wd>
+<space width="40"/>
+<wd l="8439" t="9536" r="8484" b="9556"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="8524" t="9481" r="8942" b="9617"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="876" t="9662" r="2261" b="10105" gridColFrom="0" gridColTill="0" gridRowFrom="4" gridRowTill="4">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1239" t="9728" r="2190" b="9874" baseLine="9848" underlined="none" fontSize="800">
+<wd l="1239" t="9733" r="1818" b="9874"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="1883" t="9728" r="2190" b="9848"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="9662" r="2548" b="10105" gridColFrom="1" gridColTill="1" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="2548" t="9662" r="3680" b="10105" gridColFrom="2" gridColTill="2" gridRowFrom="4" gridRowTill="4">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2658" t="9723" r="3615" b="9858" baseLine="9838" underlined="none" fontSize="800">
+<wd l="2658" t="9723" r="3237" b="9858"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="3303" t="9723" r="3615" b="9843"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="9662" r="5090" b="10105" gridColFrom="3" gridColTill="3" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4209" t="9712" r="5025" b="9853" baseLine="9828" underlined="none" fontSize="800">
+<wd l="4209" t="9712" r="4652" b="9853"><run language="de">103,33</run>
+</wd>
+<space width="70"/>
+<wd l="4723" t="9712" r="5025" b="9828"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="9662" r="6510" b="10105" gridColFrom="4" gridColTill="4" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5695" t="9712" r="6445" b="9848" baseLine="9828" underlined="none" fontSize="800">
+<wd l="5695" t="9712" r="6067" b="9848"><run language="de">20,33</run>
+</wd>
+<space width="70"/>
+<wd l="6138" t="9712" r="6445" b="9828"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="9662" r="6772" b="10105" gridColFrom="5" gridColTill="5" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="6772" t="9662" r="7865" b="10105" gridColFrom="6" gridColTill="6" gridRowFrom="4" gridRowTill="4">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6983" t="9707" r="7804" b="9843" baseLine="9823" underlined="none" fontSize="800">
+<wd l="6983" t="9707" r="7427" b="9843"><run language="de">124,00</run>
+</wd>
+<space width="65"/>
+<wd l="7492" t="9707" r="7804" b="9823"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="9662" r="8141" b="10105" gridColFrom="7" gridColTill="7" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="8141" t="9662" r="9405" b="10105" gridColFrom="8" gridColTill="8" gridRowFrom="4" gridRowTill="4">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8650" t="9712" r="9400" b="9848" baseLine="9828" underlined="none" fontSize="800">
+<wd l="8650" t="9712" r="9018" b="9848"><run language="de">16,67</run>
+</wd>
+<space width="76"/>
+<wd l="9093" t="9712" r="9400" b="9828"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="876" t="10105" r="2261" b="10443" gridColFrom="0" gridColTill="0" gridRowFrom="5" gridRowTill="5">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="997" t="10231" r="2190" b="10372" baseLine="10352" underlined="none" fontSize="800">
+<wd l="997" t="10261" r="1083" b="10372"><run language="de">z</run>
+</wd>
+<space width="151"/>
+<wd l="1234" t="10231" r="1808" b="10367"><run language="de">1.333,33</run>
+</wd>
+<space width="70"/>
+<wd l="1878" t="10231" r="2190" b="10352"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2261" t="10105" r="2548" b="10443" gridColFrom="1" gridColTill="1" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2366" t="10246" r="2452" b="10357" baseLine="10352" underlined="none" fontSize="800">
+<wd l="2366" t="10246" r="2452" b="10357"><run language="de">E</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2548" t="10105" r="3680" b="10443" gridColFrom="2" gridColTill="2" gridRowFrom="5" gridRowTill="5">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2653" t="10221" r="3610" b="10362" baseLine="10342" underlined="none" fontSize="800">
+<wd l="2653" t="10226" r="3232" b="10362"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="3298" t="10221" r="3610" b="10342"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="3680" t="10105" r="5090" b="10443" gridColFrom="3" gridColTill="3" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="4204" t="10211" r="5025" b="10352" baseLine="10332" underlined="none" fontSize="800">
+<wd l="4204" t="10216" r="4652" b="10352"><run language="de">103,33</run>
+</wd>
+<space width="70"/>
+<wd l="4723" t="10211" r="5025" b="10332"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="5090" t="10105" r="6510" b="10443" gridColFrom="4" gridColTill="4" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="5695" t="10211" r="6445" b="10347" baseLine="10332" underlined="none" fontSize="800">
+<wd l="5695" t="10211" r="6067" b="10347"><run language="de">20,33</run>
+</wd>
+<space width="70"/>
+<wd l="6138" t="10211" r="6445" b="10332"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6510" t="10105" r="6772" b="10443" gridColFrom="5" gridColTill="5" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6621" t="10226" r="6707" b="10342" baseLine="10327" underlined="none" fontSize="800">
+<wd l="6621" t="10226" r="6707" b="10342"><run language="de">E</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="6772" t="10105" r="7865" b="10443" gridColFrom="6" gridColTill="6" gridRowFrom="5" gridRowTill="5">
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="6978" t="10206" r="7804" b="10347" baseLine="10327" underlined="none" fontSize="800">
+<wd l="6978" t="10211" r="7427" b="10347"><run language="de">124,00</run>
+</wd>
+<space width="65"/>
+<wd l="7492" t="10206" r="7804" b="10327"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="7865" t="10105" r="8141" b="10443" gridColFrom="7" gridColTill="7" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+</cellZone>
+<cellZone l="8141" t="10105" r="9405" b="10443" gridColFrom="8" gridColTill="8" gridRowFrom="5" gridRowTill="5">
+<topBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="8650" t="10211" r="9395" b="10347" baseLine="10332" underlined="none" fontSize="800">
+<wd l="8650" t="10211" r="9018" b="10347"><run language="de">16,67</run>
+</wd>
+<space width="70"/>
+<wd l="9088" t="10211" r="9395" b="10332"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+</tableZone>
+<textZone l="992" t="10583" r="1657" b="10674" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="992" t="10589" r="1651" b="10669" baseLine="10659" underlined="none" fontSize="400">
+<wd l="992" t="10589" r="1651" b="10669"><run backColor="ffffff" language="de">Gesamtsumme</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<tableZone l="856" t="10881" r="4496" b="14712" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<gridTable>
+<gridCol>1813</gridCol>
+<gridCol>1827</gridCol>
+<gridRow>237</gridRow>
+<gridRow>226</gridRow>
+<gridRow>222</gridRow>
+<gridRow>226</gridRow>
+<gridRow>227</gridRow>
+<gridRow>226</gridRow>
+<gridRow>217</gridRow>
+<gridRow>232</gridRow>
+<gridRow>221</gridRow>
+<gridRow>227</gridRow>
+<gridRow>221</gridRow>
+<gridRow>222</gridRow>
+<gridRow>221</gridRow>
+<gridRow>227</gridRow>
+<gridRow>221</gridRow>
+<gridRow>232</gridRow>
+<gridRow>227</gridRow>
+</gridTable>
+<cellZone l="856" t="10881" r="4496" b="11118" gridColFrom="0" gridColTill="1" gridRowFrom="0" gridRowTill="0">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1908" t="10941" r="3449" b="11082" baseLine="11052" underlined="none" fontSize="800">
+<wd l="1908" t="10946" r="2694" b="11082"><run language="de">Aufgelaufene</run>
+</wd>
+<space width="40"/>
+<wd l="2734" t="10946" r="3449" b="11052"><run language="de">Jahreswerte</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="11118" r="2669" b="11344" gridColFrom="0" gridColTill="0" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1435" t="11173" r="2236" b="11283" baseLine="11278" underlined="none" fontSize="800">
+<wd l="1435" t="11173" r="2236" b="11283"><run language="de">Gesamtbrutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="11118" r="4496" b="11344" gridColFrom="1" gridColTill="1" gridRowFrom="1" gridRowTill="1">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3152" t="11163" r="4013" b="11278" baseLine="11273" underlined="none" fontSize="800">
+<wd l="3152" t="11163" r="3540" b="11278"><run language="de">Steuer</run>
+</wd>
+<space width="40"/>
+<wd l="3580" t="11223" r="3625" b="11243"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="3665" t="11163" r="4013" b="11273"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="11344" r="2669" b="11566" gridColFrom="0" gridColTill="0" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1667" t="11394" r="2613" b="11535" baseLine="11520" underlined="none" fontSize="800">
+<wd l="1667" t="11399" r="2241" b="11535"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="2306" t="11394" r="2613" b="11520"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="11344" r="4496" b="11566" gridColFrom="1" gridColTill="1" gridRowFrom="2" gridRowTill="2">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3459" t="11394" r="4421" b="11530" baseLine="11515" underlined="none" fontSize="800">
+<wd l="3459" t="11394" r="4043" b="11530"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="4109" t="11394" r="4421" b="11515"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="11566" r="2669" b="11792" gridColFrom="0" gridColTill="0" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1510" t="11621" r="2165" b="11737" baseLine="11726" underlined="none" fontSize="800">
+<wd l="1510" t="11621" r="2165" b="11737"><run language="de">Lohnsteuer</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="11566" r="4496" b="11792" gridColFrom="1" gridColTill="1" gridRowFrom="3" gridRowTill="3">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3172" t="11616" r="3993" b="11726" baseLine="11726" underlined="none" fontSize="800">
+<wd l="3172" t="11616" r="3993" b="11726"><run language="de">Kirchensteuer</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="11792" r="2669" b="12019" gridColFrom="0" gridColTill="0" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1863" t="11847" r="2608" b="11983" baseLine="11968" underlined="none" fontSize="800">
+<wd l="1863" t="11847" r="2236" b="11983"><run language="de">77,75</run>
+</wd>
+<space width="65"/>
+<wd l="2301" t="11847" r="2608" b="11968"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="11792" r="4496" b="12019" gridColFrom="1" gridColTill="1" gridRowFrom="4" gridRowTill="4">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3751" t="11842" r="4411" b="11983" baseLine="11963" underlined="none" fontSize="800">
+<wd l="3751" t="11847" r="4038" b="11983"><run language="de">0,00</run>
+</wd>
+<space width="70"/>
+<wd l="4109" t="11842" r="4411" b="11963"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="12019" r="2669" b="12245" gridColFrom="0" gridColTill="0" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1697" t="12064" r="1969" b="12175" baseLine="12170" underlined="none" fontSize="800">
+<wd l="1697" t="12064" r="1969" b="12175"><run language="de">SolZ</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="12019" r="4496" b="12245" gridColFrom="1" gridColTill="1" gridRowFrom="5" gridRowTill="5">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3248" t="12054" r="3902" b="12175" baseLine="12170" underlined="none" fontSize="800">
+<wd l="3248" t="12059" r="3424" b="12175"><run language="de">KV</run>
+</wd>
+<space width="40"/>
+<wd l="3464" t="12114" r="3509" b="12139"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="3550" t="12059" r="3902" b="12175"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="12245" r="2669" b="12462" gridColFrom="0" gridColTill="0" gridRowFrom="6" gridRowTill="6">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1943" t="12285" r="2608" b="12426" baseLine="12406" underlined="none" fontSize="800">
+<wd l="1943" t="12290" r="2236" b="12426"><run language="de">2,00</run>
+</wd>
+<space width="60"/>
+<wd l="2296" t="12285" r="2608" b="12406"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="12245" r="4496" b="12462" gridColFrom="1" gridColTill="1" gridRowFrom="6" gridRowTill="6">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3454" t="12290" r="4411" b="12426" baseLine="12411" underlined="none" fontSize="800">
+<wd l="3454" t="12290" r="4033" b="12426"><run language="de">1.333,33</run>
+</wd>
+<space width="70"/>
+<wd l="4103" t="12290" r="4411" b="12411"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="12462" r="2669" b="12694" gridColFrom="0" gridColTill="0" gridRowFrom="7" gridRowTill="7">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1505" t="12507" r="2150" b="12628" baseLine="12618" underlined="none" fontSize="800">
+<wd l="1505" t="12517" r="1682" b="12628"><run language="de">PV</run>
+</wd>
+<space width="35"/>
+<wd l="1717" t="12572" r="1757" b="12592"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="1797" t="12517" r="2150" b="12623"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="12462" r="4496" b="12694" gridColFrom="1" gridColTill="1" gridRowFrom="7" gridRowTill="7">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3243" t="12502" r="3902" b="12623" baseLine="12618" underlined="none" fontSize="800">
+<wd l="3243" t="12507" r="3424" b="12623"><run language="de">RV</run>
+</wd>
+<space width="40"/>
+<wd l="3464" t="12562" r="3509" b="12587"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="3550" t="12507" r="3902" b="12623"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="12694" r="2669" b="12915" gridColFrom="0" gridColTill="0" gridRowFrom="8" gridRowTill="8">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1657" t="12743" r="2603" b="12879" baseLine="12864" underlined="none" fontSize="800">
+<wd l="1657" t="12743" r="2230" b="12879"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="2296" t="12743" r="2603" b="12864"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="12694" r="4496" b="12915" gridColFrom="1" gridColTill="1" gridRowFrom="8" gridRowTill="8">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3454" t="12738" r="4411" b="12879" baseLine="12859" underlined="none" fontSize="800">
+<wd l="3454" t="12738" r="4033" b="12879"><run language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="4098" t="12738" r="4411" b="12864"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="12915" r="2669" b="13142" gridColFrom="0" gridColTill="0" gridRowFrom="9" gridRowTill="9">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1495" t="12960" r="2145" b="13076" baseLine="13071" underlined="none" fontSize="800">
+<wd l="1495" t="12965" r="1752" b="13076"><run language="de">AV-</run>
+</wd>
+<space width="45"/>
+<wd l="1797" t="12965" r="2145" b="13071"><run language="de">Brutto</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="12915" r="4496" b="13142" gridColFrom="1" gridColTill="1" gridRowFrom="9" gridRowTill="9">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3212" t="12955" r="3927" b="13091" baseLine="13066" underlined="none" fontSize="800">
+<wd l="3212" t="12955" r="3383" b="13071"><run language="de">KV</run>
+</wd>
+<space width="40"/>
+<wd l="3424" t="13015" r="3469" b="13041"><run language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="3514" t="12960" r="3927" b="13091"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="13142" r="2669" b="13363" gridColFrom="0" gridColTill="0" gridRowFrom="10" gridRowTill="10">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1651" t="13187" r="2598" b="13328" baseLine="13312" underlined="none" fontSize="800">
+<wd l="1651" t="13192" r="2220" b="13328"><run language="de">1.333,33</run>
+</wd>
+<space width="70"/>
+<wd l="2291" t="13187" r="2598" b="13312"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="13142" r="4496" b="13363" gridColFrom="1" gridColTill="1" gridRowFrom="10" gridRowTill="10">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3580" t="13192" r="4406" b="13328" baseLine="13307" underlined="none" fontSize="800">
+<wd l="3580" t="13192" r="4028" b="13328"><run language="de">103,33</run>
+</wd>
+<space width="70"/>
+<wd l="4098" t="13192" r="4406" b="13312"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="13363" r="2669" b="13585" gridColFrom="0" gridColTill="0" gridRowFrom="11" gridRowTill="11">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1470" t="13408" r="2175" b="13549" baseLine="13524" underlined="none" fontSize="800">
+<wd l="1470" t="13418" r="1641" b="13529"><run language="de">PV</run>
+</wd>
+<space width="40"/>
+<wd l="1682" t="13474" r="1722" b="13494"><run language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="1762" t="13413" r="2175" b="13549"><run language="de">Beltrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="13363" r="4496" b="13585" gridColFrom="1" gridColTill="1" gridRowFrom="11" gridRowTill="11">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3212" t="13403" r="3922" b="13544" baseLine="13519" underlined="none" fontSize="800">
+<wd l="3212" t="13408" r="3383" b="13519"><run language="de">RV</run>
+</wd>
+<space width="40"/>
+<wd l="3424" t="13463" r="3469" b="13484"><run language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="3514" t="13408" r="3922" b="13544"><run language="de">Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="13585" r="2669" b="13806" gridColFrom="0" gridColTill="0" gridRowFrom="12" gridRowTill="12">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1848" t="13635" r="2598" b="13776" baseLine="13756" underlined="none" fontSize="800">
+<wd l="1848" t="13635" r="2220" b="13776"><run language="de">20,33</run>
+</wd>
+<space width="70"/>
+<wd l="2291" t="13635" r="2598" b="13756"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="13585" r="4496" b="13806" gridColFrom="1" gridColTill="1" gridRowFrom="12" gridRowTill="12">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3580" t="13635" r="4401" b="13771" baseLine="13750" underlined="none" fontSize="800">
+<wd l="3580" t="13635" r="4028" b="13771"><run language="de">124,00</run>
+</wd>
+<space width="70"/>
+<wd l="4098" t="13635" r="4401" b="13761"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="13806" r="2669" b="14033" gridColFrom="0" gridColTill="0" gridRowFrom="13" gridRowTill="13">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1460" t="13856" r="2175" b="13987" baseLine="13967" underlined="none" fontSize="800">
+<wd l="1460" t="13856" r="2175" b="13987"><run language="de">AV-Beitrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="13806" r="4496" b="14033" gridColFrom="1" gridColTill="1" gridRowFrom="13" gridRowTill="13">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3122" t="13846" r="4008" b="13967" baseLine="13962" underlined="none" fontSize="800">
+<wd l="3122" t="13851" r="3414" b="13967"><run language="de">VWL</run>
+</wd>
+<space width="40"/>
+<wd l="3454" t="13907" r="3499" b="13932"><run language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="3545" t="13851" r="4008" b="13967"><run language="de">Gesamt</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="14033" r="2669" b="14254" gridColFrom="0" gridColTill="0" gridRowFrom="14" gridRowTill="14">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1858" t="14083" r="2593" b="14219" baseLine="14204" underlined="none" fontSize="800">
+<wd l="1858" t="14083" r="2220" b="14219"><run language="de">16,67</run>
+</wd>
+<space width="65"/>
+<wd l="2286" t="14083" r="2593" b="14204"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="14033" r="4496" b="14254" gridColFrom="1" gridColTill="1" gridRowFrom="14" gridRowTill="14">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3736" t="14088" r="4401" b="14229" baseLine="14209" underlined="none" fontSize="800">
+<wd l="3736" t="14088" r="4023" b="14229"><run language="de">0,00</run>
+</wd>
+<space width="70"/>
+<wd l="4093" t="14093" r="4401" b="14219"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="14254" r="2669" b="14486" gridColFrom="0" gridColTill="0" gridRowFrom="15" gridRowTill="15">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1057" t="14294" r="2573" b="14435" baseLine="14410" underlined="none" fontSize="800">
+<wd l="1057" t="14304" r="1536" b="14425"><run language="de">Betrlebl.</run>
+</wd>
+<space width="45"/>
+<wd l="1581" t="14304" r="2573" b="14435"><run language="de">Altersversorgung</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="14254" r="4496" b="14486" gridColFrom="1" gridColTill="1" gridRowFrom="15" gridRowTill="15">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="2991" t="14299" r="4124" b="14445" baseLine="14410" underlined="none" fontSize="800">
+<wd l="2991" t="14299" r="4124" b="14445"><run language="de">Auszahlungsbetrag</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="856" t="14486" r="2669" b="14713" gridColFrom="0" gridColTill="0" gridRowFrom="16" gridRowTill="16">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="1933" t="14526" r="2593" b="14667" baseLine="14652" underlined="none" fontSize="800">
+<wd l="1933" t="14531" r="2220" b="14667"><run language="de">0,00</run>
+</wd>
+<space width="65"/>
+<wd l="2286" t="14526" r="2593" b="14652"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+<cellZone l="2669" t="14486" r="4496" b="14713" gridColFrom="1" gridColTill="1" gridRowFrom="16" gridRowTill="16">
+<leftBorder type="single" width="10" color="000000"/>
+<topBorder type="single" width="10" color="000000"/>
+<rightBorder type="single" width="10" color="000000"/>
+<bottomBorder type="single" width="10" color="000000"/>
+<ln l="3560" t="14531" r="4396" b="14672" baseLine="14657" underlined="none" fontSize="800">
+<wd l="3560" t="14531" r="4023" b="14672"><run language="de">989,25</run>
+</wd>
+<space width="65"/>
+<wd l="4088" t="14541" r="4396" b="14662"><run language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</cellZone>
+</tableZone>
+<textZone l="6334" t="10926" r="8212" b="11072" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6334" t="10926" r="8207" b="11067" baseLine="11037" underlined="none" fontSize="800">
+<wd l="6334" t="10931" r="6646" b="11042"><run backColor="ffffff" language="de">Netto</run>
+</wd>
+<space width="40"/>
+<wd l="6686" t="10986" r="6727" b="11006"><run backColor="ffffff" language="de">-</run>
+</wd>
+<space width="45"/>
+<wd l="6772" t="10931" r="7215" b="11067"><run backColor="ffffff" language="de">Bez&#252;ge</run>
+</wd>
+<space width="30"/>
+<wd l="7245" t="10926" r="7291" b="11037"><run backColor="ffffff" language="de">/</run>
+</wd>
+<space width="40"/>
+<wd l="7331" t="10931" r="7638" b="11037"><run backColor="ffffff" language="de">Netto</run>
+</wd>
+<space width="45"/>
+<wd l="7683" t="10986" r="7724" b="11006"><run backColor="ffffff" language="de">-</run>
+</wd>
+<space width="35"/>
+<wd l="7759" t="10931" r="8207" b="11067"><run backColor="ffffff" language="de">Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5070" t="14032" r="7638" b="14617" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5075" t="14032" r="7633" b="14163" baseLine="14153" underlined="none" fontSize="800">
+<wd l="5075" t="14037" r="5458" b="14163"><run backColor="ffffff" language="de">IBAN:</run>
+</wd>
+<space width="55"/>
+<wd l="5513" t="14037" r="5891" b="14158"><run backColor="ffffff" language="de">DE19</run>
+</wd>
+<space width="50"/>
+<wd l="5941" t="14032" r="6258" b="14158"><run backColor="ffffff" language="de">5001</run>
+</wd>
+<space width="65"/>
+<wd l="6324" t="14032" r="6656" b="14158"><run backColor="ffffff" language="de">0517</run>
+</wd>
+<space width="50"/>
+<wd l="6707" t="14032" r="7024" b="14153"><run backColor="ffffff" language="de">5431</run>
+</wd>
+<space width="65"/>
+<wd l="7089" t="14032" r="7422" b="14153"><run backColor="ffffff" language="de">2674</run>
+</wd>
+<space width="50"/>
+<wd l="7472" t="14032" r="7633" b="14148"><run backColor="ffffff" language="de">06</run>
+</wd>
+<space/>
+</ln>
+<ln l="5070" t="14264" r="6480" b="14385" baseLine="14380" underlined="none" fontSize="800">
+<wd l="5070" t="14264" r="5352" b="14385"><run backColor="ffffff" language="de">BIC:</run>
+</wd>
+<space width="60"/>
+<wd l="5413" t="14264" r="6480" b="14385"><run backColor="ffffff" language="de">INGDDEFFXXX</run>
+</wd>
+<space/>
+</ln>
+<ln l="5070" t="14481" r="7432" b="14611" baseLine="14606" underlined="none" fontSize="800">
+<wd l="5070" t="14486" r="5443" b="14611"><run backColor="ffffff" language="de">Bank:</run>
+</wd>
+<space width="60"/>
+<wd l="5503" t="14481" r="6148" b="14611"><run backColor="ffffff" language="de">ING-DIBa</run>
+</wd>
+<space width="60"/>
+<wd l="6208" t="14481" r="6807" b="14611"><run backColor="ffffff" language="de">Frankfurt</run>
+</wd>
+<space width="50"/>
+<wd l="6858" t="14516" r="7054" b="14606"><run backColor="ffffff" language="de">am</run>
+</wd>
+<space width="60"/>
+<wd l="7114" t="14481" r="7432" b="14606"><run backColor="ffffff" language="de">Main</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<pictureZone l="5075" t="11117" r="11157" b="14455">
+<shape>
+<rect l="5075" t="11117" r="11157" b="13604"/>
+<rect l="5075" t="13604" r="9461" b="13796"/>
+<rect l="5075" t="13796" r="11157" b="14027"/>
+<rect l="7658" t="14027" r="11157" b="14274"/>
+<rect l="10845" t="14274" r="11157" b="14455"/>
+</shape>
+</pictureZone>
+<textZone l="871" t="14853" r="8091" b="15488" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="871" t="14853" r="6238" b="14964" baseLine="14934" underlined="none" fontSize="400">
+<wd l="871" t="14873" r="901" b="14944"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space width="70"/>
+<wd l="972" t="14858" r="1737" b="14954"><run backColor="ffffff" language="de">Tedmonelsentgelt</run>
+</wd>
+<space width="40"/>
+<wd l="1777" t="14853" r="1878" b="14934"><run backColor="ffffff" language="de">Ee</run>
+</wd>
+<space width="30"/>
+<wd l="1908" t="14858" r="2069" b="14934"><run backColor="ffffff" language="de">wird</run>
+</wd>
+<space width="30"/>
+<wd l="2100" t="14858" r="2225" b="14929"><run backColor="ffffff" language="de">die</run>
+</wd>
+<space width="25"/>
+<wd l="2251" t="14858" r="3232" b="14954"><run backColor="ffffff" language="de">Tageefohnsleuerlabelle</run>
+</wd>
+<space width="30"/>
+<wd l="3263" t="14863" r="4134" b="14954"><run backColor="ffffff" language="de">engewendlund/oder</run>
+</wd>
+<space width="20"/>
+<wd l="4154" t="14863" r="4280" b="14939"><run backColor="ffffff" language="de">die</run>
+</wd>
+<space width="30"/>
+<wd l="4310" t="14868" r="4864" b="14944"><run backColor="ffffff" language="de">eulamellacha</run>
+</wd>
+<space width="30"/>
+<wd l="4894" t="14868" r="5216" b="14949"><run backColor="ffffff" language="de">Lahmet</run>
+</wd>
+<space width="15"/>
+<wd l="5221" t="14868" r="5664" b="14964"><run backColor="ffffff" language="de">enk&#252;rzung</run>
+</wd>
+<space width="35"/>
+<wd l="5700" t="14868" r="6238" b="14964"><run backColor="ffffff" language="de">durchgef&#252;hrt</run>
+</wd>
+<space/>
+</ln>
+<ln l="871" t="15050" r="8086" b="15160" baseLine="15130" underlined="none" fontSize="400">
+<wd l="871" t="15070" r="901" b="15095"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="50"/>
+<wd l="952" t="15055" r="1526" b="15140"><run backColor="ffffff" language="de">A=Abrwalung,</run>
+</wd>
+<space width="35"/>
+<wd l="1561" t="15050" r="1662" b="15120"><run backColor="ffffff" language="de">De</run>
+</wd>
+<space width="20"/>
+<wd l="1682" t="15050" r="1792" b="15125"><run backColor="ffffff" language="de">8V</run>
+</wd>
+<wd l="1792" t="15050" r="2175" b="15140"><run backColor="ffffff" language="de">-Bettrage</run>
+</wd>
+<space width="25"/>
+<wd l="2200" t="15055" r="2502" b="15120"><run backColor="ffffff" language="de">werden</run>
+</wd>
+<space width="35"/>
+<wd l="2538" t="15070" r="2704" b="15120"><run backColor="ffffff" language="de">vom</run>
+</wd>
+<space width="35"/>
+<wd l="2739" t="15055" r="3227" b="15145"><run backColor="ffffff" language="de">Arbellgeber</run>
+</wd>
+<space width="25"/>
+<wd l="3253" t="15055" r="3655" b="15135"><run backColor="ffffff" language="de">enekehlet</run>
+</wd>
+<space width="40"/>
+<wd l="3696" t="15055" r="4385" b="15150"><run backColor="ffffff" language="de">EeElnmellemsg,</run>
+</wd>
+<space width="30"/>
+<wd l="4416" t="15060" r="4708" b="15145"><run backColor="ffffff" language="de">FeFret</run>
+</wd>
+<space width="35"/>
+<wd l="4743" t="15065" r="5277" b="15135"><run backColor="ffffff" language="de">LeLeufender</run>
+</wd>
+<space width="30"/>
+<wd l="5307" t="15065" r="5594" b="15155"><run backColor="ffffff" language="de">Damm.</run>
+</wd>
+<space width="35"/>
+<wd l="5629" t="15065" r="6263" b="15155"><run backColor="ffffff" language="de">MeMehrjahrIge</run>
+</wd>
+<space width="25"/>
+<wd l="6289" t="15070" r="6883" b="15160"><run backColor="ffffff" language="de">gereleuerung,</run>
+</wd>
+<space width="30"/>
+<wd l="6913" t="15070" r="7472" b="15140"><run backColor="ffffff" language="de">PePeuschale</run>
+</wd>
+<space width="25"/>
+<wd l="7497" t="15065" r="8086" b="15155"><run backColor="ffffff" language="de">Versleuerung,</run>
+</wd>
+<space/>
+</ln>
+<ln l="972" t="15180" r="6656" b="15291" baseLine="15266" underlined="none" fontSize="400">
+<wd l="972" t="15196" r="1077" b="15271"><run backColor="ffffff" language="de">So</run>
+</wd>
+<space width="15"/>
+<wd l="1093" t="15196" r="1485" b="15281"><run backColor="ffffff" language="de">Sonstiger</run>
+</wd>
+<space width="30"/>
+<wd l="1516" t="15185" r="1797" b="15281"><run backColor="ffffff" language="de">Bezug,</run>
+</wd>
+<space width="30"/>
+<wd l="1828" t="15185" r="2271" b="15276"><run backColor="ffffff" language="de">VeVorjahr.</run>
+</wd>
+<space width="35"/>
+<wd l="2306" t="15180" r="3086" b="15266"><run backColor="ffffff" language="de">GESeGesmalbrulta.</run>
+</wd>
+<space width="30"/>
+<wd l="3117" t="15185" r="3333" b="15261"><run backColor="ffffff" language="de">J&#8226;hAl</run>
+</wd>
+<space width="30"/>
+<wd l="3363" t="15185" r="3847" b="15286"><run backColor="ffffff" language="de">Aureldtung</run>
+</wd>
+<space width="35"/>
+<wd l="3882" t="15190" r="4018" b="15266"><run backColor="ffffff" language="de">lauf</run>
+</wd>
+<space width="20"/>
+<wd l="4038" t="15196" r="4189" b="15266"><run backColor="ffffff" language="de">des</run>
+</wd>
+<space width="25"/>
+<wd l="4214" t="15196" r="4808" b="15281"><run backColor="ffffff" language="de">Cleeamlbtulle.</run>
+</wd>
+<space width="30"/>
+<wd l="4839" t="15196" r="5196" b="15276"><run backColor="ffffff" language="de">NeOhne</run>
+</wd>
+<space width="25"/>
+<wd l="5221" t="15201" r="5710" b="15291"><run backColor="ffffff" language="de">Auswirkung</run>
+</wd>
+<space width="30"/>
+<wd l="5740" t="15196" r="5881" b="15271"><run backColor="ffffff" language="de">auf</run>
+</wd>
+<space width="20"/>
+<wd l="5901" t="15201" r="6052" b="15276"><run backColor="ffffff" language="de">das</run>
+</wd>
+<space width="30"/>
+<wd l="6082" t="15201" r="6656" b="15276"><run backColor="ffffff" language="de">GeeamlbrUll0</run>
+</wd>
+<space/>
+</ln>
+<ln l="871" t="15372" r="3867" b="15483" baseLine="15452" underlined="none" fontSize="400">
+<wd l="871" t="15382" r="1772" b="15483"><run backColor="ffffff" language="de">Entgehbescheinigung</run>
+</wd>
+<space width="30"/>
+<wd l="1803" t="15382" r="2004" b="15452"><run backColor="ffffff" language="de">nach</run>
+</wd>
+<space width="35"/>
+<wd l="2039" t="15372" r="2084" b="15472"><run backColor="ffffff" language="de">&#167;</run>
+</wd>
+<space width="40"/>
+<wd l="2125" t="15377" r="2266" b="15452"><run backColor="ffffff" language="de">108</run>
+</wd>
+<space width="25"/>
+<wd l="2291" t="15377" r="2573" b="15452"><run backColor="ffffff" language="de">Absatz</run>
+</wd>
+<space width="35"/>
+<wd l="2608" t="15377" r="2653" b="15452"><run backColor="ffffff" language="de">3</run>
+</wd>
+<space width="30"/>
+<wd l="2684" t="15377" r="2865" b="15457"><run backColor="ffffff" language="de">Salz</run>
+</wd>
+<space width="35"/>
+<wd l="2900" t="15382" r="2935" b="15457"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space width="35"/>
+<wd l="2971" t="15382" r="3112" b="15457"><run backColor="ffffff" language="de">der</run>
+</wd>
+<space width="25"/>
+<wd l="3137" t="15382" r="3867" b="15483"><run backColor="ffffff" language="de">Gewerbeordnung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10115" t="5463" r="11122" b="5644" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10115" t="5463" r="11117" b="5639" baseLine="5619" underlined="none" fontSize="800">
+<wd l="10115" t="5503" r="10699" b="5639"><run backColor="ffffff" language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="10765" t="5463" r="11117" b="5619"><run backColor="ffffff" language="de">EUR</run>
+<run subsuperscript="subscript" backColor="ffffff" language="de">I</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9818" t="7920" r="10634" b="8036" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9818" t="7925" r="10629" b="8031" baseLine="8031" underlined="none" fontSize="800">
+<wd l="9818" t="7925" r="10629" b="8031"><run backColor="ffffff" language="de">Gesamtbrutto</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10100" t="8177" r="11077" b="8318" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10100" t="8177" r="11072" b="8313" baseLine="8293" underlined="none" fontSize="800">
+<wd l="10100" t="8177" r="10689" b="8313"><run backColor="ffffff" language="de">1.333,33</run>
+</wd>
+<space width="65"/>
+<wd l="10755" t="8177" r="11072" b="8298"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9647" t="8479" r="10906" b="8625" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9647" t="8479" r="10901" b="8620" baseLine="8590" underlined="none" fontSize="800">
+<wd l="9647" t="8484" r="10402" b="8595"><run backColor="ffffff" language="de">Steuerrechtl.</run>
+</wd>
+<space width="40"/>
+<wd l="10443" t="8484" r="10901" b="8620"><run backColor="ffffff" language="de">Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10307" t="8710" r="11072" b="8851" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10307" t="8710" r="11067" b="8846" baseLine="8826" underlined="none" fontSize="800">
+<wd l="10307" t="8716" r="10684" b="8846"><run backColor="ffffff" language="de">79,75</run>
+</wd>
+<space width="70"/>
+<wd l="10755" t="8710" r="11067" b="8831"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10302" t="9209" r="11072" b="9350" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10302" t="9209" r="11067" b="9345" baseLine="9330" underlined="none" fontSize="800">
+<wd l="10302" t="9214" r="10684" b="9345"><run backColor="ffffff" language="de">79,75</run>
+</wd>
+<space width="65"/>
+<wd l="10750" t="9209" r="11067" b="9330"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9642" t="9476" r="10805" b="9622" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9642" t="9476" r="10800" b="9617" baseLine="9587" underlined="none" fontSize="800">
+<wd l="9642" t="9481" r="9818" b="9587"><run backColor="ffffff" language="de">SV</run>
+</wd>
+<space width="40"/>
+<wd l="9858" t="9541" r="9904" b="9561"><run backColor="ffffff" language="de">-</run>
+</wd>
+<space width="40"/>
+<wd l="9944" t="9486" r="10302" b="9592"><run backColor="ffffff" language="de">rechtl.</run>
+</wd>
+<space width="40"/>
+<wd l="10342" t="9486" r="10800" b="9617"><run backColor="ffffff" language="de">Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10216" t="9712" r="11077" b="9858" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10216" t="9712" r="11072" b="9853" baseLine="9833" underlined="none" fontSize="800">
+<wd l="10216" t="9712" r="10684" b="9853"><run backColor="ffffff" language="de">264,33</run>
+</wd>
+<space width="65"/>
+<wd l="10750" t="9717" r="11072" b="9838"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10211" t="10221" r="11077" b="10362" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10211" t="10221" r="11072" b="10357" baseLine="10337" underlined="none" fontSize="800">
+<wd l="10211" t="10221" r="10684" b="10357"><run backColor="ffffff" language="de">264,33</run>
+</wd>
+<space width="65"/>
+<wd l="10750" t="10221" r="11072" b="10342"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10211" t="10835" r="11072" b="10976" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10211" t="10835" r="11067" b="10971" baseLine="10951" underlined="none" fontSize="800">
+<wd l="10211" t="10835" r="10684" b="10971"><run backColor="ffffff" language="de">989,25</run>
+</wd>
+<space width="65"/>
+<wd l="10750" t="10835" r="11067" b="10956"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9486" t="13630" r="11047" b="13776" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9486" t="13630" r="11042" b="13771" baseLine="13740" underlined="none" fontSize="800">
+<wd l="9486" t="13630" r="9939" b="13745"><run backColor="ffffff" language="de">Summe</run>
+</wd>
+<space width="45"/>
+<wd l="9984" t="13630" r="10302" b="13740"><run backColor="ffffff" language="de">Netto</run>
+</wd>
+<space width="40"/>
+<wd l="10342" t="13635" r="11042" b="13771"><run backColor="ffffff" language="de">Be-/Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9677" t="14299" r="10825" b="14440" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9677" t="14299" r="10820" b="14435" baseLine="14410" underlined="none" fontSize="800">
+<wd l="9677" t="14299" r="10820" b="14435"><run backColor="ffffff" language="de">Auszahlungsbetrag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10191" t="14637" r="11037" b="14778" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10191" t="14637" r="11032" b="14773" baseLine="14757" underlined="none" fontSize="800">
+<wd l="10191" t="14637" r="10654" b="14773"><run backColor="ffffff" language="de">989,25</run>
+</wd>
+<space width="70"/>
+<wd l="10724" t="14642" r="11032" b="14763"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8288" t="16444" r="11248" b="16721" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8288" t="16444" r="11243" b="16716" baseLine="16651" underlined="none" fontSize="1400" fontFace="Times New Roman">
+<wd l="8288" t="16444" r="9284" b="16656"><run backColor="ffffff" language="de">Scanned</run>
+</wd>
+<space width="65"/>
+<wd l="9350" t="16444" r="9652" b="16716"><run backColor="ffffff" language="de">by</run>
+</wd>
+<space width="86"/>
+<wd l="9738" t="16449" r="11243" b="16661"><run backColor="ffffff" language="de">CamScanner</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<zone l="1415" t="5458" r="6022" b="7875" backColor="ffffff">
+<leftBorder type="single" width="10" color="1a191e"/>
+<topBorder type="single" width="10" color="202026"/>
+<rightBorder type="single" width="10" color="2d2d34"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="9491" t="5433" r="11122" b="7855" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="10" color="202026"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="916" t="5478" r="1385" b="7890" backColor="ffffff">
+<leftBorder type="single" width="10" color="0e0f16"/>
+<topBorder type="single" width="10" color="202026"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="1430" t="5236" r="6042" b="5433" backColor="ffffff">
+<topBorder type="single" width="10" color="1e1d24"/>
+<rightBorder type="single" width="10" color="2d2d34"/>
+<bottomBorder type="single" width="10" color="202026"/>
+</zone>
+<zone l="5095" t="10896" r="9446" b="11077" backColor="ffffff">
+<topBorder type="single" width="10" color="29282f"/>
+<rightBorder type="single" width="10" color="0f0f17"/>
+<bottomBorder type="single" width="15" color="15151b"/>
+</zone>
+<zone l="8137" t="3917" r="11147" b="4174" backColor="ffffff">
+<leftBorder type="single" width="10" color="29282f"/>
+<topBorder type="single" width="15" color="181720"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="15" color="13121b"/>
+</zone>
+<zone l="8137" t="3635" r="11157" b="3887" backColor="ffffff">
+<leftBorder type="single" width="10" color="29282f"/>
+<topBorder type="single" width="10" color="191922"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+</zone>
+<zone l="8831" t="5438" r="9138" b="7855" backColor="ffffff">
+<leftBorder type="single" width="10" color="26272f"/>
+<topBorder type="single" width="10" color="202026"/>
+<rightBorder type="single" width="10" color="23242c"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="9164" t="5438" r="9466" b="7855" backColor="ffffff">
+<rightBorder type="single" width="10" color="0f0f17"/>
+</zone>
+<zone l="8499" t="5438" r="8801" b="7855" backColor="ffffff">
+<leftBorder type="single" width="10" color="2b2a33"/>
+<topBorder type="single" width="10" color="202026"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="9486" t="8660" r="11117" b="9083" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="10" color="212027"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="25252c"/>
+</zone>
+<zone l="9486" t="9667" r="11117" b="10090" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="10" color="1f1e25"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="15" color="1e1d22"/>
+</zone>
+<zone l="9486" t="10674" r="11117" b="11097" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="15" color="09090d"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="15" color="15151b"/>
+</zone>
+<zone l="9466" t="14481" r="11077" b="14903" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="15" color="17161f"/>
+<bottomBorder type="single" width="15" color="090910"/>
+</zone>
+<zone l="6082" t="1390" r="8680" b="1646" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<topBorder type="single" width="10" color="1d1e27"/>
+<rightBorder type="single" width="10" color="2c2b31"/>
+<bottomBorder type="single" width="10" color="1d1e29"/>
+</zone>
+<zone l="6082" t="1672" r="8680" b="1928" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<rightBorder type="single" width="10" color="2c2b31"/>
+<bottomBorder type="single" width="10" color="1f1e26"/>
+</zone>
+<zone l="6082" t="1113" r="8680" b="1364" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<topBorder type="single" width="10" color="1f202b"/>
+<rightBorder type="single" width="10" color="2c2b31"/>
+</zone>
+<zone l="8700" t="1651" r="11157" b="1908" backColor="ffffff">
+<topBorder type="single" width="10" color="1d1e29"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1f1e26"/>
+</zone>
+<zone l="6082" t="846" r="8680" b="1088" backColor="ffffff">
+<topBorder type="single" width="10" color="21222e"/>
+</zone>
+<zone l="8700" t="836" r="11157" b="1088" backColor="ffffff">
+<topBorder type="single" width="10" color="21222e"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1f202b"/>
+</zone>
+<zone l="8700" t="1933" r="11157" b="2185" backColor="ffffff">
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="25242c"/>
+</zone>
+<zone l="8700" t="1380" r="11157" b="1631" backColor="ffffff">
+<topBorder type="single" width="10" color="1d1e27"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+</zone>
+<zone l="8700" t="1108" r="11157" b="1349" backColor="ffffff">
+</zone>
+<zone l="7049" t="2241" r="9244" b="2492" backColor="ffffff">
+<leftBorder type="single" width="10" color="131318"/>
+<topBorder type="single" width="10" color="25242c"/>
+<rightBorder type="single" width="10" color="24252d"/>
+<bottomBorder type="single" width="10" color="1c1b23"/>
+</zone>
+<zone l="9486" t="9103" r="11117" b="9425" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1c1b20"/>
+</zone>
+<zone l="9486" t="8106" r="11117" b="8418" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<topBorder type="single" width="10" color="1b1a1e"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="242329"/>
+</zone>
+<zone l="9486" t="10110" r="11117" b="10422" backColor="ffffff">
+<leftBorder type="single" width="10" color="0f0f17"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1b1b21"/>
+</zone>
+<zone l="6062" t="3660" r="8096" b="3907" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<topBorder type="single" width="10" color="191922"/>
+<bottomBorder type="single" width="15" color="181720"/>
+</zone>
+<zone l="6062" t="3942" r="8096" b="4189" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<bottomBorder type="single" width="15" color="13121b"/>
+</zone>
+<zone l="6082" t="1964" r="7855" b="2215" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<bottomBorder type="single" width="10" color="25242c"/>
+</zone>
+<zone l="4350" t="1405" r="6042" b="1651" backColor="ffffff">
+<bottomBorder type="single" width="10" color="1d1e29"/>
+</zone>
+<zone l="9476" t="7875" r="11127" b="8091" backColor="ffffff">
+</zone>
+<zone l="9476" t="8439" r="11127" b="8650" backColor="ffffff">
+<topBorder type="single" width="10" color="242329"/>
+</zone>
+<zone l="9471" t="9446" r="11127" b="9652" backColor="ffffff">
+</zone>
+<zone l="9254" t="2215" r="10211" b="2492" backColor="ffffff">
+<leftBorder type="single" width="10" color="24252d"/>
+<rightBorder type="single" width="10" color="232129"/>
+<bottomBorder type="single" width="10" color="1c1b23"/>
+</zone>
+<zone l="7865" t="1943" r="8690" b="2225" backColor="ffffff">
+</zone>
+<zone l="906" t="1395" r="2598" b="1651" backColor="ffffff">
+<bottomBorder type="single" width="10" color="1d1e29"/>
+</zone>
+<zone l="2618" t="1390" r="4330" b="1646" backColor="ffffff">
+<bottomBorder type="single" width="10" color="1d1e29"/>
+</zone>
+<zone l="10231" t="2215" r="11157" b="3303" backColor="ffffff">
+<leftBorder type="single" width="10" color="232129"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1c1c25"/>
+</zone>
+<zone l="9244" t="3343" r="11157" b="3595" backColor="ffffff">
+<leftBorder type="single" width="10" color="24252d"/>
+<topBorder type="single" width="10" color="1c1c25"/>
+</zone>
+<zone l="6062" t="4209" r="11137" b="5186" backColor="ffffff">
+<leftBorder type="single" width="10" color="2d2d34"/>
+<rightBorder type="single" width="15" color="1f1e27"/>
+<bottomBorder type="single" width="10" color="1e1d24"/>
+</zone>
+<zone l="7029" t="5443" r="7709" b="7855" backColor="ffffff">
+<leftBorder type="single" width="10" color="3d3c42"/>
+<topBorder type="single" width="10" color="202026"/>
+<rightBorder type="single" width="10" color="1a191f"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="7734" t="5438" r="8474" b="7855" backColor="ffffff">
+<topBorder type="single" width="10" color="202026"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="6047" t="5458" r="7004" b="7865" backColor="ffffff">
+<topBorder type="single" width="10" color="202026"/>
+<bottomBorder type="single" width="10" color="212127"/>
+</zone>
+<zone l="4597" t="11117" r="5060" b="13574" backColor="ffffff">
+<leftBorder type="single" width="10" color="201f26"/>
+<topBorder type="single" width="15" color="15151b"/>
+<bottomBorder type="single" width="10" color="2f303d"/>
+</zone>
+<rulerline l="11142" t="14455" r="11142" b="14929" type="single" width="15" color="1f1e27"/>
+<rulerline l="9239" t="2492" r="9239" b="3343" type="single" width="10" color="24252d"/>
+<rulerline l="8680" t="2502" r="8680" b="3635" type="single" width="10" color="2b2a2f"/>
+<rulerline l="8121" t="2507" r="8121" b="3635" type="single" width="10" color="29282f"/>
+<rulerline l="7583" t="2512" r="7583" b="3650" type="single" width="5" color="222029"/>
+<rulerline l="7039" t="2492" r="7039" b="3655" type="single" width="10" color="131318"/>
+<rulerline l="6047" t="2215" r="6047" b="3660" type="single" width="10" color="2d2d34"/>
+<rulerline l="4592" t="10881" r="5095" b="10881" type="single" width="10" color="29282f"/>
+<rulerline l="886" t="8439" r="9476" b="8439" type="single" width="10" color="242329"/>
+<rulerline l="906" t="5216" r="1430" b="5216" type="single" width="10" color="1e1d24"/>
+<rulerline l="6047" t="3348" r="9239" b="3348" type="single" width="10" color="1c1c25"/>
+<rulerline l="6047" t="3071" r="10216" b="3071" type="single" width="15" color="1a1922"/>
+<rulerline l="1541" t="3036" r="5669" b="3036" type="single" width="15" color="111321"/>
+<rulerline l="6052" t="2794" r="10216" b="2794" type="single" width="15" color="1f1f27"/>
+<rulerline l="6052" t="2507" r="7044" b="2507" type="single" width="10" color="1c1b23"/>
+<rulerline l="891" t="826" r="6082" b="826" type="single" width="10" color="21222e"/>
+</zones>
+</page>
+</document>

@@ -4,13 +4,17 @@ module.exports = {
 
 const coordHandler = require('./coordinatesHandler');
 
+let luisSentence = ""; //sentence to be sent to luis
+let luisSentenceMap = []; //maps luis sentence and the documentData structure
+let documentData = []; //main data structure that contains each zone, line, words and attributes
+
 //retrieves the text from text zones and fill two data structures (one that contain all the xml useful information and other that helps with luis response processing)
 function getTextZones(zones) {
 
-    let sectionPosition, linePosition, lineFont, wordPosition
+    let zonePosition, linePosition, lineFont, wordPosition;
     zones.forEach( (zone, zoneIdx) => {
         // console.log(zone); 
-        sectionPosition = coordHandler.getPositionObject(zone.$.l, zone.$.t, zone.$.r, zone.$.b);  
+        zonePosition = coordHandler.getPositionObject(zone.$.l, zone.$.t, zone.$.r, zone.$.b);  
 
         zone.ln.forEach( (line, lineIdx) => {
             // console.log(line);
@@ -18,7 +22,7 @@ function getTextZones(zones) {
             lineFont = line.$.fontSize;
 
             line.wd.forEach( (word, wordIdx) => {
-                // console.log(word.$.l);
+                // console.log(word);
                 wordPosition = coordHandler.getPositionObject(word.$.l, word.$.t, word.$.r, word.$.b);
                 word.run.forEach( string => {
 

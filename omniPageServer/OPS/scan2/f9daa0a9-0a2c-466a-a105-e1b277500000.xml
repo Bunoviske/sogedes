@@ -1,0 +1,1556 @@
+<?xml version="1.0"?>
+<!--XML document generated using OCR technology from Nuance Communications, Inc.-->
+<document xmlns="http://www.scansoft.com/omnipage/xml/ssdoc-schema3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<summary>
+</summary>
+<page ocr-vers="OmniPageCSDK20" app-vers="Nuance OmniPage Server">
+<description backColor="ffffff">
+<source file="C:\WINDOWS\TEMP\DCS\5e37729305f24847b51d691bfe410b61\JobInput\input000" dpix="260" dpiy="260" sizex="2149" sizey="3041"/>
+<theoreticalPage size="Custom" marginLeft="0" marginTop="0" marginRight="0" marginBottom="0" width="2149" height="3041"/>
+<language>de</language>
+</description>
+<zones>
+<textZone l="1030" t="1052" r="4791" b="2132" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1036" t="1052" r="4159" b="1268" baseLine="1202" underlined="single" fontSize="800">
+<wd l="1036" t="1052" r="2010" b="1230"><run backColor="ffffff" language="de">Abrechnung</run>
+</wd>
+<space width="66"/>
+<wd l="2077" t="1069" r="2332" b="1202"><run backColor="ffffff" language="de">der</run>
+</wd>
+<space width="55"/>
+<wd l="2387" t="1069" r="3982" b="1268"><run backColor="ffffff" language="de">Brutto/Netto-Bez&#252;ge</run>
+</wd>
+<space width="177"/>
+<space/>
+</ln>
+<ln l="1036" t="1257" r="4159" b="1495" baseLine="1418" underlined="none" fontSize="800">
+<wd l="1036" t="1307" r="1562" b="1401"><run backColor="ffffff" language="de">Personat-Nr.</run>
+</wd>
+<space width="133"/>
+<wd l="1695" t="1257" r="1711" b="1462"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space width="83"/>
+<wd l="1794" t="1313" r="2387" b="1412"><run backColor="ffffff" language="de">Geburtsdatum</run>
+</wd>
+<space width="89"/>
+<wd l="2476" t="1274" r="2980" b="1490"><run backColor="ffffff" language="de">ISIKIIFaktor</run>
+</wd>
+<space width="266"/>
+<wd l="3246" t="1307" r="3257" b="1495"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space width="50"/>
+<wd l="3306" t="1346" r="3639" b="1440"><run backColor="ffffff" language="de">&apos;&lt;Ure.</run>
+</wd>
+<space width="50"/>
+<wd l="3711" t="1351" r="4159" b="1440"><run backColor="ffffff" language="de">Konfession</run>
+</wd>
+<space/>
+</ln>
+<ln l="1041" t="1523" r="4159" b="1695" baseLine="1656" underlined="single" fontSize="800">
+<wd l="1041" t="1523" r="1562" b="1645"><run backColor="ffffff" language="de">00003</run>
+</wd>
+<space width="150"/>
+<wd l="1711" t="1529" r="2348" b="1695"><run backColor="ffffff" language="de">15,02,56</run>
+</wd>
+<space width="138"/>
+<wd l="2487" t="1545" r="2564" b="1667"><run backColor="ffffff" language="de">3</run>
+</wd>
+<space width="233"/>
+<wd l="2797" t="1662" r="2814" b="1695"><run backColor="ffffff" language="de">,</run>
+</wd>
+<space width="886"/>
+<wd l="3700" t="1601" r="3905" b="1684"><run backColor="ffffff" language="de">ev</run>
+</wd>
+<space width="255"/>
+<space/>
+</ln>
+<ln l="1030" t="1700" r="3085" b="1911" baseLine="1839" underlined="none" fontSize="800">
+<wd l="1030" t="1728" r="1551" b="1833"><run backColor="ffffff" language="de">U-Noilmw</run>
+</wd>
+<space width="914"/>
+<wd l="2465" t="1700" r="3085" b="1911"><run backColor="ffffff" language="de">&apos;Krankenkasse</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="1955" r="4785" b="2127" baseLine="2099" underlined="single" fontSize="800">
+<wd l="1036" t="1955" r="2343" b="2099"><run backColor="ffffff" language="de">50150256W493</run>
+</wd>
+<space width="138"/>
+<wd l="2481" t="1988" r="2686" b="2099"><run backColor="ffffff" language="de">EK</run>
+</wd>
+<space width="122"/>
+<wd l="2808" t="1994" r="3462" b="2105"><run backColor="ffffff" language="de">Barmer</run>
+</wd>
+<space width="122"/>
+<wd l="3583" t="1999" r="4785" b="2127"><run backColor="ffffff" language="de">Ersatzkasse</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1340" t="2675" r="2697" b="2974" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1351" t="2658" r="2692" b="2780" baseLine="2769" underlined="none" fontSize="800">
+<wd l="1351" t="2686" r="2193" b="2775"><run backColor="ffffff" language="de">umomm=mt&#8212;</run>
+</wd>
+<space width="72"/>
+<space width="100"/>
+<wd l="2365" t="2686" r="2692" b="2780"><run backColor="ffffff" language="de">skee</run>
+</wd>
+<space/>
+</ln>
+<ln l="1340" t="2725" r="2686" b="2969" baseLine="2952" underlined="single" fontSize="1600">
+<wd l="1340" t="2780" r="1944" b="2969"><run backColor="ffffff" language="de">ee</run>
+<run subsuperscript="subscript" backColor="ffffff" language="de">,</run>
+</wd>
+<space width="670"/>
+<wd l="2614" t="2791" r="2686" b="2886" fontSize="800"><run backColor="ffffff" language="de">5</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1357" t="3666" r="2204" b="3799" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1357" t="3666" r="2199" b="3794" baseLine="3772" underlined="none" fontSize="800">
+<wd l="1357" t="3666" r="2199" b="3794"><run backColor="ffffff" language="de">Herrrx/Fr-au</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="4364" t="881" r="10479" b="1722" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7970" t="881" r="10473" b="1069" baseLine="1030" underlined="none" fontSize="800">
+<wd l="7970" t="903" r="8612" b="1069"><run backColor="ffffff" language="de">2PC/2P</run>
+</wd>
+<space width="354"/>
+<wd l="8967" t="881" r="10473" b="1041"><run backColor="ffffff" language="de">425094/11190/3</run>
+</wd>
+<space/>
+</ln>
+<ln l="4364" t="1119" r="10473" b="1268" baseLine="1252" underlined="none" fontSize="800">
+<wd l="4364" t="1146" r="4674" b="1257"><run backColor="ffffff" language="de">f&#252;r</run>
+</wd>
+<space width="122"/>
+<wd l="4796" t="1146" r="5550" b="1268"><run backColor="ffffff" language="de">Oktober</run>
+</wd>
+<space width="127"/>
+<wd l="5677" t="1152" r="6081" b="1268"><run backColor="ffffff" language="de">2017</run>
+</wd>
+<space width="2553"/>
+<wd l="8634" t="1119" r="9709" b="1252" underlined="single"><run backColor="ffffff" language="de">18.10.2017</run>
+</wd>
+<space width="277"/>
+<wd l="9986" t="1119" r="10473" b="1235" underlined="single"><run backColor="ffffff" language="de">Ne 1</run>
+</wd>
+<space/>
+</ln>
+<ln l="7959" t="1302" r="9775" b="1512" baseLine="1440" underlined="none" fontSize="800">
+<wd l="7959" t="1368" r="8070" b="1468"><run backColor="ffffff" language="de">VJ</run>
+</wd>
+<space width="33"/>
+<wd l="8103" t="1362" r="8241" b="1468"><run backColor="ffffff" language="de">Ud.</run>
+</wd>
+<space width="33"/>
+<wd l="8274" t="1362" r="8402" b="1457"><run backColor="ffffff" language="de">Ob.</run>
+</wd>
+<space width="210"/>
+<wd l="8612" t="1318" r="8790" b="1512"><run backColor="ffffff" language="de">lud.</run>
+</wd>
+<space width="44"/>
+<wd l="8834" t="1346" r="9100" b="1462"><run backColor="ffffff" language="de">Aases</run>
+</wd>
+<space width="216"/>
+<wd l="9316" t="1324" r="9587" b="1451"><run backColor="ffffff" language="de">Url.Tg.</run>
+</wd>
+<space width="22"/>
+<wd l="9609" t="1346" r="9775" b="1446"><run backColor="ffffff" language="de">gen.</run>
+</wd>
+<space/>
+</ln>
+<ln l="8740" t="1567" r="9044" b="1717" baseLine="1695" underlined="single" fontSize="800">
+<wd l="8740" t="1567" r="9044" b="1717"><run backColor="ffffff" language="de">309</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="3118" t="3301" r="4370" b="3417" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="3118" t="3301" r="4364" b="3412" baseLine="3401" underlined="none" fontSize="800">
+<wd l="3118" t="3306" r="3506" b="3401"><run backColor="ffffff" language="de">Pore.</run>
+</wd>
+<space width="39"/>
+<wd l="3545" t="3312" r="3838" b="3406"><run backColor="ffffff" language="de">&#8212;Nr.</run>
+</wd>
+<space width="116"/>
+<wd l="3954" t="3306" r="4364" b="3412"><run backColor="ffffff" language="de">00003</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1346" t="3999" r="3567" b="4591" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1362" t="3999" r="3561" b="4209" baseLine="4148" underlined="none" fontSize="800">
+<wd l="1362" t="3999" r="2675" b="4154"><run backColor="ffffff" language="de">Heinzebster</run>
+</wd>
+<space width="100"/>
+<wd l="2775" t="4015" r="3561" b="4209"><run backColor="ffffff" language="de">Wichtig</run>
+</wd>
+<space/>
+</ln>
+<ln l="1346" t="4204" r="2559" b="4386" baseLine="4337" underlined="none" fontSize="800">
+<wd l="1346" t="4209" r="1590" b="4337"><run backColor="ffffff" language="de">Am</run>
+</wd>
+<space width="105"/>
+<wd l="1695" t="4204" r="2249" b="4386"><run backColor="ffffff" language="de">Steig</run>
+</wd>
+<space width="111"/>
+<wd l="2359" t="4204" r="2559" b="4348"><run backColor="ffffff" language="de">20</run>
+</wd>
+<space/>
+</ln>
+<ln l="1374" t="4398" r="2908" b="4586" baseLine="4542" underlined="none" fontSize="800">
+<wd l="1374" t="4398" r="1905" b="4542"><run backColor="ffffff" language="de">90329</run>
+</wd>
+<space width="111"/>
+<wd l="2016" t="4403" r="2908" b="4586"><run backColor="ffffff" language="de">N&#252;rnberg</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1036" t="5489" r="1745" b="5610" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1036" t="5489" r="1739" b="5605" baseLine="5588" underlined="none" fontSize="800">
+<wd l="1036" t="5489" r="1739" b="5605"><run backColor="ffffff" language="de">BraGeez&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1030" t="5666" r="2276" b="5876" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1030" t="5666" r="2271" b="5871" baseLine="5804" underlined="none" fontSize="800">
+<wd l="1030" t="5705" r="1346" b="5804"><run backColor="ffffff" language="de">Lohnan</run>
+</wd>
+<space width="343"/>
+<wd l="1689" t="5666" r="2271" b="5871"><run backColor="ffffff" language="de">Ihzeichnung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="4342" t="1318" r="6857" b="2631" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="4348" t="1318" r="6087" b="1706" baseLine="1495" underlined="none" fontSize="800">
+<wd l="4348" t="1318" r="4791" b="1501"><run backColor="ffffff" language="de">IFreibetrag</run>
+</wd>
+<space width="28"/>
+<wd l="4818" t="1351" r="5023" b="1468"><run backColor="ffffff" language="de">J&#228;hrt.</run>
+</wd>
+<space width="316"/>
+<wd l="5339" t="1357" r="5771" b="1495"><run backColor="ffffff" language="de">Freibetrag</run>
+</wd>
+<space width="33"/>
+<wd l="4708" t="1379" r="5948" b="1695"><run subsuperscript="subscript" backColor="ffffff" language="de">m.</run>
+<run backColor="ffffff" language="de">6.000</run>
+</wd>
+<space width="570"/>
+<wd l="5788" t="1584" r="6087" b="1706" underlined="single"><run backColor="ffffff" language="de">500</run>
+</wd>
+<space/>
+</ln>
+<ln l="5766" t="1739" r="6486" b="1966" baseLine="1889" underlined="none" fontSize="800">
+<wd l="5766" t="1739" r="5782" b="1955"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space width="61"/>
+<wd l="5843" t="1794" r="5965" b="1894"><run backColor="ffffff" language="de">KK</run>
+</wd>
+<space width="39"/>
+<wd l="6004" t="1800" r="6081" b="1894"><run backColor="ffffff" language="de">%</run>
+</wd>
+<space width="66"/>
+<wd l="6148" t="1745" r="6486" b="1966"><run backColor="ffffff" language="de">&quot;IPGRS</run>
+</wd>
+<space/>
+</ln>
+<ln l="5793" t="2022" r="6519" b="2171" baseLine="2143" underlined="single" fontSize="1000">
+<wd l="5793" t="2022" r="6519" b="2171"><run backColor="ffffff" language="de">15,70101</run>
+</wd>
+<space/>
+</ln>
+<ln l="6225" t="2221" r="6463" b="2343" baseLine="2337" underlined="none" fontSize="800">
+<wd l="6225" t="2243" r="6353" b="2337"><run backColor="ffffff" language="de">Ein</run>
+</wd>
+<space width="11"/>
+<wd l="6364" t="2249" r="6463" b="2343"><run backColor="ffffff" language="de">Inh</run>
+</wd>
+<space/>
+</ln>
+<ln l="6231" t="2470" r="6851" b="2625" baseLine="2586" underlined="single" fontSize="800">
+<wd l="6231" t="2470" r="6851" b="2625"><run backColor="ffffff" language="de">07,01,99</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6231" t="2664" r="6630" b="2769" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6231" t="2670" r="6624" b="2764" baseLine="2764" underlined="none" fontSize="800">
+<wd l="6231" t="2670" r="6624" b="2764"><run backColor="ffffff" language="de">Steuer-ID</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5671" t="3218" r="5932" b="3434" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5671" t="3223" r="5926" b="3428" baseLine="3428" underlined="none" fontSize="1600">
+<wd l="5671" t="3223" r="5926" b="3428"><run backColor="ffffff" language="de">94.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6225" t="1362" r="6425" b="1468" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6225" t="1368" r="6419" b="1462" baseLine="1462" underlined="none" fontSize="800">
+<wd l="6225" t="1368" r="6419" b="1462"><run backColor="ffffff" language="de">DBA</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6635" t="1318" r="9637" b="2409" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6635" t="1318" r="7732" b="1540" baseLine="1468" underlined="none" fontSize="800">
+<wd l="6635" t="1318" r="7045" b="1529"><run backColor="ffffff" language="de">&apos;GIetwa</run>
+</wd>
+<space width="354"/>
+<wd l="7399" t="1329" r="7732" b="1540"><run backColor="ffffff" language="de">19.4g</run>
+</wd>
+<space/>
+</ln>
+<ln l="7416" t="1601" r="7604" b="1728" baseLine="1722" underlined="none" fontSize="800">
+<wd l="7416" t="1601" r="7604" b="1728"><run backColor="ffffff" language="de">30</run>
+</wd>
+<space/>
+</ln>
+<ln l="6635" t="1700" r="9631" b="1972" baseLine="1889" underlined="none" fontSize="800">
+<wd l="6635" t="1750" r="6918" b="1966"><run backColor="ffffff" language="de">lOGRS</run>
+</wd>
+<space width="260"/>
+<wd l="7178" t="1756" r="7416" b="1972"><run backColor="ffffff" language="de">&apos;Um.&apos;</run>
+</wd>
+<space width="33"/>
+<wd l="7449" t="1817" r="7732" b="1938"><run backColor="ffffff" language="de">SV:fg.</run>
+</wd>
+<space width="227"/>
+<wd l="7959" t="1811" r="8164" b="1911" italic="true"><run backColor="ffffff" language="de">Arm.</run>
+</wd>
+<space width="33"/>
+<wd l="8197" t="1700" r="8291" b="1900"><run backColor="ffffff" language="de">To</run>
+<run subsuperscript="subscript" backColor="ffffff" language="de">&apos;</run>
+</wd>
+<space width="22"/>
+<wd l="8308" t="1822" r="8402" b="1922"><run backColor="ffffff" language="de">pe</run>
+</wd>
+<space width="205"/>
+<wd l="8607" t="1734" r="8922" b="1955"><run backColor="ffffff" language="de">&apos;Urlaub</run>
+</wd>
+<space width="33"/>
+<wd l="8956" t="1783" r="9155" b="1905"><run backColor="ffffff" language="de">Tage</run>
+</wd>
+<space width="116"/>
+<wd l="9271" t="1717" r="9498" b="1938"><run backColor="ffffff" language="de">&apos;Kran</run>
+</wd>
+<space width="17"/>
+<wd l="9515" t="1767" r="9631" b="1866"><run backColor="ffffff" language="de">kh.</run>
+</wd>
+<space/>
+</ln>
+<ln l="6668" t="2033" r="7610" b="2160" baseLine="2160" underlined="single" fontSize="800">
+<wd l="6668" t="2033" r="7056" b="2160"><run backColor="ffffff" language="de">9111</run>
+</wd>
+<space width="150"/>
+<wd l="7206" t="2038" r="7278" b="2160"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space width="144"/>
+<wd l="7422" t="2038" r="7610" b="2160"><run backColor="ffffff" language="de">30</run>
+</wd>
+<space/>
+</ln>
+<ln l="6967" t="2193" r="7300" b="2404" baseLine="2348" underlined="none" fontSize="800">
+<wd l="6967" t="2193" r="7300" b="2404"><run backColor="ffffff" language="de">!Austritt</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9986" t="1318" r="10434" b="1423" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9986" t="1324" r="10429" b="1418" baseLine="1418" underlined="none" fontSize="800">
+<wd l="9986" t="1324" r="10429" b="1418"><run backColor="ffffff" language="de">Resturlaub</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10080" t="1545" r="10385" b="1700" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10080" t="1545" r="10379" b="1695" baseLine="1667" underlined="single" fontSize="800">
+<wd l="10080" t="1545" r="10379" b="1695"><run backColor="ffffff" language="de">309</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9991" t="1750" r="10479" b="1883" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9991" t="1750" r="10473" b="1878" baseLine="1850" underlined="none" fontSize="800">
+<wd l="9991" t="1756" r="10235" b="1855"><run backColor="ffffff" language="de">Feliz.</run>
+</wd>
+<space width="33"/>
+<wd l="10268" t="1756" r="10473" b="1878"><run backColor="ffffff" language="de">Tage</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7953" t="2149" r="10440" b="2398" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7953" t="2149" r="10434" b="2393" baseLine="2315" underlined="none" fontSize="800">
+<wd l="7953" t="2243" r="8164" b="2343" italic="true"><run backColor="ffffff" language="de">AMI.</run>
+</wd>
+<space width="39"/>
+<wd l="8202" t="2243" r="8358" b="2343"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space width="249"/>
+<wd l="8607" t="2177" r="8917" b="2393"><run backColor="ffffff" language="de">lUrlaub</run>
+</wd>
+<space width="39"/>
+<wd l="8956" t="2226" r="9116" b="2326"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space width="155"/>
+<wd l="9271" t="2160" r="9626" b="2376"><run backColor="ffffff" language="de">leinkh.</run>
+</wd>
+<space width="44"/>
+<wd l="9670" t="2210" r="9825" b="2304"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space width="127"/>
+<wd l="9953" t="2149" r="10235" b="2359"><run backColor="ffffff" language="de">IFeNL</run>
+</wd>
+<space width="39"/>
+<wd l="10274" t="2193" r="10434" b="2293"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7505" t="2542" r="10374" b="2847" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7505" t="2542" r="10368" b="2841" baseLine="2747" underlined="none" fontSize="800">
+<wd l="7505" t="2631" r="7726" b="2841" italic="true" fontSize="400"><run backColor="ffffff" language="de">1MFB</run>
+</wd>
+<space width="881"/>
+<wd l="8607" t="2620" r="8978" b="2830"><run backColor="ffffff" language="de">&apos;Zeitlohn</run>
+</wd>
+<space width="39"/>
+<wd l="9017" t="2664" r="9177" b="2758"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space width="100"/>
+<wd l="9277" t="2603" r="9659" b="2814"><run backColor="ffffff" language="de">l&#252;bersta</run>
+</wd>
+<space width="294"/>
+<wd l="9609" t="2542" r="9642" b="2581"><run backColor="ffffff">&#8226;</run>
+</wd>
+<space width="310"/>
+<wd l="9953" t="2586" r="10169" b="2797"><run backColor="ffffff" language="de">&apos;Bez.</run>
+</wd>
+<space width="44"/>
+<wd l="10213" t="2636" r="10368" b="2730"><run backColor="ffffff" language="de">Std.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6220" t="3329" r="7471" b="3467" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6220" t="3329" r="7466" b="3462" baseLine="3428" underlined="none" fontSize="800">
+<wd l="6220" t="3334" r="6646" b="3434"><run backColor="ffffff" language="de">HInweise</run>
+</wd>
+<space width="33"/>
+<wd l="6679" t="3356" r="6834" b="3434"><run backColor="ffffff" language="de">zur</run>
+</wd>
+<space width="28"/>
+<wd l="6862" t="3334" r="7466" b="3462"><run backColor="ffffff" language="de">Abrechnung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1263" t="5926" r="3916" b="6757" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1268" t="5926" r="2359" b="6048" baseLine="6042" underlined="none" fontSize="800">
+<wd l="1268" t="5926" r="1567" b="6042"><run backColor="ffffff" language="de">100</run>
+</wd>
+<space width="138"/>
+<wd l="1706" t="5926" r="2359" b="6048"><run backColor="ffffff" language="de">Gehalt</run>
+</wd>
+<space/>
+</ln>
+<ln l="1263" t="6148" r="3140" b="6275" baseLine="6270" underlined="none" fontSize="800">
+<wd l="1263" t="6148" r="1567" b="6270"><run backColor="ffffff" language="de">335</run>
+</wd>
+<space width="138"/>
+<wd l="1706" t="6153" r="3140" b="6275"><run backColor="ffffff" language="de">Privatfahrten</run>
+</wd>
+<space/>
+</ln>
+<ln l="1263" t="6358" r="3910" b="6530" baseLine="6491" underlined="none" fontSize="800">
+<wd l="1263" t="6369" r="1573" b="6491"><run backColor="ffffff" language="de">336</run>
+</wd>
+<space width="122"/>
+<wd l="1695" t="6358" r="2802" b="6524"><run backColor="ffffff" language="de">Whg/Arbeit</run>
+</wd>
+<space width="138"/>
+<wd l="2941" t="6380" r="3484" b="6497"><run backColor="ffffff" language="de">ST+SV</run>
+</wd>
+<space width="111"/>
+<wd l="3594" t="6380" r="3910" b="6530"><run backColor="ffffff" language="de">pfl</run>
+</wd>
+<space/>
+</ln>
+<ln l="1263" t="6580" r="3556" b="6751" baseLine="6718" underlined="none" fontSize="800">
+<wd l="1263" t="6591" r="1562" b="6718"><run backColor="ffffff" language="de">337</run>
+</wd>
+<space width="133"/>
+<wd l="1695" t="6580" r="2802" b="6746"><run backColor="ffffff" language="de">Whg/Arbeit</run>
+</wd>
+<space width="127"/>
+<wd l="2930" t="6635" r="3107" b="6751"><run backColor="ffffff" language="de">p.</run>
+</wd>
+<space width="166"/>
+<wd l="3273" t="6607" r="3556" b="6718"><run backColor="ffffff" language="de">St.</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1041" t="9006" r="2343" b="9138" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1041" t="9011" r="2337" b="9133" baseLine="9111" underlined="none" fontSize="800">
+<wd l="1041" t="9011" r="2337" b="9133"><run backColor="ffffff" language="de">Steuereezlahterslcherung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1041" t="9199" r="2592" b="9615" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1041" t="9199" r="2586" b="9393" baseLine="9327" underlined="none" fontSize="800">
+<wd l="1041" t="9199" r="1263" b="9393"><run backColor="ffffff" language="de">St d1</run>
+</wd>
+<space width="665"/>
+<wd l="1927" t="9233" r="2586" b="9327"><run backColor="ffffff" language="de">SteuerAmM</run>
+</wd>
+<space/>
+</ln>
+<ln l="1041" t="9449" r="2575" b="9609" baseLine="9570" underlined="none" fontSize="800">
+<wd l="1041" t="9460" r="1135" b="9576"><run backColor="ffffff">&#8226;</run>
+</wd>
+<space width="687"/>
+<wd l="1822" t="9449" r="2575" b="9609"><run backColor="ffffff" language="de">4.879,75</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5123" t="5671" r="5450" b="5893" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5123" t="5671" r="5444" b="5887" baseLine="5826" underlined="none" fontSize="800">
+<wd l="5123" t="5671" r="5444" b="5887"><run backColor="ffffff" language="de">&apos;Einheit</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6164" t="5721" r="6502" b="5854" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6164" t="5721" r="6497" b="5849" baseLine="5826" underlined="none" fontSize="800">
+<wd l="6164" t="5721" r="6497" b="5849"><run backColor="ffffff" language="de">Menge&apos;</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7266" t="5716" r="8164" b="5832" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7266" t="5716" r="8158" b="5832" baseLine="5821" underlined="none" fontSize="800">
+<wd l="7266" t="5721" r="7588" b="5826"><run backColor="ffffff" language="de">Faktor&apos;</run>
+</wd>
+<space width="44"/>
+<wd l="7632" t="5716" r="7643" b="5832"><run backColor="ffffff" language="de">1</run>
+</wd>
+<space width="28"/>
+<wd l="7671" t="5727" r="8158" b="5821"><run backColor="ffffff" language="de">Prozentsatz</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8407" t="5666" r="9044" b="6718" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8612" t="5666" r="9039" b="5882" baseLine="5815" underlined="none" fontSize="800">
+<wd l="8612" t="5666" r="9039" b="5882"><run backColor="ffffff" language="de">ISM.IGe</run>
+</wd>
+<space/>
+</ln>
+<ln l="8407" t="5943" r="8950" b="6054" baseLine="6054" underlined="none" fontSize="800">
+<wd l="8407" t="5948" r="8502" b="6054"><run backColor="ffffff" language="de">L</run>
+</wd>
+<wd l="8629" t="5943" r="8950" b="6054"><run backColor="ffffff" language="de">LJ</run>
+</wd>
+<space/>
+</ln>
+<ln l="8407" t="6164" r="8950" b="6275" baseLine="6275" underlined="none" fontSize="800">
+<wd l="8407" t="6164" r="8502" b="6275"><run backColor="ffffff" language="de">L</run>
+</wd>
+<wd l="8629" t="6164" r="8950" b="6275"><run backColor="ffffff" language="de">LJ</run>
+</wd>
+<space/>
+</ln>
+<ln l="8407" t="6380" r="8950" b="6491" baseLine="6491" underlined="none" fontSize="800">
+<wd l="8407" t="6380" r="8502" b="6491"><run backColor="ffffff" language="de">L</run>
+</wd>
+<wd l="8629" t="6380" r="8950" b="6491"><run backColor="ffffff" language="de">LJ</run>
+</wd>
+<space/>
+</ln>
+<ln l="8413" t="6602" r="8950" b="6713" baseLine="6713" underlined="none" fontSize="800">
+<wd l="8413" t="6607" r="8502" b="6713"><run backColor="ffffff" language="de">P</run>
+</wd>
+<space width="133"/>
+<wd l="8634" t="6602" r="8729" b="6713"><run backColor="ffffff" language="de">F</run>
+</wd>
+<space width="122"/>
+<wd l="8850" t="6602" r="8950" b="6713"><run backColor="ffffff" language="de">J</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="3473" t="9161" r="4170" b="9598" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="3473" t="9161" r="4165" b="9371" baseLine="9310" underlined="none" fontSize="800">
+<wd l="3473" t="9222" r="4043" b="9316"><run backColor="ffffff" language="de">Lehnsteuer</run>
+</wd>
+<space width="100"/>
+<wd l="4143" t="9161" r="4165" b="9371"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space/>
+</ln>
+<ln l="3500" t="9438" r="4021" b="9593" baseLine="9554" underlined="none" fontSize="800">
+<wd l="3500" t="9438" r="4021" b="9593"><run backColor="ffffff" language="de">485,50</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="4674" t="9210" r="5367" b="9593" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="4674" t="9216" r="5361" b="9305" baseLine="9305" underlined="none" fontSize="800">
+<wd l="4674" t="9216" r="5361" b="9305"><run backColor="ffffff" language="de">Kirchensteuer</run>
+</wd>
+<space/>
+</ln>
+<ln l="4935" t="9426" r="5334" b="9587" baseLine="9548" underlined="none" fontSize="800">
+<wd l="4935" t="9426" r="5334" b="9587"><run backColor="ffffff" language="de">38,84</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5677" t="9155" r="6785" b="9582" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5677" t="9155" r="6779" b="9360" baseLine="9299" underlined="none" fontSize="800">
+<wd l="5677" t="9199" r="6657" b="9327"><run backColor="ffffff" language="de">Solidaritituuschlag</run>
+</wd>
+<space width="105"/>
+<wd l="6762" t="9155" r="6779" b="9360"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space/>
+</ln>
+<ln l="6236" t="9421" r="6641" b="9576" baseLine="9543" underlined="none" fontSize="800">
+<wd l="6236" t="9421" r="6641" b="9576"><run backColor="ffffff" language="de">26,70</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9637" t="5699" r="10512" b="6740" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10191" t="5705" r="10506" b="5821" baseLine="5799" underlined="none" fontSize="800">
+<wd l="10191" t="5705" r="10506" b="5821"><run backColor="ffffff" language="de">sen</run>
+</wd>
+<space/>
+</ln>
+<ln l="9637" t="5921" r="10495" b="6070" baseLine="6042" underlined="none" fontSize="800">
+<wd l="9637" t="5921" r="10495" b="6070"><run backColor="ffffff" language="de">4.400,00</run>
+</wd>
+<space/>
+</ln>
+<ln l="9858" t="6148" r="10495" b="6292" baseLine="6264" underlined="none" fontSize="800">
+<wd l="9858" t="6148" r="10495" b="6292"><run backColor="ffffff" language="de">287,00</run>
+</wd>
+<space/>
+</ln>
+<ln l="9864" t="6364" r="10495" b="6513" baseLine="6480" underlined="none" fontSize="800">
+<wd l="9864" t="6364" r="10495" b="6513"><run backColor="ffffff" language="de">192,75</run>
+</wd>
+<space/>
+</ln>
+<ln l="9975" t="6585" r="10495" b="6735" baseLine="6702" underlined="none" fontSize="800">
+<wd l="9975" t="6585" r="10495" b="6735"><run backColor="ffffff" language="de">22,50</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9642" t="8762" r="10518" b="9138" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9809" t="8767" r="10512" b="8867" baseLine="8867" underlined="none" fontSize="800">
+<wd l="9809" t="8767" r="10512" b="8867"><run backColor="ffffff" language="de">usamteme</run>
+</wd>
+<space/>
+</ln>
+<ln l="9642" t="8983" r="10501" b="9133" baseLine="9105" underlined="none" fontSize="800">
+<wd l="9642" t="8983" r="10501" b="9133"><run backColor="ffffff" language="de">4.902,25</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9310" t="9199" r="10518" b="9582" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9310" t="9199" r="10512" b="9332" baseLine="9305" underlined="none" fontSize="800">
+<wd l="9310" t="9205" r="10113" b="9310"><run backColor="ffffff" language="de">Steuerrechdlche</run>
+</wd>
+<space width="33"/>
+<wd l="10146" t="9210" r="10512" b="9332"><run backColor="ffffff" language="de">Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+<ln l="9875" t="9432" r="10495" b="9576" baseLine="9543" underlined="none" fontSize="800">
+<wd l="9875" t="9432" r="10495" b="9576"><run backColor="ffffff" language="de">551,04</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1041" t="10108" r="2149" b="10224" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1041" t="10113" r="2143" b="10218" baseLine="10213" underlined="none" fontSize="800">
+<wd l="1041" t="10113" r="1135" b="10218"><run backColor="ffffff">&#8226;</run>
+</wd>
+<space width="526"/>
+<wd l="1662" t="10113" r="2143" b="10213"><run backColor="ffffff" language="de">mieme</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="2387" t="10086" r="4148" b="10484" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="2664" t="10086" r="4143" b="10202" baseLine="10191" underlined="none" fontSize="800">
+<wd l="2664" t="10102" r="3146" b="10202"><run backColor="ffffff" language="de">RVarutto</run>
+</wd>
+<space width="521"/>
+<wd l="3666" t="10091" r="3805" b="10191"><run backColor="ffffff" language="de">AM</run>
+</wd>
+<wd l="3810" t="10091" r="4143" b="10191"><run backColor="ffffff" language="de">-Brutto</run>
+</wd>
+<space/>
+</ln>
+<ln l="2387" t="10313" r="4132" b="10479" baseLine="10434" underlined="none" fontSize="800">
+<wd l="2387" t="10318" r="3135" b="10479"><run backColor="ffffff" language="de">4.879,75</run>
+</wd>
+<space width="249"/>
+<wd l="3384" t="10313" r="4132" b="10473"><run backColor="ffffff" language="de">4.879,75</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="4663" t="10080" r="5140" b="10191" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="4663" t="10086" r="5134" b="10185" baseLine="10180" underlined="none" fontSize="800">
+<wd l="4663" t="10086" r="5134" b="10185"><run backColor="ffffff" language="de">PV-Brutto</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5599" t="10074" r="6114" b="10207" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5599" t="10080" r="6109" b="10202" baseLine="10174" underlined="none" fontSize="800">
+<wd l="5599" t="10080" r="6109" b="10202"><run backColor="ffffff" language="de">KV43eitrag</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="6569" t="10069" r="7100" b="10462" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="6585" t="10074" r="7095" b="10202" baseLine="10174" underlined="none" fontSize="800">
+<wd l="6585" t="10074" r="7095" b="10202"><run backColor="ffffff" language="de">WMUen</run>
+</wd>
+<space/>
+</ln>
+<ln l="6569" t="10296" r="7089" b="10457" baseLine="10418" underlined="none" fontSize="800">
+<wd l="6569" t="10296" r="7089" b="10457"><run backColor="ffffff" language="de">456,26</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="7460" t="10069" r="7981" b="10462" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="7460" t="10074" r="7975" b="10202" baseLine="10174" underlined="none" fontSize="800">
+<wd l="7460" t="10074" r="7975" b="10202"><run backColor="ffffff" language="de">offliteleag</run>
+</wd>
+<space/>
+</ln>
+<ln l="7560" t="10296" r="7964" b="10457" baseLine="10418" underlined="none" fontSize="800">
+<wd l="7560" t="10296" r="7964" b="10457"><run backColor="ffffff" language="de">73,20</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8452" t="10074" r="9028" b="10207" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8452" t="10074" r="9022" b="10202" baseLine="10174" underlined="none" fontSize="800">
+<wd l="8452" t="10074" r="9022" b="10202"><run backColor="ffffff" language="de">PV.Seese</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1036" t="11215" r="2249" b="11343" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1036" t="11221" r="2243" b="11337" baseLine="11315" underlined="none" fontSize="800">
+<wd l="1036" t="11221" r="2243" b="11337"><run backColor="ffffff" language="de">Vardlenstbasehelnigung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1036" t="11448" r="1883" b="12888" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1036" t="11454" r="1650" b="11553" baseLine="11553" underlined="none" fontSize="800">
+<wd l="1036" t="11454" r="1650" b="11553"><run backColor="ffffff" language="de">Gesamterutto</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="11675" r="1601" b="11780" baseLine="11775" underlined="none" fontSize="800">
+<wd l="1036" t="11675" r="1302" b="11780"><run backColor="ffffff" language="de">Steuer</run>
+</wd>
+<wd l="1313" t="11681" r="1601" b="11780"><run backColor="ffffff" language="de">-Brutto</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="11897" r="1495" b="11996" baseLine="11996" underlined="none" fontSize="800">
+<wd l="1036" t="11897" r="1495" b="11996"><run backColor="ffffff" language="de">Lohnsteuer</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="12124" r="1612" b="12223" baseLine="12218" underlined="none" fontSize="800">
+<wd l="1036" t="12124" r="1612" b="12223"><run backColor="ffffff" language="de">Krchensteuer</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="12334" r="1878" b="12467" baseLine="12434" underlined="none" fontSize="800">
+<wd l="1036" t="12334" r="1878" b="12467"><run backColor="ffffff" language="de">Solidarit&#228;tszuscHag</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="12545" r="1839" b="12689" baseLine="12661" underlined="none" fontSize="800">
+<wd l="1036" t="12556" r="1495" b="12666"><run backColor="ffffff" language="de">Steuerfreie</run>
+</wd>
+<space width="33"/>
+<wd l="1529" t="12567" r="1839" b="12689"><run backColor="ffffff" language="de">Bez&#252;ge</run>
+</wd>
+<space/>
+</ln>
+<ln l="1036" t="12766" r="1789" b="12882" baseLine="12882" underlined="none" fontSize="800">
+<wd l="1036" t="12783" r="1119" b="12882"><run backColor="ffffff" language="de">P.</run>
+</wd>
+<space width="33"/>
+<wd l="1152" t="12794" r="1379" b="12882"><run backColor="ffffff" language="de">verst.</run>
+</wd>
+<space width="33"/>
+<wd l="1412" t="12783" r="1789" b="12882"><run backColor="ffffff" language="de">Zutakt</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1041" t="13215" r="1662" b="13553" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1041" t="13215" r="1656" b="13348" baseLine="13320" underlined="none" fontSize="800">
+<wd l="1041" t="13220" r="1434" b="13348"><run backColor="ffffff" language="de">Pf&#228;ndung</run>
+</wd>
+<space width="28"/>
+<wd l="1462" t="13231" r="1656" b="13326"><run backColor="ffffff" language="de">Rest</run>
+</wd>
+<space/>
+</ln>
+<ln l="1041" t="13425" r="1639" b="13547" baseLine="13542" underlined="none" fontSize="800">
+<wd l="1041" t="13447" r="1412" b="13547"><run backColor="ffffff" language="de">Darlehen</run>
+</wd>
+<space width="39"/>
+<wd l="1451" t="13447" r="1639" b="13547"><run backColor="ffffff" language="de">Rest</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="2498" t="11404" r="5350" b="12888" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="2498" t="11404" r="5339" b="11575" baseLine="11531" underlined="none" fontSize="800">
+<wd l="2498" t="11420" r="3240" b="11575"><run backColor="ffffff" language="de">4.90225</run>
+</wd>
+<space width="166"/>
+<wd l="3406" t="11426" r="3816" b="11531"><run backColor="ffffff" language="de">Ueun</run>
+</wd>
+<space width="786"/>
+<wd l="4602" t="11404" r="5339" b="11559"><run backColor="ffffff" language="de">4.879,75</run>
+</wd>
+<space/>
+</ln>
+<ln l="2498" t="11636" r="3866" b="11802" baseLine="11753" underlined="none" fontSize="800">
+<wd l="2498" t="11647" r="2564" b="11769"><run backColor="ffffff" language="de">4</run>
+</wd>
+<space width="66"/>
+<wd l="2631" t="11742" r="2658" b="11769"><run backColor="ffffff" language="de">.</run>
+</wd>
+<space width="61"/>
+<wd l="2719" t="11636" r="3240" b="11802"><run backColor="ffffff" language="de">879,75</run>
+</wd>
+<space width="166"/>
+<wd l="3406" t="11653" r="3866" b="11775"><run backColor="ffffff" language="de">KV-Beitrag</run>
+</wd>
+<space/>
+</ln>
+<ln l="2714" t="11830" r="5345" b="12024" baseLine="11969" underlined="none" fontSize="800">
+<wd l="2714" t="11863" r="3240" b="12024"><run backColor="ffffff" language="de">485,50</run>
+</wd>
+<space width="166"/>
+<wd l="3406" t="11874" r="3534" b="11969"><run backColor="ffffff" language="de">RV</run>
+</wd>
+<wd l="3534" t="11869" r="3871" b="11991"><run backColor="ffffff" language="de">-sen</run>
+</wd>
+<space width="947"/>
+<wd l="4818" t="11847" r="5345" b="12007"><run backColor="ffffff" language="de">45626</run>
+</wd>
+<space/>
+</ln>
+<ln l="2819" t="12063" r="5339" b="12246" baseLine="12190" underlined="none" fontSize="800">
+<wd l="2819" t="12079" r="3229" b="12246"><run backColor="ffffff" language="de">38,84</run>
+</wd>
+<space width="166"/>
+<wd l="3395" t="12096" r="3866" b="12218"><run backColor="ffffff" language="de">msen</run>
+</wd>
+<space width="1069"/>
+<wd l="4935" t="12063" r="5339" b="12234"><run backColor="ffffff" language="de">7320</run>
+</wd>
+<space/>
+</ln>
+<ln l="2819" t="12306" r="3866" b="12462" baseLine="12412" underlined="none" fontSize="800">
+<wd l="2819" t="12306" r="3240" b="12462"><run backColor="ffffff" language="de">26,70</run>
+</wd>
+<space width="166"/>
+<wd l="3406" t="12312" r="3866" b="12434"><run backColor="ffffff" language="de">PV-Beitrag</run>
+</wd>
+<space/>
+</ln>
+<ln l="3401" t="12517" r="3943" b="12666" baseLine="12633" underlined="none" fontSize="800">
+<wd l="3401" t="12539" r="3600" b="12639" italic="true"><run backColor="ffffff" language="de">VAL</run>
+</wd>
+<space width="33"/>
+<wd l="3633" t="12545" r="3943" b="12666"><run backColor="ffffff" language="de">gesamt</run>
+</wd>
+<space/>
+</ln>
+<ln l="3401" t="12750" r="4087" b="12882" baseLine="12855" underlined="none" fontSize="800">
+<wd l="3401" t="12750" r="4087" b="12882"><run backColor="ffffff" language="de">KugAuszardung</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1047" t="14079" r="3473" b="14234" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1047" t="14079" r="3467" b="14228" baseLine="14195" bold="true" underlined="none" fontSize="800">
+<wd l="1047" t="14095" r="1252" b="14190"><run backColor="ffffff" language="de">Bank</run>
+</wd>
+<space width="238"/>
+<wd l="1490" t="14090" r="2459" b="14228"><run backColor="ffffff" language="de">Sparkasse</run>
+</wd>
+<space width="127"/>
+<wd l="2586" t="14084" r="3467" b="14228"><run backColor="ffffff" language="de">N&#252;rnberg</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1052" t="14306" r="1296" b="14417" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1052" t="14311" r="1290" b="14411" baseLine="14406" underlined="none" fontSize="800">
+<wd l="1052" t="14311" r="1290" b="14411"><run backColor="ffffff" language="de">Konto</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1484" t="14295" r="4475" b="14428" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1484" t="14295" r="4470" b="14422" baseLine="14417" underlined="none" fontSize="800">
+<wd l="1484" t="14300" r="1905" b="14422"><run backColor="ffffff" language="de">DE26</run>
+</wd>
+<space width="144"/>
+<wd l="2049" t="14300" r="2459" b="14422"><run backColor="ffffff" language="de">7605</run>
+</wd>
+<space width="144"/>
+<wd l="2603" t="14300" r="3007" b="14422"><run backColor="ffffff" language="de">0101</run>
+</wd>
+<space width="150"/>
+<wd l="3157" t="14300" r="3567" b="14422"><run backColor="ffffff" language="de">0007</run>
+</wd>
+<space width="150"/>
+<wd l="3716" t="14295" r="4137" b="14417"><run backColor="ffffff" language="de">6XXX</run>
+</wd>
+<space width="122"/>
+<wd l="4259" t="14300" r="4470" b="14417"><run backColor="ffffff" language="de">XX</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1052" t="14511" r="3318" b="14932" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1135" t="14511" r="2188" b="14610" baseLine="14577" bold="true" underlined="none" fontSize="400">
+<wd l="1135" t="14511" r="1191" b="14577"><run backColor="ffffff" language="de">H</run>
+</wd>
+<space width="33"/>
+<wd l="1224" t="14527" r="1263" b="14561"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="44"/>
+<wd l="1307" t="14516" r="2188" b="14610"><run backColor="ffffff" language="de">HumgrocAnungesedroop</run>
+</wd>
+<space/>
+</ln>
+<ln l="1052" t="14577" r="3312" b="14716" baseLine="14694" bold="true" underlined="none" fontSize="400">
+<wd l="1052" t="14577" r="1097" b="14649"><run subsuperscript="subscript" backColor="ffffff" language="de">2</run>
+</wd>
+<space width="39"/>
+<wd l="1135" t="14616" r="1263" b="14688"><run backColor="ffffff" language="de">Std</run>
+</wd>
+<space width="39"/>
+<wd l="1302" t="14633" r="1346" b="14677"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="44"/>
+<wd l="1390" t="14622" r="1728" b="14705"><run backColor="ffffff" language="de">Stunden,</run>
+</wd>
+<space width="39"/>
+<wd l="1767" t="14627" r="1817" b="14694"><run backColor="ffffff" language="de">T</run>
+</wd>
+<space width="33"/>
+<wd l="1850" t="14644" r="1900" b="14677"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="1933" t="14627" r="2160" b="14716"><run backColor="ffffff" language="de">Tag.,</run>
+</wd>
+<space width="39"/>
+<wd l="2199" t="14633" r="2332" b="14694"><run backColor="ffffff" language="de">Km</run>
+</wd>
+<space width="116"/>
+<wd l="2448" t="14633" r="2847" b="14716"><run backColor="ffffff" language="de">KYDmeter,</run>
+</wd>
+<space width="39"/>
+<wd l="2886" t="14633" r="2969" b="14705"><run backColor="ffffff" language="de">SI</run>
+</wd>
+<space width="39"/>
+<wd l="3007" t="14644" r="3046" b="14682"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="44"/>
+<wd l="3090" t="14633" r="3312" b="14705"><run backColor="ffffff" language="de">Stock</run>
+</wd>
+<space/>
+</ln>
+<ln l="1135" t="14727" r="3290" b="14821" baseLine="14804" bold="true" underlined="none" fontSize="400">
+<wd l="1135" t="14727" r="1313" b="14793"><run backColor="ffffff" language="de">EUR</run>
+</wd>
+<space width="39"/>
+<wd l="1351" t="14749" r="1396" b="14782"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="1429" t="14732" r="1639" b="14810" bold="true" italic="true"><run backColor="ffffff" language="de">Eve.</run>
+</wd>
+<space width="33"/>
+<wd l="1673" t="14732" r="1822" b="14804" bold="true" italic="true"><run backColor="ffffff" language="de">T&#8226;xl</run>
+</wd>
+<space width="39"/>
+<wd l="1861" t="14754" r="1900" b="14788"><run bold="true" italic="true" backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="1938" t="14738" r="2282" b="14810"><run backColor="ffffff" language="de">Timond</run>
+</wd>
+<space width="33"/>
+<wd l="2315" t="14738" r="2526" b="14821"><run backColor="ffffff" language="de">Euro,</run>
+</wd>
+<space width="44"/>
+<wd l="2570" t="14738" r="2703" b="14810"><run backColor="ffffff" language="de">Mb</run>
+</wd>
+<space width="33"/>
+<wd l="2736" t="14760" r="2780" b="14793"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="44"/>
+<wd l="2825" t="14743" r="3074" b="14810"><run backColor="ffffff" language="de">Millen</run>
+</wd>
+<space width="28"/>
+<wd l="3102" t="14743" r="3290" b="14815"><run backColor="ffffff" language="de">Euro</run>
+</wd>
+<space/>
+</ln>
+<ln l="1141" t="14832" r="3013" b="14926" baseLine="14915" bold="true" underlined="none" fontSize="400">
+<wd l="1141" t="14832" r="1761" b="14926"><run backColor="ffffff" language="de">Geptenerfidle</run>
+</wd>
+<space width="39"/>
+<wd l="1800" t="14849" r="3013" b="14926"><run backColor="ffffff" language="de">Notto-LonnrHotto-Sandenlohn</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="1058" t="15031" r="2033" b="15120" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="1058" t="15031" r="2027" b="15114" baseLine="15103" bold="true" underlined="none" fontSize="400">
+<wd l="1058" t="15031" r="1119" b="15098"><run bold="true" italic="true" backColor="ffffff" language="de">A</run>
+</wd>
+<space width="17"/>
+<wd l="1113" t="15031" r="1224" b="15098" bold="true" italic="true"><run backColor="ffffff" language="de">FP</run>
+</wd>
+<space width="39"/>
+<wd l="1263" t="15037" r="1639" b="15109"><run backColor="ffffff" language="de">Forrn.-ti.</run>
+</wd>
+<space width="39"/>
+<wd l="1678" t="15042" r="2027" b="15114"><run backColor="ffffff" language="de">LO0H14</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="3921" t="14505" r="6098" b="14948" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="3921" t="14505" r="6065" b="14605" baseLine="14577" bold="true" underlined="none" fontSize="400">
+<wd l="3921" t="14516" r="3966" b="14588"><run backColor="ffffff" language="de">L</run>
+</wd>
+<space width="39"/>
+<wd l="4004" t="14538" r="4049" b="14572"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="4082" t="14516" r="4492" b="14588"><run backColor="ffffff" language="de">Ltnd.i.er</run>
+</wd>
+<space width="33"/>
+<wd l="4525" t="14511" r="4796" b="14605"><run backColor="ffffff" language="de">Buxe</run>
+</wd>
+<space width="39"/>
+<wd l="4835" t="14516" r="4890" b="14583"><run backColor="ffffff" language="de">6</run>
+</wd>
+<space width="33"/>
+<wd l="4924" t="14533" r="4968" b="14566"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="5007" t="14511" r="5389" b="14599"><run backColor="ffffff" language="de">Sonoreer</run>
+</wd>
+<space width="33"/>
+<wd l="5422" t="14511" r="5682" b="14594"><run backColor="ffffff" language="de">El&#8226;sug,</run>
+</wd>
+<space width="39"/>
+<wd l="5721" t="14511" r="5771" b="14577"><run backColor="ffffff" language="de">F</run>
+</wd>
+<space width="122"/>
+<wd l="5893" t="14505" r="6065" b="14588"><run backColor="ffffff" language="de">Frei,</run>
+</wd>
+<space/>
+</ln>
+<ln l="3921" t="14622" r="6092" b="14716" baseLine="14694" bold="true" underlined="none" fontSize="400">
+<wd l="3921" t="14627" r="3977" b="14699"><run backColor="ffffff" language="de">E</run>
+</wd>
+<space width="33"/>
+<wd l="4010" t="14644" r="4054" b="14682"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="4093" t="14627" r="4625" b="14716"><run backColor="ffffff" language="de">Effirn&#8226;b&#8226;eag,</run>
+</wd>
+<space width="39"/>
+<wd l="4663" t="14627" r="4724" b="14699"><run backColor="ffffff" language="de">P</run>
+</wd>
+<space width="33"/>
+<wd l="4758" t="14644" r="4802" b="14677"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="4841" t="14627" r="5466" b="14716"><run backColor="ffffff" language="de">PeucK&#8226;lbrtng.</run>
+</wd>
+<space width="33"/>
+<wd l="5500" t="14627" r="5561" b="14694"><run backColor="ffffff" language="de">A</run>
+</wd>
+<space width="33"/>
+<wd l="5594" t="14638" r="5638" b="14671"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="5677" t="14622" r="6092" b="14710"><run backColor="ffffff" language="de">Abfindung,</run>
+</wd>
+<space/>
+</ln>
+<ln l="3921" t="14732" r="6059" b="14826" baseLine="14804" bold="true" underlined="none" fontSize="400">
+<wd l="3921" t="14738" r="3993" b="14810"><run backColor="ffffff" language="de">84</run>
+</wd>
+<space width="39"/>
+<wd l="4032" t="14760" r="4076" b="14793"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="4115" t="14743" r="4580" b="14826"><run backColor="ffffff" language="de">m&#8226;K9&#228;hip&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="4614" t="14738" r="5178" b="14826"><run backColor="ffffff" language="de">V&#8226;f&#8226;t&#8226;u&#8226;rung,</run>
+</wd>
+<space width="39"/>
+<wd l="5217" t="14738" r="5356" b="14804"><run backColor="ffffff" language="de">e4.</run>
+</wd>
+<space width="39"/>
+<wd l="5394" t="14732" r="6059" b="14821"><run backColor="ffffff" language="de">H&#8226;chterecinurg</run>
+</wd>
+<space/>
+</ln>
+<ln l="3921" t="14849" r="5300" b="14943" baseLine="14915" bold="true" underlined="none" fontSize="400">
+<wd l="3921" t="14854" r="3977" b="14926"><run backColor="ffffff" language="de">V</run>
+</wd>
+<space width="33"/>
+<wd l="4010" t="14871" r="4060" b="14910"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="4093" t="14854" r="4409" b="14943"><run backColor="ffffff" language="de">Vorpthr,</run>
+</wd>
+<space width="33"/>
+<wd l="4442" t="14854" r="4525" b="14921"><run backColor="ffffff" language="de">ei</run>
+</wd>
+<space width="44"/>
+<wd l="4569" t="14865" r="4608" b="14910"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="44"/>
+<wd l="4652" t="14849" r="5300" b="14937"><run backColor="ffffff" language="de">Erttgoko,dhe.n</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5688" t="11177" r="7034" b="11304" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5688" t="11182" r="7028" b="11298" baseLine="11276" underlined="none" fontSize="800">
+<wd l="5688" t="11182" r="7028" b="11298"><run backColor="ffffff" language="de">Netto-Bez&#252;ge/Netto-Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="5688" t="11337" r="8773" b="13082" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5688" t="11337" r="6790" b="11559" baseLine="11492" underlined="none" fontSize="800">
+<wd l="5688" t="11398" r="5804" b="11498"><run backColor="ffffff" language="de">W.</run>
+</wd>
+<space width="415"/>
+<wd l="6220" t="11337" r="6790" b="11559"><run backColor="ffffff" language="de">&apos;Bezeichnung</run>
+</wd>
+<space/>
+</ln>
+<ln l="5699" t="11614" r="7649" b="11742" baseLine="11736" underlined="none" fontSize="800">
+<wd l="5699" t="11614" r="6109" b="11742"><run backColor="ffffff" language="de">9073</run>
+</wd>
+<space width="133"/>
+<wd l="6242" t="11614" r="7649" b="11736"><run backColor="ffffff" language="de">Privatfahrten</run>
+</wd>
+<space/>
+</ln>
+<ln l="5699" t="11825" r="8407" b="11996" baseLine="11958" underlined="none" fontSize="800">
+<wd l="5699" t="11841" r="6098" b="11963"><run backColor="ffffff" language="de">9074</run>
+</wd>
+<space width="127"/>
+<wd l="6225" t="11825" r="7322" b="11996"><run backColor="ffffff" language="de">Whg/Arbeit</run>
+</wd>
+<space width="127"/>
+<wd l="7449" t="11847" r="7992" b="11963"><run backColor="ffffff" language="de">ST+SV</run>
+</wd>
+<space width="111"/>
+<wd l="8103" t="11841" r="8407" b="11996"><run backColor="ffffff" language="de">pfl</run>
+</wd>
+<space/>
+</ln>
+<ln l="5705" t="12046" r="8064" b="12218" baseLine="12179" underlined="none" fontSize="800">
+<wd l="5705" t="12063" r="6109" b="12185"><run backColor="ffffff" language="de">9075</run>
+</wd>
+<space width="116"/>
+<wd l="6225" t="12046" r="7327" b="12212"><run backColor="ffffff" language="de">Whg/Arbeit</run>
+</wd>
+<space width="111"/>
+<wd l="7438" t="12090" r="7615" b="12218"><run backColor="ffffff" language="de">p.</run>
+</wd>
+<space width="172"/>
+<wd l="7787" t="12063" r="8064" b="12179"><run backColor="ffffff" language="de">St.</run>
+</wd>
+<space/>
+</ln>
+<ln l="5705" t="12279" r="8103" b="12412" baseLine="12406" underlined="none" fontSize="800">
+<wd l="5705" t="12290" r="6109" b="12412"><run backColor="ffffff" language="de">9983</run>
+</wd>
+<space width="122"/>
+<wd l="6231" t="12290" r="6447" b="12406"><run backColor="ffffff" language="de">AG</run>
+</wd>
+<wd l="6474" t="12279" r="7316" b="12406"><run backColor="ffffff" language="de">&#8212;Zuschu&#223;</run>
+</wd>
+<space width="144"/>
+<wd l="7460" t="12318" r="7765" b="12406"><run backColor="ffffff" language="de">zur</run>
+</wd>
+<space width="133"/>
+<wd l="7898" t="12290" r="8103" b="12401"><run backColor="ffffff" language="de">PV</run>
+</wd>
+<space/>
+</ln>
+<ln l="5705" t="12500" r="8430" b="12655" baseLine="12622" underlined="none" fontSize="800">
+<wd l="5705" t="12506" r="6103" b="12633"><run backColor="ffffff" language="de">9984</run>
+</wd>
+<space width="138"/>
+<wd l="6242" t="12500" r="7654" b="12655"><run backColor="ffffff" language="de">Gesamtbeitrag</run>
+</wd>
+<space width="138"/>
+<wd l="7793" t="12534" r="8097" b="12628"><run backColor="ffffff" language="de">zur</run>
+</wd>
+<space width="133"/>
+<wd l="8230" t="12511" r="8430" b="12628"><run backColor="ffffff" language="de">PV</run>
+</wd>
+<space/>
+</ln>
+<ln l="5705" t="12722" r="8767" b="12855" baseLine="12844" underlined="none" fontSize="800">
+<wd l="5705" t="12727" r="6109" b="12855"><run backColor="ffffff" language="de">9995</run>
+</wd>
+<space width="122"/>
+<wd l="6231" t="12722" r="7206" b="12849"><run backColor="ffffff" language="de">AG&#8212;Anteil</run>
+</wd>
+<space width="150"/>
+<wd l="7355" t="12755" r="7660" b="12844"><run backColor="ffffff" language="de">zur</run>
+</wd>
+<space width="133"/>
+<wd l="7793" t="12722" r="8391" b="12844"><run backColor="ffffff" language="de">freiw.</run>
+</wd>
+<space width="161"/>
+<wd l="8551" t="12727" r="8767" b="12849"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space/>
+</ln>
+<ln l="5705" t="12943" r="8767" b="13076" baseLine="13071" underlined="none" fontSize="800">
+<wd l="5705" t="12949" r="6114" b="13076"><run backColor="ffffff" language="de">9996</run>
+</wd>
+<space width="133"/>
+<wd l="6247" t="12943" r="8396" b="13076"><run backColor="ffffff" language="de">Gesamtbeitr.z.freiw.</run>
+</wd>
+<space width="155"/>
+<wd l="8551" t="12954" r="8767" b="13071"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9471" t="10080" r="10523" b="10457" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9471" t="10080" r="10518" b="10207" baseLine="10180" underlined="none" fontSize="800">
+<wd l="9471" t="10086" r="10119" b="10185"><run backColor="ffffff" language="de">SV-rechtlIche</run>
+</wd>
+<space width="33"/>
+<wd l="10152" t="10086" r="10518" b="10207"><run backColor="ffffff" language="de">Abz&#252;ge</run>
+</wd>
+<space/>
+</ln>
+<ln l="9881" t="10307" r="10512" b="10451" baseLine="10423" underlined="none" fontSize="800">
+<wd l="9881" t="10307" r="10512" b="10451"><run backColor="ffffff" language="de">529,46</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9659" t="10966" r="10534" b="11337" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9775" t="10972" r="10529" b="11066" baseLine="11066" underlined="none" fontSize="800">
+<wd l="9775" t="10972" r="10025" b="11066"><run backColor="ffffff" language="de">Netto</run>
+</wd>
+<wd l="10025" t="10972" r="10529" b="11066"><run backColor="ffffff" language="de">-Verdienst</run>
+</wd>
+<space/>
+</ln>
+<ln l="9659" t="11188" r="10518" b="11332" baseLine="11304" underlined="single" fontSize="800">
+<wd l="9659" t="11188" r="10518" b="11332"><run backColor="ffffff" language="de">3.821,75</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9886" t="11398" r="10639" b="13104" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10213" t="11404" r="10523" b="11531" baseLine="11503" underlined="none" fontSize="800">
+<wd l="10213" t="11404" r="10523" b="11531"><run backColor="ffffff" language="de">&amp;tzeg</run>
+</wd>
+<space/>
+</ln>
+<ln l="9886" t="11625" r="10518" b="11775" baseLine="11747" underlined="none" fontSize="800">
+<wd l="9886" t="11625" r="10628" b="11775"><run backColor="ffffff" language="de">287,00-</run>
+</wd>
+</ln>
+<ln l="9886" t="11847" r="10518" b="11996" baseLine="11963" underlined="none" fontSize="800">
+<wd l="9886" t="11847" r="10628" b="11996"><run backColor="ffffff" language="de">192,75-</run>
+</wd>
+</ln>
+<ln l="9997" t="12068" r="10518" b="12212" baseLine="12185" underlined="none" fontSize="800">
+<wd l="9997" t="12068" r="10628" b="12212"><run backColor="ffffff" language="de">22,50-</run>
+</wd>
+</ln>
+<ln l="10002" t="12290" r="10523" b="12439" baseLine="12406" underlined="none" fontSize="800">
+<wd l="10002" t="12290" r="10523" b="12439"><run backColor="ffffff" language="de">55,46</run>
+</wd>
+<space/>
+</ln>
+<ln l="9892" t="12506" r="10523" b="12655" baseLine="12622" underlined="none" fontSize="800">
+<wd l="9892" t="12506" r="10634" b="12655"><run backColor="ffffff" language="de">110,93-</run>
+</wd>
+</ln>
+<ln l="9892" t="12722" r="10523" b="12871" baseLine="12844" underlined="none" fontSize="800">
+<wd l="9892" t="12722" r="10523" b="12871"><run backColor="ffffff" language="de">317,55</run>
+</wd>
+<space/>
+</ln>
+<ln l="9903" t="12943" r="10523" b="13098" baseLine="13065" underlined="none" fontSize="800">
+<wd l="9903" t="12943" r="10634" b="13098"><run backColor="ffffff" language="de">682,95&#8212;</run>
+</wd>
+</ln>
+</textZone>
+<textZone l="5993" t="14012" r="8806" b="14932" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="5998" t="14012" r="7560" b="14223" baseLine="14156" underlined="none" fontSize="800">
+<wd l="5998" t="14062" r="6563" b="14162"><run backColor="ffffff" language="de">SV-AG-Anted</run>
+</wd>
+<space width="111"/>
+<wd l="6674" t="14012" r="6690" b="14223"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space width="205"/>
+<wd l="6895" t="14062" r="7067" b="14162"><run backColor="ffffff" language="de">Zus,</run>
+</wd>
+<space width="33"/>
+<wd l="7100" t="14057" r="7560" b="14156"><run backColor="ffffff" language="de">AG-Kosten</run>
+</wd>
+<space/>
+</ln>
+<ln l="6042" t="14278" r="7560" b="14444" baseLine="14400" underlined="single" fontSize="800">
+<wd l="6042" t="14278" r="6552" b="14444"><run backColor="ffffff" language="de">902,47</run>
+</wd>
+<space width="1008"/>
+<space/>
+</ln>
+<ln l="6657" t="14494" r="8119" b="14577" baseLine="14566" bold="true" underlined="none" fontSize="400">
+<wd l="6657" t="14505" r="6702" b="14572"><run backColor="ffffff" language="de">J</run>
+</wd>
+<space width="33"/>
+<wd l="6735" t="14516" r="6779" b="14555"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="6818" t="14500" r="7266" b="14577"><run backColor="ffffff" language="de">B&#8226;M&#8226;ndlell</run>
+</wd>
+<space width="28"/>
+<wd l="7294" t="14505" r="7438" b="14572"><run backColor="ffffff" language="de">de.</run>
+</wd>
+<space width="39"/>
+<wd l="7477" t="14494" r="7881" b="14572"><run backColor="ffffff" language="de">GIbuffi-8</run>
+</wd>
+<space width="17"/>
+<wd l="7898" t="14505" r="8119" b="14566"><run backColor="ffffff" language="de">rUto&#8226;</run>
+</wd>
+<space/>
+</ln>
+<ln l="6574" t="14583" r="8740" b="14699" baseLine="14677" bold="true" underlined="none" fontSize="400">
+<wd l="6574" t="14583" r="6624" b="14649"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="33"/>
+<wd l="6657" t="14616" r="6707" b="14688"><run backColor="ffffff" language="de">Z</run>
+</wd>
+<space width="39"/>
+<wd l="6746" t="14633" r="6790" b="14666"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="6829" t="14616" r="7128" b="14688"><run backColor="ffffff" language="de">ElnachL</run>
+</wd>
+<space width="39"/>
+<wd l="7167" t="14610" r="7848" b="14699"><run backColor="ffffff" language="de">13&#8226;11r&#8226;omuchlag</run>
+</wd>
+<space width="332"/>
+<wd l="8180" t="14605" r="8291" b="14677"><run backColor="ffffff" language="de">fUr</run>
+</wd>
+<space width="28"/>
+<wd l="8319" t="14605" r="8740" b="14671"><run backColor="ffffff" language="de">IUndarbt*</run>
+</wd>
+<space/>
+</ln>
+<ln l="6657" t="14727" r="7909" b="14810" baseLine="14793" bold="true" underlined="none" fontSize="400">
+<wd l="6657" t="14727" r="6846" b="14799"><run backColor="ffffff" language="de">AWO</run>
+</wd>
+<space width="39"/>
+<wd l="6884" t="14749" r="6929" b="14777"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="6967" t="14727" r="7909" b="14810"><run backColor="ffffff" language="de">Mehrlachb&#8226;&#8226;ch&#228;lUgung</run>
+</wd>
+<space/>
+</ln>
+<ln l="6657" t="14832" r="8801" b="14926" baseLine="14910" bold="true" underlined="none" fontSize="400">
+<wd l="6657" t="14843" r="7211" b="14926"><run backColor="ffffff" language="de">M&#8226;llgobl&#228;cher</run>
+</wd>
+<space width="33"/>
+<wd l="7244" t="14838" r="7748" b="14921"><run backColor="ffffff" language="de">Beetraga&#8226;olz</run>
+</wd>
+<space width="28"/>
+<wd l="7776" t="14849" r="7892" b="14904" bold="true" italic="true"><run backColor="ffffff" language="de">a&#223;</run>
+</wd>
+<space width="33"/>
+<wd l="7926" t="14832" r="8042" b="14904"><run backColor="ffffff" language="de">KV</run>
+</wd>
+<space width="33"/>
+<wd l="8075" t="14832" r="8219" b="14898"><run backColor="ffffff" language="de">trAL</run>
+</wd>
+<space width="44"/>
+<wd l="8263" t="14832" r="8801" b="14915"><run backColor="ffffff" language="de">1</run>
+<run subsuperscript="subscript" backColor="ffffff" language="de">,</run>
+<run backColor="ffffff" language="de">&#8226;&#8226;&#8226;te</run>
+<run subsuperscript="subscript" backColor="ffffff" language="de">4</run>
+<run backColor="ffffff" language="de">d&#8226;rtKI</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="3666" t="14987" r="7139" b="15092" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="3666" t="14987" r="7134" b="15087" baseLine="15059" bold="true" underlined="none" fontSize="400">
+<wd l="3666" t="15031" r="3694" b="15054"><run backColor="ffffff" language="de">&#8226;</run>
+</wd>
+<space width="39"/>
+<wd l="3733" t="14998" r="3905" b="15070"><run backColor="ffffff" language="de">De.</run>
+</wd>
+<space width="39"/>
+<wd l="3943" t="15004" r="4026" b="15070"><run backColor="ffffff" language="de">Ist</run>
+</wd>
+<space width="39"/>
+<wd l="4065" t="15015" r="4226" b="15070"><run backColor="ffffff" language="de">eine</run>
+</wd>
+<space width="33"/>
+<wd l="4259" t="14998" r="5106" b="15081"><run backColor="ffffff" language="de">Entgaltb&#8226;schomauna</run>
+</wd>
+<space width="44"/>
+<wd l="5151" t="14998" r="5334" b="15065"><run backColor="ffffff" language="de">mch</run>
+</wd>
+<space width="33"/>
+<wd l="5367" t="14993" r="5583" b="15087"><run backColor="ffffff" language="de">1108</run>
+</wd>
+<space width="39"/>
+<wd l="5622" t="14998" r="5771" b="15065"><run backColor="ffffff" language="de">Abs</run>
+</wd>
+<space width="66"/>
+<wd l="5838" t="14993" r="5882" b="15059"><run backColor="ffffff" language="de">3</run>
+</wd>
+<space width="39"/>
+<wd l="5921" t="14993" r="6098" b="15065"><run backColor="ffffff" language="de">SM</run>
+</wd>
+<space width="39"/>
+<wd l="6137" t="14993" r="6153" b="15059"><run backColor="ffffff" language="de">I</run>
+</wd>
+<space width="55"/>
+<wd l="6209" t="14993" r="6330" b="15059"><run backColor="ffffff" language="de">der</run>
+</wd>
+<space width="39"/>
+<wd l="6369" t="14987" r="7067" b="15070"><run backColor="ffffff" language="de">G&#8226;welb&#8226;0re5J.2</run>
+</wd>
+<space width="33"/>
+<wd l="7100" t="15020" r="7134" b="15037"><run backColor="ffffff" language="de">-</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8396" t="14051" r="9000" b="14156" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8396" t="14057" r="8994" b="14151" baseLine="14145" underlined="none" fontSize="800">
+<wd l="8396" t="14057" r="8994" b="14151"><run backColor="ffffff" language="de">Gesamttanten</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="9582" t="14046" r="10534" b="14411" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="9582" t="14051" r="10529" b="14173" baseLine="14140" underlined="none" fontSize="800">
+<wd l="9582" t="14051" r="10529" b="14173"><run backColor="ffffff" language="de">Auszahlungsbetrag</run>
+</wd>
+<space/>
+</ln>
+<ln l="9670" t="14256" r="10523" b="14406" baseLine="14378" underlined="none" fontSize="800">
+<wd l="9670" t="14256" r="10523" b="14406"><run backColor="ffffff" language="de">2.898,63</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="10113" t="14965" r="10623" b="15092" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="10113" t="14965" r="10617" b="15087" baseLine="15081" bold="true" underlined="none" fontSize="800">
+<wd l="10113" t="14965" r="10617" b="15087"><run backColor="ffffff" language="de">DATEV</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<textZone l="8385" t="16399" r="11337" b="16687" language="de" fillingMethod="omnifont" recognitionModule="omnifontPlus2w" chrFilter="all">
+<ln l="8385" t="16405" r="11332" b="16682" baseLine="16610" underlined="none" fontSize="1400" fontFace="Times New Roman">
+<wd l="8385" t="16405" r="9371" b="16626"><run backColor="ffffff" language="de">Scanned</run>
+</wd>
+<space width="72"/>
+<wd l="9443" t="16405" r="9737" b="16682"><run backColor="ffffff" language="de">by</run>
+</wd>
+<space width="89"/>
+<wd l="9825" t="16405" r="11332" b="16615"><run backColor="ffffff" language="de">CamScanner</run>
+</wd>
+<space/>
+</ln>
+</textZone>
+<rulerline l="9083" t="5644" r="9083" b="14439" type="single" width="11" color="060609"/>
+<rulerline l="3367" t="12888" r="3367" b="13586" type="single" width="11" color="131318"/>
+<rulerline l="10113" t="14915" r="10623" b="14915" type="double" width="44" color="0a0a0b"/>
+<rulerline l="10113" t="14838" r="10623" b="14838" type="double" width="50" color="050408"/>
+<rulerline l="10113" t="14766" r="10623" b="14766" type="double" width="39" color="0e0e11"/>
+<rulerline l="10113" t="14699" r="10628" b="14699" type="double" width="55" color="0e0e10"/>
+<rulerline l="10113" t="14627" r="10628" b="14627" type="double" width="44" color="060507"/>
+<rulerline l="10113" t="14572" r="10628" b="14572" type="single" width="11" color="06060a"/>
+<rulerline l="9216" t="14428" r="10645" b="14428" type="single" width="17" color="050509"/>
+<rulerline l="5688" t="13996" r="10650" b="13996" type="single" width="11" color="0e0e15"/>
+<rulerline l="1041" t="14023" r="5466" b="14023" type="single" width="11" color="0d0e14"/>
+<rulerline l="1036" t="13580" r="5466" b="13580" type="single" width="11" color="16151b"/>
+<rulerline l="5677" t="11321" r="9100" b="11321" type="single" width="17" color="040406"/>
+<rulerline l="1030" t="11359" r="5461" b="11359" type="single" width="17" color="050506"/>
+<rulerline l="9199" t="10905" r="10639" b="10905" type="single" width="17" color="060509"/>
+<rulerline l="1030" t="10905" r="9094" b="10905" type="single" width="11" color="07080d"/>
+<rulerline l="1030" t="10036" r="10634" b="10036" type="single" width="6" color="0b0a10"/>
+<rulerline l="9183" t="9155" r="10628" b="9155" type="single" width="17" color="0b0b0d"/>
+<rulerline l="1030" t="9138" r="9083" b="9138" type="single" width="22" color="050508"/>
+<rulerline l="9183" t="8706" r="10623" b="8706" type="single" width="22" color="050409"/>
+<rulerline l="9172" t="5644" r="10623" b="5644" type="single" width="17" color="030208"/>
+<rulerline l="1019" t="5649" r="9072" b="5649" type="single" width="22" color="050408"/>
+<rulerline l="6209" t="3484" r="10623" b="3484" type="single" width="22" color="050509"/>
+<rulerline l="7959" t="3030" r="10617" b="3030" type="single" width="11" color="25222d"/>
+<rulerline l="6220" t="3052" r="7732" b="3052" type="single" width="6" color="3c3844"/>
+<rulerline l="7959" t="2138" r="10623" b="2138" type="single" width="11" color="111017"/>
+</zones>
+</page>
+</document>
