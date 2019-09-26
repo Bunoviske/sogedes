@@ -15,7 +15,17 @@ function addEventListener(eventName, eventListener){
     eventBus.on(eventName, eventListener);
 }
 
+function addOnceEventListener(eventName, eventListener){
+    eventBus.once(eventName, eventListener);
+}
+
+function removeEventListener(eventName){
+    eventBus.removeListener(eventName);
+}
+
 module.exports = {
     notifyEvent: notifyEvent,
-    addEventListener: addEventListener
+    addEventListener: addEventListener,
+    addOnceEventListener: addOnceEventListener,
+    removeEventListener: removeEventListener
 }
