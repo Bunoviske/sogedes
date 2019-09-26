@@ -4,7 +4,7 @@ module.exports = {
 }
 
 const coordHandler = require('./coordinatesHandler');
-const luis = require('./luisPreprocess');
+const luisPreproc = require('./luisPreprocess');
 
 let documentData = []; //main data structure that contains each text zone, line, words and attributes
 
@@ -35,12 +35,11 @@ function extractTextZones(zones) {
                 // console.log(word);
                 addWordData(word);
             });
-            luis.addLuisSentence(documentData, zoneIdx, lineIdx);
+            luisPreproc.addLuisSentence(documentData, zoneIdx, lineIdx);
         });
 
-        luis.addContinuousTextLuisSentence(documentData, zoneIdx);
+        luisPreproc.addContinuousTextLuisSentence(documentData, zoneIdx);
     });
-    // console.log(luis.getLuisSentenceMap());
     // console.log(documentData[0].lines[0]);
 }
 
