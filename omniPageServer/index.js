@@ -14,7 +14,8 @@ xmlParse.init();
 
 let DEBUG = true;
 if (DEBUG) {
-    let debugFile = "C:\\Users\\Carvalko\\Documents\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\scan1\\745aa6f7-1cb4-4484-b408-4fbb15400000.xml"
+    // let debugFile = "C:\\Users\\Carvalko\\Documents\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\scan1\\745aa6f7-1cb4-4484-b408-4fbb15400000.xml"
+    let debugFile = "/home/bruno/Documentos/sogedes/sogedes/omniPageServer/OPS/scan1/745aa6f7-1cb4-4484-b408-4fbb15400000.xml";
     OPS.debugXmlFile(debugFile);
 }
 else
