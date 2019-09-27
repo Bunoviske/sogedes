@@ -8,7 +8,11 @@ const documentUnderstanding = require('./documentUnderstanding/docUnderstanding'
 function init() {
     bus.addEventListener("parseXml", xmlParser);
 }
-
+/********
+@parameters = {
+    xmlFile: xmlFile
+}
+********/
 function xmlParser(parameters) {
     console.log("Parsing " + parameters.xmlFile);
 

@@ -7,6 +7,23 @@ const coordHandler = require('./coordinatesHandler');
 const luisPreproc = require('./luisPreprocess');
 
 let documentData = []; //main data structure that contains each text zone, line, words and attributes
+/********
+documentData = {
+    zonePos: zonePosition,
+    lines: [{ 
+        linePos: linePosition,
+        lineFont: lineFont,
+        spaces: [{
+            width: width
+        }],
+        words: [{
+            wordPos: wordPosition,
+            text: string
+            }
+        ]}
+    ]                
+}
+********/
 
 function getTextZones() {
     return documentData;

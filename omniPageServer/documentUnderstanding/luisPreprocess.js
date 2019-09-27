@@ -10,6 +10,15 @@ let sentenceMap = []; //maps luis sentence and the documentData structure
 let luisSentences = []; //array of sentences
 let luisSentencesMap = [];//array of sentences map
 
+/********
+sentenceMap = {
+    zoneIdx: zoneIdx,
+    lineIdx: lineIdx,
+    wordIdx: wordIdx,
+    text: text            
+}
+********/
+
 //array of sentences to send to luis to detect address, names etc. These are send as separated sentences because they are defined as Intents in LUIS!
 let zoneTextLuisSentences = [];  
 
