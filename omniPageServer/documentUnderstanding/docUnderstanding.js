@@ -2,6 +2,7 @@ module.exports = {
     run: run
 }
 const preproc = require('./preprocess');
+const posproc = require('./posprocess');
 const luis = require('./luisApi');
 
 function run(xmlResult) {
@@ -10,9 +11,8 @@ function run(xmlResult) {
 
     preproc.extractTextZones(xmlResult.document.page[0].zones[0].textZone);
     preproc.extractTableZones(xmlResult.document.page[0].zones[0].tableZone);
+    posproc.createListeners();
     luis.extractLabels(preproc.getLuisSentences(), preproc.getLuisSentencesMap());
-    // luis.extractContinuousText();
-
-    // posprocess.getKeyValuePairs();
+    luis.extractContinuousText(preproc.getContinuousTextLuisSentences());
     
 }

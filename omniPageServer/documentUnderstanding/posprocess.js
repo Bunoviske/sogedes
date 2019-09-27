@@ -1,10 +1,10 @@
 module.exports = {
-    run: run
+    createListeners: createListeners
 }
 
 const bus = require('../eventBus');
 
-function run() {
+function createListeners() {
     bus.addEventListener("posprocessLuisResponse", findKeyValuePairs)
 }
 

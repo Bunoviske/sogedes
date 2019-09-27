@@ -3,7 +3,8 @@ module.exports = {
     extractTableZones: extractTableZones,
     getTextZones: getTextZones,
     getLuisSentences: getLuisSentences,
-    getLuisSentencesMap: getLuisSentencesMap
+    getLuisSentencesMap: getLuisSentencesMap,
+    getContinuousTextLuisSentences: getContinuousTextLuisSentences
 }
 
 const txtZoneHandler = require('./textZoneHandler');
@@ -25,6 +26,9 @@ function getLuisSentencesMap() {
     return luisPreproc.getLuisSentencesMap();
 }
 
+function getContinuousTextLuisSentences(){
+    return luisPreproc.getContinuousTextLuisSentences();
+}
 
 function extractTableZones(zones){
     // getTableZones();

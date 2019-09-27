@@ -30,8 +30,8 @@ function extractLabels(luisSentences, luisSentencesMap) {
     });
 }
 
-function extractContinuousText(zoneTextLuisSentences) {
-
+function extractContinuousText(continuousTextSentences) {
+    
 }
 
 function callLuis(query, listenerFunction) {
