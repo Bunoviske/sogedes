@@ -30,8 +30,23 @@ function extractLabels(luisSentences, luisSentencesMap) {
     });
 }
 
-function extractContinuousText(continuousTextSentences) {
-    
+function extractContinuousText(continuousTextSentences, continuousTextMap) {
+    // console.log(continuousTextSentences);
+    // console.log(continuousTextMap);
+
+    continuousTextSentences.forEach((luisSentence, idx) => {
+
+        let t0 = performance.now();
+
+        //Parameters = {data: data}
+        let thisSentenceListener = function (parameters) { 
+            responseCounter++;
+            let t1 = performance.now();
+            console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
+            analyseContinuousTextExtraction(parameters.data, continuousTextMap[idx]);
+        };
+        callLuis(luisSentence, thisSentenceListener);
+    });
 }
 
 function callLuis(query, listenerFunction) {
@@ -54,6 +69,14 @@ function callLuis(query, listenerFunction) {
     }).on("error", (err) => {
         console.log("Error: " + err.message);
     });
+}
+
+function checkIfReceivedAllResponses(numCalls) { //call posprocessing step when you have all the results. it is important to know all entities before posprocessing
+    if (responseCounter == numCalls) {
+        responseCounter = 0;
+        console.log("Calling posprocessing step for these best results: " + bestResults);
+        bus.notifyEvent("posprocessLuisResponse", { bestResults: bestResults });
+    }
 }
 
 function analyseLabelExtraction(jsonRes, luisSentenceMap) {
@@ -80,12 +103,6 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
     }
 }
 
-function analyseContinuousTextExtraction(jsonRes) {
-
-    let arr = JSON.parse(jsonRes);
-
-}
-
 function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     let words = luisSentence.split(' ');
     let i = 0, charAccumulator = 0;
@@ -98,10 +115,18 @@ function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     return luisSentenceMap[i];
 }
 
-function checkIfReceivedAllResponses(numCalls) { //call posprocessing step when you have all the results
-    if (responseCounter == numCalls) {
-        responseCounter = 0;
-        console.log("Calling posprocessing step for these best results: " + bestResults);
-        bus.notifyEvent("posprocessLuisResponse", { bestResults: bestResults });
-    }
+function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
+
+    let arr = JSON.parse(jsonRes);
+    // console.log(arr);
+
+    //TODO - Implement this function
+
+    //each sentence is an intent, so the posprocessing can happen independently
+    console.log("Calling posprocessing step for this continuous text: " + arr);
+    bus.notifyEvent("posprocessContinuousTextLuisResponse", { bestResults: "bestResults" });
+
 }
+
+
+

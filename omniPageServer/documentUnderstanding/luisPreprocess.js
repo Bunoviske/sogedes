@@ -3,7 +3,8 @@ module.exports = {
     addContinuousTextLuisSentence: addContinuousTextLuisSentence,
     getLuisSentences: getLuisSentences,
     getLuisSentencesMap: getLuisSentencesMap,
-    getContinuousTextLuisSentences: getContinuousTextLuisSentences
+    getContinuousTextLuisSentences: getContinuousTextLuisSentences,
+    getContinuousTextMap: getContinuousTextMap
 }
 
 const mathjs = require('mathjs');
@@ -23,6 +24,7 @@ sentenceMap = {
 
 //array of sentences to send to luis to detect address, names etc. These are send as separated sentences because they are defined as Intents in LUIS!
 let continuousTextLuisSentences = [];
+let continuousTextMap = [];
 
 function addLuisSentence(documentData, zoneIdx, lineIdx) {
     let thisLine = documentData[zoneIdx].lines[lineIdx];
@@ -41,11 +43,11 @@ function addLuisSentence(documentData, zoneIdx, lineIdx) {
 function addContinuousTextLuisSentence(documentData, zoneIdx) { //check if the text in this zone is a continuous text
     let zone = documentData[zoneIdx];
     //at least two lines and regular space between words
-    let zoneText = getContinuousText(zone);
+    let zoneText = getZoneText(zone);
     if (getLinesCount(zone) >= 2 && isContinuousText(zone) /*&& !hasManyNumbers(zoneText)*/) {
         continuousTextLuisSentences.push(zoneText);
-        console.log(zoneText);
-
+        continuousTextMap.push(zoneIdx);
+        // console.log(zoneText);
     }
 }
 
@@ -59,6 +61,10 @@ function getLuisSentences() {
 
 function getContinuousTextLuisSentences() {
     return continuousTextLuisSentences;
+}
+
+function getContinuousTextMap() {
+    return continuousTextMap;
 }
 
 function checkMaxSentenceLength() {
@@ -136,7 +142,6 @@ function checkSpacePattern(spacesWidth) {
     }
     let std = mathjs.std(spacesWidth);
     let mean = mathjs.mean(spacesWidth);
-
     // console.log(spacesWidth);
     // console.log("Standard deviation:                " + std);
     // console.log("Mean:                " + mean);
@@ -147,7 +152,7 @@ function checkSpacePattern(spacesWidth) {
     return 0;
 }
 
-function getContinuousText(zone) {
+function getZoneText(zone) {
     let sentence = "";
     zone.lines.forEach(line => {
         line.words.forEach((word, idx) => {
