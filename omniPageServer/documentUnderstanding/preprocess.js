@@ -11,7 +11,7 @@ const txtZoneHandler = require('./textZoneHandler');
 const luisPreproc = require('./luisPreprocess');
 
 function extractTextZones(zones) {
-    txtZoneHandler.extractTextZones(zones); //during the extraction, the luis sentences are already built
+    txtZoneHandler.extractTextZones(zones); //during the extraction, the luis sentences are build
 }
 
 function getTextZones(){

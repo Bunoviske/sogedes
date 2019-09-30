@@ -6,6 +6,8 @@ module.exports = {
     getContinuousTextLuisSentences: getContinuousTextLuisSentences
 }
 
+const mathjs = require('mathjs');
+
 let sentence = ""; //sentence to be sent to luis to find labels and values (this is not continuous text)
 let sentenceMap = []; //maps luis sentence and the documentData structure
 let luisSentences = []; //array of sentences
@@ -39,8 +41,12 @@ function addLuisSentence(documentData, zoneIdx, lineIdx) {
 function addContinuousTextLuisSentence(documentData, zoneIdx) { //check if the text in this zone is a continuous text
     let zone = documentData[zoneIdx];
     //at least two lines and regular space between words
-    if (getLinesCount(zone) >= 2 && isContinuousText(zone))
-        continuousTextLuisSentences.push(getContinuousText(zone));
+    let zoneText = getContinuousText(zone);
+    if (getLinesCount(zone) >= 2 && isContinuousText(zone) /*&& !hasManyNumbers(zoneText)*/) {
+        continuousTextLuisSentences.push(zoneText);
+        console.log(zoneText);
+
+    }
 }
 
 function getLuisSentencesMap() {
@@ -88,7 +94,7 @@ function hasManyNumbers(myString) {
     let digitCount = (myString.match(/\d/g) || []).length;
     let alphaNumCount = (myString.match(/\w/g) || []).length;
     //console.log(alphaNumCount + " " + myString.length + " " + myString);
-    return digitCount / alphaNumCount > 0.5; //if 50% or more of the string are numbers, dont add to luis sentence
+    return digitCount / alphaNumCount > 0.5; //return true if 50% or more of the string are numbers
 }
 function hasNumber(myString) {
     return /\d/.test(myString);
@@ -104,17 +110,19 @@ function getLinesCount(zone) {
 }
 function isContinuousText(zone) { //check if the space between the words in the section follow a pattern
     let spacesWidth = [];
-    let linesWithPattern = 0;
+    let linesWithPattern = 0, numOfSpaces = 0;
 
     zone.lines.forEach(line => {
         spacesWidth = []; //each line has its own pattern. may be different font sizes
         line.spaces.forEach(space => {
             spacesWidth.push(space.width);
         });
+        numOfSpaces += spacesWidth.length; //get the total number of spaces in that line
         linesWithPattern += checkSpacePattern(spacesWidth);
     });
 
-    if (linesWithPattern == zone.lines.length) //all line must have the pattern
+    //all lines must have the pattern and at least one space in the text zone (if there isnt one single space, probably is not a continuous text)
+    if (linesWithPattern == zone.lines.length && numOfSpaces > 0)
         return true;
 
     return false;
@@ -123,39 +131,28 @@ function isContinuousText(zone) { //check if the space between the words in the 
 
 //returns 1 with there is a pattern and 0 with there isnt
 function checkSpacePattern(spacesWidth) {
-    const mathjs = require('mathjs');
-
     if (spacesWidth.length <= 1) { //only one space or no space (no pattern to look out)
         return 1;
     }
-    spacesWidth = normalizeSpaces(spacesWidth);
     let std = mathjs.std(spacesWidth);
-    let threshold = 0.5; //0.5 is the maximum std for a normalized range of values. take 25% of it
+    let mean = mathjs.mean(spacesWidth);
+
+    // console.log(spacesWidth);
+    // console.log("Standard deviation:                " + std);
+    // console.log("Mean:                " + mean);
+    // console.log("Thresold:                " + (mean*0.25));    
+    let threshold = mean * 0.25; //take 25% of the mean
     if (std < threshold)
         return 1;
     return 0;
 }
-function normalizeSpaces(spacesWidth) {
 
-    let normalize = function (val, max, min) {
-        if (max - min == 0) return 0;
-        return (val - min) / (max - min);
-    }
-    let normalizedArray = [];
-    let max = Math.max(spacesWidth);
-    let min = Math.min(spacesWidth);
-    spacesWidth.forEach(width => {
-        normalizedArray.push(normalize(width, max, min))
-    });
-    return normalizedArray;
-}
 function getContinuousText(zone) {
     let sentence = "";
     zone.lines.forEach(line => {
-        line.words.forEach( (word, idx) => {
+        line.words.forEach((word, idx) => {
             sentence += word.text + getWordSpace(idx);
         });
     });
-    console.log(sentence);
     return sentence;
 }

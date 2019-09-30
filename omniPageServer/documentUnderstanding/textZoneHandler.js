@@ -48,10 +48,12 @@ function extractTextZones(zones) {
                     addSpaceData(space);
                 });
 
-            line.wd.forEach((word, wordIdx) => {
-                // console.log(word);
-                addWordData(word);
-            });
+            if (typeof line.wd != "undefined")
+                line.wd.forEach((word, wordIdx) => {
+                    // console.log(word);
+                    addWordData(word);
+                });
+                
             luisPreproc.addLuisSentence(documentData, zoneIdx, lineIdx);
         });
 
