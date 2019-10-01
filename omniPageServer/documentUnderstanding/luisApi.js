@@ -12,14 +12,30 @@ const urlLuis = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e396e
 let bestResults = [];
 let responseCounter = 0;
 
+let DEBUG_POSPROCESSING = true;
+
 function extractLabels(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
 
+        if (DEBUG_POSPROCESSING) {
+            let searchVariable = "Gesamtbrutto";
+            let foundElem = luisSentence.search(searchVariable);
+            if (foundElem != -1){
+                bus.notifyEvent("posprocessLuisResponse", { bestResults:{
+                    label: searchVariable,
+                    score: "element.score",
+                    type: "element.type",
+                    mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)
+                }});
+            }
+            return;
+        }
+
         let t0 = performance.now();
 
         //Parameters = {data: data}
-        let thisSentenceListener = function (parameters) { 
+        let thisSentenceListener = function (parameters) {
             responseCounter++;
             let t1 = performance.now();
             console.log("LUIS response for sentence number " + idx + " in " + (t1 - t0) + " milliseconds.");
@@ -39,7 +55,7 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
         let t0 = performance.now();
 
         //Parameters = {data: data}
-        let thisSentenceListener = function (parameters) { 
+        let thisSentenceListener = function (parameters) {
             responseCounter++;
             let t1 = performance.now();
             console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
@@ -50,8 +66,11 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
 }
 
 function callLuis(query, listenerFunction) {
-    listenerFunction({ data: "{\"data\": \"data OLA OI\"}" });
-    return;
+
+    if (DEBUG_POSPROCESSING) {
+        listenerFunction({ data: "{\"data\": \"data OLA OI\"}" });
+        return;
+    }
 
     // query = 'überweisung $1650,00';
     https.get(urlLuis + querystring.escape(query), (resp) => { //convert query to URL encoding
@@ -93,9 +112,9 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
                         label: element.entity,
                         score: element.score,
                         type: element.type,
-                        startIndex: element.startIndex,
-                        endIndex: element.endIndex,
-                        luisSentenceMapObject: getLuisSentenceMapObject(arr.query, luisSentenceMap, element.startIndex)
+                        // startIndex: element.startIndex,
+                        // endIndex: element.endIndex,
+                        mapObject: getLuisSentenceMapObject(arr.query, luisSentenceMap, element.startIndex)
                     }
                 );
             }
@@ -106,7 +125,7 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
 function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     let words = luisSentence.split(' ');
     let i = 0, charAccumulator = 0;
-    //accumalates the words length until it reaches the startIndex. Then is possible to retrieve the word index in the map
+    //accumulates the words length until it reaches the startIndex. Then is possible to retrieve the word index in the map
     while (startIndex != charAccumulator && i < words.length) {
         charAccumulator += words[i++].length + 1; //gets the length of every word plus the space
     }
@@ -124,7 +143,7 @@ function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
 
     //each sentence is an intent, so the posprocessing can happen independently
     console.log("Calling posprocessing step for this continuous text: " + arr);
-    bus.notifyEvent("posprocessContinuousTextLuisResponse", { bestResults: "bestResults" });
+    bus.notifyEvent("posprocessContinuousTextLuisResponse", { result: "result" });
 
 }
 

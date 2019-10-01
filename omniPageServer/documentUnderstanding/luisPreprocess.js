@@ -8,6 +8,7 @@ module.exports = {
 }
 
 const mathjs = require('mathjs');
+const utils = require('./commonUtils');
 
 let sentence = ""; //sentence to be sent to luis to find labels and values (this is not continuous text)
 let sentenceMap = []; //maps luis sentence and the documentData structure
@@ -44,7 +45,7 @@ function addContinuousTextLuisSentence(documentData, zoneIdx) { //check if the t
     let zone = documentData[zoneIdx];
     //at least two lines and regular space between words
     let zoneText = getZoneText(zone);
-    if (getLinesCount(zone) >= 2 && isContinuousText(zone) /*&& !hasManyNumbers(zoneText)*/) {
+    if (getLinesCount(zone) >= 2 && isContinuousText(zone) /*&& !utils.hasManyNumbers(zoneText)*/) {
         continuousTextLuisSentences.push(zoneText);
         continuousTextMap.push(zoneIdx);
         // console.log(zoneText);
@@ -90,20 +91,10 @@ function isGoodWord(wordText, fontSize) {
 
     //old method
     let fontThreshold = 300;
-    if (fontSize > fontThreshold && !hasManyNumbers(wordText) && wordText.length > 1) { //good candidates are big, not numbers (label only) and are not a singular char
+    if (fontSize > fontThreshold && !utils.hasManyNumbers(wordText) && wordText.length > 1) { //good candidates are big, not numbers (label only) and are not a singular char
         return true;
     }
     return false;
-}
-
-function hasManyNumbers(myString) {
-    let digitCount = (myString.match(/\d/g) || []).length;
-    let alphaNumCount = (myString.match(/\w/g) || []).length;
-    //console.log(alphaNumCount + " " + myString.length + " " + myString);
-    return digitCount / alphaNumCount > 0.5; //return true if 50% or more of the string are numbers
-}
-function hasNumber(myString) {
-    return /\d/.test(myString);
 }
 
 function getWordSpace(wordIdx) { //returns a space only if width property is defined in the line for this word
