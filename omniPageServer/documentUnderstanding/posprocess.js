@@ -35,8 +35,6 @@ mapObject = { //maps a word with the documentData structure
 function findKeyValuePairs(parameters) { //for now, the results are coming from textZones
 
     console.log("Finding key value pairs...");
-    console.log(parameters.bestResults);
-    return;
 
     //algorithm: given a label, first search for values in the same textZone/cellZone/tableZone. If no value is found, search in the nearby zones on the right and on the bottom
 
@@ -48,7 +46,8 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
         if (value == null) //if no value is found in the same zone, search nearby
             value = searchValueInNearbyTextZones(label, wordMap);
 
-        console.log("Label: " + result.mapObject.text + "      Value: " + value);
+        if (value != null)
+            console.log("Label: " + result.mapObject.text + "      Value: " + value.text);
     });    
 }
 
@@ -59,9 +58,15 @@ function searchValueInSameTextZone(label, wordMap){
     //for now, all labels have numbers as values
     let valueCandidates = searchForNumberValues(wordMap.zoneIdx);
 
+    console.log(valueCandidates);
+
     //take the values and filter the ones on the right and below
     let rightCandidates = getSameLineRightCandidates(valueCandidates, wordMap.lineIdx, wordMap.wordIdx);
     let belowCandidates = getCandidatesBelow(valueCandidates, wordMap.zoneIdx, wordMap.lineIdx, wordMap.wordIdx);
+
+    console.log(rightCandidates);
+    console.log(belowCandidates);
+
     
     //return the closest candidate from both arrays
     return getClosestCandidate(rightCandidates.concat(belowCandidates), wordMap.zoneIdx, wordMap.lineIdx, wordMap.wordIdx);
@@ -73,9 +78,9 @@ function searchForNumberValues(zoneToSearchIdx){
     let thisZone = documentData[zoneToSearchIdx];
     let candidates = [];
     
-    thisZone.lines.forEach( line, lineIdx => {
-        line.words.forEach( word, wordIdx => {
-            if (utils.hasManyNumbers(word.text)) //a candidate has the same structure as a sentence map (luisSentenceMapObject)
+    thisZone.lines.forEach( (line, lineIdx) => {
+        line.words.forEach( (word, wordIdx) => {
+            if (utils.hasManyNumbers(word.text)) //a candidate has the same structure as a map (mapObject)
                 candidates.push({
                     zoneIdx: zoneToSearchIdx,
                     lineIdx: lineIdx,
@@ -132,6 +137,10 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx,labelWordIdx
         }
     });
     return bestCandidate;
+}
+
+function searchValueInNearbyTextZones(label, wordMap){
+    return null;
 }
 
 /********
