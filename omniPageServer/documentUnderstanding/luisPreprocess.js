@@ -1,5 +1,6 @@
 module.exports = {
     addLuisSentence: addLuisSentence,
+    sinalizeEndOfDocument: sinalizeEndOfDocument,
     addContinuousTextLuisSentence: addContinuousTextLuisSentence,
     getLuisSentences: getLuisSentences,
     getLuisSentencesMap: getLuisSentencesMap,
@@ -36,8 +37,12 @@ function addLuisSentence(documentData, zoneIdx, lineIdx) {
             addSentenceMap(zoneIdx, lineIdx, wordIdx, word.text);
         }
     });
-
     checkMaxSentenceLength();
+}
+
+function sinalizeEndOfDocument() { //this function should add the last sentence to the array of sentences
+    if (sentence != "")
+        pushSentence();
 }
 
 //get text zones with multiple lines and regular spacing between words -> good to retrieve blocks of text
@@ -70,11 +75,15 @@ function getContinuousTextMap() {
 
 function checkMaxSentenceLength() {
     if (sentence.length > 300) {
-        luisSentences.push(sentence);
-        luisSentencesMap.push(sentenceMap);
-        sentence = "";
-        sentenceMap = [];
+        pushSentence();
     }
+}
+
+function pushSentence() {
+    luisSentences.push(sentence);
+    luisSentencesMap.push(sentenceMap);
+    sentence = "";
+    sentenceMap = [];
 }
 
 function addSentenceMap(zoneIdx, lineIdx, wordIdx, text) {

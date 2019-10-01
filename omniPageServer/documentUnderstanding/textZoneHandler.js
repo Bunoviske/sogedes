@@ -56,9 +56,9 @@ function extractTextZones(zones) {
                 
             luisPreproc.addLuisSentence(documentData, zoneIdx, lineIdx);
         });
-
         luisPreproc.addContinuousTextLuisSentence(documentData, zoneIdx);
     });
+    luisPreproc.sinalizeEndOfDocument(); //it is necessary to sinalize end of the document to the luis preprocessing class
     // console.log(documentData[0].lines[0]);
 }
 
