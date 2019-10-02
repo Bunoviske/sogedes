@@ -19,15 +19,15 @@ function extractLabels(luisSentences, luisSentencesMap) {
     luisSentences.forEach((luisSentence, idx) => {
 
         if (DEBUG_POSPROCESSING) {
-            let searchVariable = "Gesamtbrutto";
+            let searchVariable = "Auszahlungsbetrag";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1){
-                bus.notifyEvent("posprocessLuisResponse", { bestResults:{
+                bus.notifyEvent("posprocessLuisResponse", { bestResults:[{
                     label: searchVariable,
                     score: "element.score",
                     type: "element.type",
                     mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)
-                }});
+                }]});
             }
             return;
         }
