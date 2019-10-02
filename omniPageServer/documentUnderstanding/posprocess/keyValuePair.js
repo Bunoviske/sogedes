@@ -1,17 +1,10 @@
 module.exports = {
-    createListeners: createListeners
+    findKeyValuePairs: findKeyValuePairs
 }
 
-const bus = require('../eventBus');
-const txtHandler = require('./textZoneHandler');
-const coordHandler = require('./coordinatesHandler');
-const utils = require('./commonUtils');
-
-function createListeners() {
-    //TODO - Save posprocessing results in json file for communication with contextor. Take a look at TextPosProcessing.js in the pdf2txt project
-    bus.addEventListener("posprocessLuisResponse", findKeyValuePairs);
-    bus.addEventListener("posprocessContinuousTextLuisResponse", getInfoFromContinuousText);
-}
+const txtHandler = require('../preprocess/textZoneHandler');
+const coordHandler = require('../coordinatesHandler');
+const utils = require('../commonUtils');
 
 /********
 @parameters = {
@@ -34,10 +27,6 @@ mapObject = { //maps a word with the documentData structure
 
 function findKeyValuePairs(parameters) { //for now, the results are coming from textZones
 
-    console.log("Finding key value pairs...");
-
-    //algorithm: given a label, first search for values in the same textZone/cellZone/tableZone. If no value is found, search in the nearby zones on the right and on the bottom
-
     parameters.bestResults.forEach(result => {
         let label = result.entity;
         let mapObject = result.mapObject;
@@ -50,6 +39,7 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
             console.log("Label: " + result.mapObject.text + "      Value: " + value.text);
     });
 }
+
 
 function searchValueInSameTextZone(label, mapObject) {
 
@@ -217,17 +207,4 @@ function findZoneBelow(labelZoneIdx){
         }
     });
     return bestZoneIdx; //if there isnt a best zone, return -1
-}
-
-
-/********
-@parameters = {
-    result: {
-    }
-}
-********/
-function getInfoFromContinuousText(parameters) {
-    // console.log(parameters.bestResults);
-
-    //TODO - implement function
 }

@@ -1,9 +1,10 @@
 module.exports = {
     extractTextZones: extractTextZones,
-    getTextZones: getTextZones
+    getTextZones: getTextZones,
+    addCellZonesAsTexZones: addCellZonesAsTexZones
 }
 
-const coordHandler = require('./coordinatesHandler');
+const coordHandler = require('../coordinatesHandler');
 const luisPreproc = require('./luisPreprocess');
 
 let documentData = []; //main data structure that contains each text zone, line, words and attributes
@@ -27,6 +28,15 @@ documentData = {
 
 function getTextZones() {
     return documentData;
+}
+
+function addCellZonesAsTexZones(cellZones){
+    cellZones.forEach( cell => {
+        documentData.push(cell);
+        //take care of luis sentences here 
+    });
+
+    luisPreproc.sinalizeEndOfDocument(); //it is necessary to sinalize end of the document extraction to the luis preprocessing class
 }
 
 //retrieves the text from text zones and fill two data structures (one that contain all the xml useful information and other that helps with luis response processing)
@@ -58,7 +68,6 @@ function extractTextZones(zones) {
         });
         luisPreproc.addContinuousTextLuisSentence(documentData, zoneIdx);
     });
-    luisPreproc.sinalizeEndOfDocument(); //it is necessary to sinalize end of the document to the luis preprocessing class
     // console.log(documentData[0].lines[0]);
 }
 

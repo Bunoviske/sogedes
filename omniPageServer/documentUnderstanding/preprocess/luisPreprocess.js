@@ -9,7 +9,7 @@ module.exports = {
 }
 
 const mathjs = require('mathjs');
-const utils = require('./commonUtils');
+const utils = require('../commonUtils');
 
 let sentence = ""; //sentence to be sent to luis to find labels and values (this is not continuous text)
 let sentenceMap = []; //maps luis sentence and the documentData structure
