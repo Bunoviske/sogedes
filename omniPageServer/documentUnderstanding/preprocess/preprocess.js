@@ -15,7 +15,9 @@ const luisPreproc = require('./luisPreprocess');
 function extractDocumentData(textZones, tableZones){
     tableZoneHandler.extractTableZones(tableZones);
     txtZoneHandler.extractTextZones(textZones);
-    txtZoneHandler.addCellZonesAsTexZones(convertCellZonesInTextZones()); //add the cell zones because they may have labels that fits in key value pair extraction
+    
+    //add the cell zones because they may have labels that fits in key value pair extraction (key value pair extraction is done with the textZones)
+    txtZoneHandler.addCellZonesAsTexZones(convertCellZonesInTextZones()); 
 }
 
 /**
