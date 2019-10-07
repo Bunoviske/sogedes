@@ -52,9 +52,9 @@ function searchValueInSameTextZone(label, mapObject) {
     let rightCandidates = getSameLineRightCandidates(valueCandidates, mapObject.lineIdx, mapObject.wordIdx);
     let belowCandidates = getCandidatesBelow(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
 
-    console.log(valueCandidates);
-    console.log(rightCandidates);
-    console.log(belowCandidates);
+    // console.log(valueCandidates);
+    // console.log(rightCandidates);
+    // console.log(belowCandidates);
 
     //return the closest candidate from both arrays
     return getClosestCandidate(rightCandidates.concat(belowCandidates), mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
@@ -77,9 +77,9 @@ function searchValueInNearbyTextZones(label, mapObject) {
     let rightCandidates = getRightCandidates(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
     let belowCandidates = getCandidatesBelow(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
 
-    console.log(valueCandidates);
-    console.log(rightCandidates);
-    console.log(belowCandidates);
+    // console.log(valueCandidates);
+    // console.log(rightCandidates);
+    // console.log(belowCandidates);
 
     //return the closest candidate from both arrays
     return getClosestCandidate(rightCandidates.concat(belowCandidates), mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
@@ -171,36 +171,39 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordId
 }
 
 //get the first text zone that is on the right
-function findRightZone(labelZoneIdx){
+function findRightZone(labelZoneIdx) {
     let documentData = txtHandler.getTextZones();
     let zonePos = documentData[labelZoneIdx].zonePos;  //get label position
     let bestZoneIdx = -1, bestZoneDistance = 2000000;
 
-    documentData.forEach( (zone, zoneIdx) => {
+    documentData.forEach((zone, zoneIdx) => {
         let candidateZonePos = zone.zonePos;
-        if (coordHandler.isValidRightZone(zonePos, candidateZonePos)){ //check if this zone is at the right and if intersect in the height direction
+        if (coordHandler.isValidRightZone(zonePos, candidateZonePos)) { //check if this zone is at the right and if intersect in the height direction
             let distance = coordHandler.horizontalZoneDistance(zonePos, candidateZonePos); //get the zone that is closest to the label zone
-            if (distance < bestZoneDistance){
+            if (distance < bestZoneDistance) {
                 bestZoneDistance = distance;
                 bestZoneIdx = zoneIdx;
             }
         }
     });
     return bestZoneIdx; //if there isnt a best zone, return -1
-   
+
 }
 
 //get the first text zone that is below
-function findZoneBelow(labelZoneIdx){
+function findZoneBelow(labelZoneIdx) {
     let documentData = txtHandler.getTextZones();
     let zonePos = documentData[labelZoneIdx].zonePos;  //get label position
+
     let bestZoneIdx = -1, bestZoneDistance = 2000000;
 
-    documentData.forEach( (zone, zoneIdx) => {
+    documentData.forEach((zone, zoneIdx) => {
         let candidateZonePos = zone.zonePos;
-        if (coordHandler.isValidBelowZone(zonePos, candidateZonePos)){ //check if this zone is at the bottom and if intersect in the width direction
+        if (coordHandler.isValidBelowZone(zonePos, candidateZonePos)) { //check if this zone is at the bottom and if intersect in the width direction
             let distance = coordHandler.verticalZoneDistance(zonePos, candidateZonePos); //get the zone that is closest to the label zone
-            if (distance < bestZoneDistance){
+            // console.log(zone.lines);
+
+            if (distance < bestZoneDistance) {
                 bestZoneDistance = distance;
                 bestZoneIdx = zoneIdx;
             }

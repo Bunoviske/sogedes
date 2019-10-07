@@ -59,8 +59,14 @@ function getTableZones(){
 
 function convertCellZonesInTextZones(){
     let tableDocumentData = getTableZones();
-    let cellZones = [];
-    //Iterate and get every cell zone
-
-    return cellZones;
+    let textZones = [];
+    
+    //For now, every cell and text zones are the same, but in the future it may change, so it will be necessary to convert the cell zone to text zone    
+    tableDocumentData.forEach( table => {
+        table.cellZones.forEach( cellZone =>{
+            textZones.push(cellZone);
+        });
+    });
+    
+    return textZones;
 }

@@ -62,14 +62,14 @@ function verticalZoneDistance(labelZonePos, zoneCandidatePos){
 
 //check if the candidate zone as at the right of the label. also check if there is a intersection in the height direction
 function isValidRightZone(labelZonePos, zoneCandidatePos){
-    if (zoneCandidatePos.left > labelZonePos.right && heightDirectionIntersection(labelZonePos, zoneCandidatePos))
+    if (zoneCandidatePos.left >= labelZonePos.right && heightDirectionIntersection(labelZonePos, zoneCandidatePos))
         return true;
     return false;
 }
 
 //check if the candidate zone as at the bottom of the label. also check if there is a intersection in the width direction
 function isValidBelowZone(labelZonePos, zoneCandidatePos){
-    if (zoneCandidatePos.top > labelZonePos.bottom && widthDirectionIntersection(labelZonePos, zoneCandidatePos))
+    if (zoneCandidatePos.top >= labelZonePos.bottom && widthDirectionIntersection(labelZonePos, zoneCandidatePos))
         return true;
     return false;
 }
@@ -77,12 +77,12 @@ function isValidBelowZone(labelZonePos, zoneCandidatePos){
 function heightDirectionIntersection(labelZonePos, zoneCandidatePos){
     return ((zoneCandidatePos.top < labelZonePos.bottom && zoneCandidatePos.top > labelZonePos.top) || 
             (zoneCandidatePos.bottom < labelZonePos.bottom && zoneCandidatePos.bottom > labelZonePos.top) || 
-            (zoneCandidatePos.top < labelZonePos.top && zoneCandidatePos.bottom > labelZonePos.bottom))
+            (zoneCandidatePos.top <= labelZonePos.top && zoneCandidatePos.bottom >= labelZonePos.bottom))
 }
 
 function widthDirectionIntersection(labelZonePos, zoneCandidatePos){
     return ((zoneCandidatePos.right < labelZonePos.right && zoneCandidatePos.right > labelZonePos.left) || 
             (zoneCandidatePos.left < labelZonePos.right && zoneCandidatePos.left > labelZonePos.left) || 
-            (zoneCandidatePos.left < labelZonePos.left && zoneCandidatePos.right > labelZonePos.right))
+            (zoneCandidatePos.left <= labelZonePos.left && zoneCandidatePos.right >= labelZonePos.right))
 }
 

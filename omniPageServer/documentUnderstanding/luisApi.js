@@ -17,9 +17,8 @@ let DEBUG_POSPROCESSING = true;
 function extractLabels(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
-
         if (DEBUG_POSPROCESSING) {
-            let searchVariable = "Auszahlungsbetrag";
+            let searchVariable = "Steuer";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1){
                 bus.notifyEvent("posprocessLuisResponse", { bestResults:[{
