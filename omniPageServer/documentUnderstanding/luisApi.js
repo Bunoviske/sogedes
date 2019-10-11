@@ -19,7 +19,7 @@ function extractLabels(luisSentences, luisSentencesMap) {
     luisSentences.forEach((luisSentence, idx) => {
         // console.log(luisSentence);
         if (DEBUG_POSPROCESSING) {
-            let searchVariable = "Steuer";
+            let searchVariable = "Gesamt";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1) {
                 bus.notifyEvent("posprocessLuisResponse", {
@@ -40,7 +40,7 @@ function extractLabels(luisSentences, luisSentencesMap) {
         let thisSentenceListener = function (parameters) {
             responseCounter++;
             let t1 = performance.now();
-            console.log("LUIS response for sentence number " + idx + " in " + (t1 - t0) + " milliseconds.");
+            // console.log("LUIS response for sentence number " + idx + " in " + (t1 - t0) + " milliseconds.");
             analyseLabelExtraction(parameters.data, luisSentencesMap[idx]);
             checkIfReceivedAllResponses(luisSentences.length);
         };
@@ -65,10 +65,10 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
         let thisSentenceListener = function (parameters) {
             responseCounter++;
             let t1 = performance.now();
-            console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
+            // console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
             analyseContinuousTextExtraction(parameters.data, continuousTextMap[idx]);
         };
-        callLuis(luisSentence, thisSentenceListener);
+        // callLuis(luisSentence, thisSentenceListener);
     });
 }
 
@@ -100,7 +100,7 @@ function callLuis(query, listenerFunction) {
 function checkIfReceivedAllResponses(numCalls) { //call posprocessing step when you have all the results. it is important to know all entities before posprocessing
     if (responseCounter == numCalls) {
         responseCounter = 0;
-        console.log("Calling posprocessing step for these best results: " + bestResults);
+        // console.log("Calling posprocessing step for these best results: " + bestResults);
         bus.notifyEvent("posprocessLuisResponse", { bestResults: bestResults });
     }
 }
@@ -113,7 +113,7 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
         arr.entities.forEach(element => {
             if (element.type == "TotalBrutto" || element.type == "TotalNetto" || element.type == "SV-nummer" || element.type == "Steuer-ID" ||
                 element.type == "Geburtstag") {
-
+                // console.log(arr);
                 bestResults.push(
                     {
                         label: element.entity,
@@ -130,16 +130,21 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
 }
 
 function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
-    let words = luisSentence.split(' ');
+    let words = luisSentence.split(' ').filter(word => word != ''); //get rid of empty values in the end of the array (split function puts a '' string in the end)
     let i = 0, charAccumulator = 0;
     //accumulates the words length until it reaches the startIndex. Then is possible to retrieve the word index in the map
     while (startIndex != charAccumulator && i < words.length) {
+
+        if (startIndex < charAccumulator + words[i].length){ //in case luis detected a word that the start index is not in the begin of the word
+            console.log("Start index is not in the begin of the string");
+            break;
+        }
         charAccumulator += words[i++].length + 1; //gets the length of every word plus the space
     }
+    if (i == words.length) i--; //subtract one to access the array of luisSentenceMap correctly if the counter has reached the end of the sentence
+
     console.log(luisSentenceMap[i]);
-    if (typeof luisSentenceMap[i] == "undefined")
-        console.log("DEBUG ERROR. THIS IS NORMAL, WONT HAPPEN WITH LUIS RESPONSE");
-        
+
     //dont consider error cases here (startIndex is assumed always correct). otherwise returns the last index of the map
     return luisSentenceMap[i];
 }
@@ -152,7 +157,8 @@ function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
     //TODO - Implement this function
 
     //each sentence is an intent, so the posprocessing can happen independently
-    console.log("Calling posprocessing step for this continuous text: " + arr);
+    console.log("Calling posprocessing step for this continuous text: ");
+    console.log(arr);
     bus.notifyEvent("posprocessContinuousTextLuisResponse", { result: "result" });
 
 }
