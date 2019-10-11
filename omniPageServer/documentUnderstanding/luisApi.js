@@ -17,16 +17,19 @@ let DEBUG_POSPROCESSING = true;
 function extractLabels(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
+        // console.log(luisSentence);
         if (DEBUG_POSPROCESSING) {
             let searchVariable = "Steuer";
             let foundElem = luisSentence.search(searchVariable);
-            if (foundElem != -1){
-                bus.notifyEvent("posprocessLuisResponse", { bestResults:[{
-                    label: searchVariable,
-                    score: "element.score",
-                    type: "element.type",
-                    mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)
-                }]});
+            if (foundElem != -1) {
+                bus.notifyEvent("posprocessLuisResponse", {
+                    bestResults: [{
+                        label: searchVariable,
+                        score: "element.score",
+                        type: "element.type",
+                        mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)
+                    }]
+                });
             }
             return;
         }
@@ -50,6 +53,11 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
     // console.log(continuousTextMap);
 
     continuousTextSentences.forEach((luisSentence, idx) => {
+
+        if (DEBUG_POSPROCESSING) {
+            // console.log(luisSentence);
+            return;
+        }
 
         let t0 = performance.now();
 

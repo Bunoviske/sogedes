@@ -12,6 +12,6 @@ function run(xmlResult) {
     preproc.extractDocumentData(xmlResult.document.page[0].zones[0].textZone, xmlResult.document.page[0].zones[0].tableZone);
     posproc.createListeners();
     luis.extractLabels(preproc.getLuisSentences(), preproc.getLuisSentencesMap());
-    // luis.extractContinuousText(preproc.getContinuousTextLuisSentences(), preproc.getContinuousTextMap());
+    luis.extractContinuousText(preproc.getContinuousTextLuisSentences(), preproc.getContinuousTextMap());
     
 }

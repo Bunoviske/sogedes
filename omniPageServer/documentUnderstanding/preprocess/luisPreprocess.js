@@ -140,16 +140,35 @@ function checkSpacePattern(spacesWidth) {
     if (spacesWidth.length <= 1) { //only one space or no space (no pattern to look out)
         return 1;
     }
-    let std = mathjs.std(spacesWidth);
     let mean = mathjs.mean(spacesWidth);
-    // console.log(spacesWidth);
-    // console.log("Standard deviation:                " + std);
-    // console.log("Mean:                " + mean);
-    // console.log("Thresold:                " + (mean*0.25));    
-    let threshold = mean * 0.25; //take 25% of the mean
-    if (std < threshold)
+    let spacePatternCont = 0;
+    let threshold = mean * 0.5; //take 50% of the mean
+
+    spacesWidth.forEach(width => {
+        if (Math.abs(width-mean) < threshold)
+            spacePatternCont++;
+    });
+
+    if (spacePatternCont/spacesWidth.length > 0.75) { //if 75% of the spaces are close to the mean, returns 1
+        // console.log("Mean: " + mean + " Threshold: "+ threshold + " Cont: " + spacePatternCont + " Ratio: " + spacePatternCont/spacesWidth.length);
         return 1;
+    }
     return 0;
+
+    //old method
+
+    // let std = mathjs.std(spacesWidth);
+    // let mean = mathjs.mean(spacesWidth);
+    // // console.log(spacesWidth);
+    // // console.log("Standard deviation:                " + std);
+    // // console.log("Mean:                " + mean);
+    // // console.log("Thresold:                " + (mean*0.25));    
+    // let threshold = mean * 0.25; //take 25% of the mean
+    // if (std < threshold){
+    //     console.log(mean + " " + std);
+    //     return 1;
+    // }
+    // return 0;
 }
 
 function getZoneText(zone) {
