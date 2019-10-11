@@ -8,11 +8,12 @@ const querystring = require("querystring");
 const bus = require('../eventBus');
 const { _, performance } = require('perf_hooks');
 
-const urlLuis = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e396e0f0-076c-4d27-aa64-9811cd3a93b7?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
+const keyValueLuisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2370db52-38af-4cbb-96e5-22beb8c34ea2?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
+const continuousTextLuisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e396e0f0-076c-4d27-aa64-9811cd3a93b7?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
 let bestResults = [];
 let responseCounter = 0;
 
-let DEBUG_POSPROCESSING = true;
+let DEBUG_POSPROCESSING = false;
 
 function extractLabels(luisSentences, luisSentencesMap) {
 
@@ -44,7 +45,7 @@ function extractLabels(luisSentences, luisSentencesMap) {
             analyseLabelExtraction(parameters.data, luisSentencesMap[idx]);
             checkIfReceivedAllResponses(luisSentences.length);
         };
-        callLuis(luisSentence, thisSentenceListener);
+        // callLuis(keyValueLuisUrl, luisSentence, thisSentenceListener);
     });
 }
 
@@ -68,11 +69,11 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
             // console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
             analyseContinuousTextExtraction(parameters.data, continuousTextMap[idx]);
         };
-        // callLuis(luisSentence, thisSentenceListener);
+        callLuis(continuousTextLuisUrl, luisSentence, thisSentenceListener);
     });
 }
 
-function callLuis(query, listenerFunction) {
+function callLuis(urlLuis, query, listenerFunction) {
 
     if (DEBUG_POSPROCESSING) {
         listenerFunction({ data: "{\"data\": \"data OLA OI\"}" });
