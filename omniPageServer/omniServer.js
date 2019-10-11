@@ -14,7 +14,9 @@ const JobTypeId = {
     "formData": 29,
     "pdfForm": 27,
     "xmlPage": 26,
-    "xmlDoc": 25
+    "xmlDoc": 25,
+    "excelDoc": 14,
+    "wordDoc": 13
 }
 const JobStatus = {
     "Unknown": -1,
