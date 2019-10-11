@@ -137,6 +137,9 @@ function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
         charAccumulator += words[i++].length + 1; //gets the length of every word plus the space
     }
     console.log(luisSentenceMap[i]);
+    if (typeof luisSentenceMap[i] == "undefined")
+        console.log("DEBUG ERROR. THIS IS NORMAL, WONT HAPPEN WITH LUIS RESPONSE");
+        
     //dont consider error cases here (startIndex is assumed always correct). otherwise returns the last index of the map
     return luisSentenceMap[i];
 }
