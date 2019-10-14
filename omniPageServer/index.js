@@ -25,7 +25,7 @@ if (DEBUG_CONVERTED_XML_DOCUMENT) {
 
     // let debugFile = "/home/bruno/Documentos/sogedes/sogedes/omniPageServer/OPS/scan1/745aa6f7-1cb4-4484-b408-4fbb15400000.xml";
     
-    OPS.debugXmlFile(debugFile);
+    OPS.debugXmlFile(debugFile, filePath);
 }
 else
     OPS.convertDocument(filePath);

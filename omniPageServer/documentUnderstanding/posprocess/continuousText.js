@@ -23,7 +23,7 @@ function findInfoFromContinuousText(parameters) {
             if (element.type == "firma") {
                 console.log("Firma: " + element.entity);
 
-                let address = ""; //just search the address with there is a name
+                let address = ""; //just search the address with there is a firma
                 result.compositeEntities.forEach(element => {
                     if (element.parentType == "address") {
                         address += element.value + " ";

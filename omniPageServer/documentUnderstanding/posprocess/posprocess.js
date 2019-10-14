@@ -5,9 +5,10 @@ module.exports = {
 const bus = require('../../eventBus');
 const keyValPair = require('./keyValuePair');
 const contText = require('./continuousText');
+const sysHandler = require('../../fileSystemHandler/fileSystemHandler');
+
 
 function createListeners() {
-    //TODO - Save posprocessing results in json file for communication with contextor. Take a look at TextPosProcessing.js in the pdf2txt project
     bus.addEventListener("posprocessLuisResponse", findKeyValuePairs);
     bus.addEventListener("posprocessContinuousTextLuisResponse", getInfoFromContinuousText);
 }
@@ -37,6 +38,8 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
     //algorithm: given a label, first search for values in the same textZone/cellZone/tableZone. If no value is found, search in the nearby zones on the right and on the bottom
     keyValPair.findKeyValuePairs(parameters);
+    // sysHandler.getFileSystemHandler("jsonHandler").writeJsonFile("data");
+
 }
 
 /********
@@ -52,4 +55,5 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 ********/
 function getInfoFromContinuousText(parameters) {
     contText.findInfoFromContinuousText(parameters);
+    // sysHandler.getFileSystemHandler("jsonHandler").writeJsonFile("data");
 }

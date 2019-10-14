@@ -10,13 +10,13 @@ function init() {
 }
 /********
 @parameters = {
-    xmlFile: xmlFile
+    xmlFilePath: xmlFilePath
 }
 ********/
 function xmlParser(parameters) {
-    console.log("Parsing " + parameters.xmlFile);
+    console.log("Parsing " + parameters.xmlFilePath);
 
-    let content = readFile(parameters.xmlFile); //read its content
+    let content = readFile(parameters.xmlFilePath); //read its content
     parseFile(content); //parse and extract information from the document
 }
 

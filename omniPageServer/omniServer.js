@@ -29,9 +29,10 @@ const JobStatus = {
     "Abandoned": 6
 }
 
-function debugXmlFile(filePath){
+function debugXmlFile(xmlFilePath, pdfFilePath){
     //DEBUG - Parse document directly
-    bus.notifyEvent("parseXml", { xmlFile: filePath});
+    sysHandler.getFileSystemHandler("jsonHandler").createEmptyJsonFile(pdfFilePath ,"-posprocessingResult.json","{\"Result\": \"Nothing\"}");
+    bus.notifyEvent("parseXml", { xmlFilePath: xmlFilePath});
 }
 
 function convertDocument(fileURI) {
@@ -57,6 +58,10 @@ function convertDocument(fileURI) {
         console.log(thisJobId);
         pollJobStatus(fileURI, thisJobId);
     });
+
+    //after converting the document, create a folder and an empty json file where the results are going to be stored
+    sysHandler.getFileSystemHandler("jsonHandler").createEmptyJsonFile(fileURI ,"-posprocessingResult.json","{\"Result\": \"Nothing\"}");
+
 }
 
 function pollJobStatus(fileURI, jobId) {
@@ -72,7 +77,7 @@ function pollJobStatus(fileURI, jobId) {
                 if (body[0].State == JobStatus.Completed) {
                     clearInterval(intervalObject); //finished the convertion
                     console.log("File Conversion Sucessful");
-                    bus.notifyEvent("parseXml", { xmlFile: getXmlFilePath(fileURI, jobId) });
+                    bus.notifyEvent("parseXml", { xmlFilePath: getXmlFilePath(fileURI, jobId) });
 
                 }
                 else if (body[0].State == JobStatus.Failed){
