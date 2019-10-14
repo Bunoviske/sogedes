@@ -12,15 +12,14 @@ let jsonOutputFileHandler = {
 
     //methods 
     createEmptyJsonFile(fileURI, fileNameExtension, jsonInitialData) {
+
         let resultDirPath = utils.getParentDirName(fileURI) + "results/";
         let filename = utils.getFileName(fileURI);
-        console.log(resultDirPath);
 
-
-        if (fs.existsSync(resultDirPath)) { //delete if exists
-            rimraf.sync(resultDirPath);
+        if (!fs.existsSync(resultDirPath)) { //if results folder dont exists, create one
+            // rimraf.sync(resultDirPath);
+            fs.mkdirSync(resultDirPath); //create subfolder /results 
         }
-        fs.mkdirSync(resultDirPath); //create subfolder /results 
         this.createFile(resultDirPath, filename, fileNameExtension, jsonInitialData);
     },
 
