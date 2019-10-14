@@ -8,18 +8,18 @@ const querystring = require("querystring");
 const bus = require('../eventBus');
 const { _, performance } = require('perf_hooks');
 
-const keyValueLuisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/2370db52-38af-4cbb-96e5-22beb8c34ea2?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
-const continuousTextLuisUrl = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/e396e0f0-076c-4d27-aa64-9811cd3a93b7?verbose=true&timezoneOffset=0&subscription-key=df4d7cbcb3ee4eae9df69e4016e636f5&q=';
+const keyValueLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/1e35ceda-dfc9-4a94-8535-85a788a63a64?verbose=true&timezoneOffset=0&subscription-key=21ddb7c530d841c59feb5f7d8b8d28e1&q=';
+const continuousTextLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/7a89d70d-fb31-48b0-b6e0-0a330757dd10?verbose=true&timezoneOffset=0&subscription-key=21ddb7c530d841c59feb5f7d8b8d28e1&q=';
 let bestResults = [];
-let responseCounter = 0;
+let responseCounter = 0; //this is just used for counting the response from the key value pair app
 
 let DEBUG_POSPROCESSING = false;
 
 function extractLabels(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
-        // console.log(luisSentence);
         if (DEBUG_POSPROCESSING) {
+            // console.log(luisSentence);
             let searchVariable = "Gesamt";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1) {
@@ -45,7 +45,7 @@ function extractLabels(luisSentences, luisSentencesMap) {
             analyseLabelExtraction(parameters.data, luisSentencesMap[idx]);
             checkIfReceivedAllResponses(luisSentences.length);
         };
-        // callLuis(keyValueLuisUrl, luisSentence, thisSentenceListener);
+        callLuis(keyValueLuisUrl, luisSentence, thisSentenceListener);
     });
 }
 
@@ -56,7 +56,7 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
     continuousTextSentences.forEach((luisSentence, idx) => {
 
         if (DEBUG_POSPROCESSING) {
-            // console.log(luisSentence);
+            console.log(luisSentence);
             return;
         }
 
@@ -64,7 +64,6 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
 
         //Parameters = {data: data}
         let thisSentenceListener = function (parameters) {
-            responseCounter++;
             let t1 = performance.now();
             // console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
             analyseContinuousTextExtraction(parameters.data, continuousTextMap[idx]);
@@ -73,13 +72,17 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
     });
 }
 
+let luisCallCont = 0;
 function callLuis(urlLuis, query, listenerFunction) {
 
     if (DEBUG_POSPROCESSING) {
         listenerFunction({ data: "{\"data\": \"data OLA OI\"}" });
         return;
     }
+    httpRequest(urlLuis, query, listenerFunction);
+}
 
+function httpRequest(urlLuis, query, listenerFunction) {
     // query = 'überweisung $1650,00';
     https.get(urlLuis + querystring.escape(query), (resp) => { //convert query to URL encoding
         let data = '';
@@ -89,7 +92,8 @@ function callLuis(urlLuis, query, listenerFunction) {
         });
         // The whole response has been received. Print out the result.
         resp.on('end', () => {
-            //console.log(data);
+            // console.log(data);
+            console.log(`statusCode: ${resp.statusCode}`)
             listenerFunction({ data: data }); //call response listener callback
         });
 
@@ -98,7 +102,7 @@ function callLuis(urlLuis, query, listenerFunction) {
     });
 }
 
-function checkIfReceivedAllResponses(numCalls) { //call posprocessing step when you have all the results. it is important to know all entities before posprocessing
+function checkIfReceivedAllResponses(numCalls) { //call posprocessing step for key value pairs when you have all the results. it is important to know all entities before posprocessing
     if (responseCounter == numCalls) {
         responseCounter = 0;
         // console.log("Calling posprocessing step for these best results: " + bestResults);
@@ -136,7 +140,7 @@ function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     //accumulates the words length until it reaches the startIndex. Then is possible to retrieve the word index in the map
     while (startIndex != charAccumulator && i < words.length) {
 
-        if (startIndex < charAccumulator + words[i].length){ //in case luis detected a word that the start index is not in the begin of the word
+        if (startIndex < charAccumulator + words[i].length) { //in case luis detected a word that the start index is not in the begin of the word
             console.log("Start index is not in the begin of the string");
             break;
         }
@@ -154,14 +158,22 @@ function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
 
     let arr = JSON.parse(jsonRes);
     // console.log(arr);
+    let result;
 
-    //TODO - Implement this function
+    if (typeof arr.topScoringIntent != "undefined") {
 
-    //each sentence is an intent, so the posprocessing can happen independently
-    console.log("Calling posprocessing step for this continuous text: ");
-    console.log(arr);
-    bus.notifyEvent("posprocessContinuousTextLuisResponse", { result: "result" });
-
+        if (arr.topScoringIntent.intent == "FirmaAngaben" || arr.topScoringIntent.intent == "PersonAngaben") {
+            result =
+                {
+                    intent: arr.topScoringIntent.intent,
+                    score: arr.topScoringIntent.score,
+                    entities: typeof arr.entities != "undefined" ? arr.entities : [],
+                    compositeEntities: typeof arr.compositeEntities != "undefined" ? arr.compositeEntities : [],
+                }
+            //each sentence is an intent, so the posprocessing can happen independently
+            bus.notifyEvent("posprocessContinuousTextLuisResponse", { result: result });
+        }
+    }
 }
 
 

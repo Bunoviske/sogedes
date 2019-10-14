@@ -42,7 +42,7 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
 function searchValueInSameTextZone(label, mapObject) {
 
-    console.log("Searching in the same zone...");
+    // console.log("Searching in the same zone...");
 
     //for now, all labels have numbers as values
     let valueCandidates = searchForNumberValues(mapObject.zoneIdx);
@@ -61,7 +61,7 @@ function searchValueInSameTextZone(label, mapObject) {
 
 function searchValueInNearbyTextZones(label, mapObject) {
 
-    console.log("Searching in the nearby zones...");
+    // console.log("Searching in the nearby zones...");
 
     //extract nearby zones
     let rightZoneIdx = findRightZone(mapObject.zoneIdx); //return -1 if there isnt a valid zone
@@ -77,8 +77,8 @@ function searchValueInNearbyTextZones(label, mapObject) {
     let belowCandidates = getCandidatesBelow(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
 
     // console.log(valueCandidates);
-    console.log(rightCandidates);
-    console.log(belowCandidates);
+    // console.log(rightCandidates);
+    // console.log(belowCandidates);
 
     //return the closest candidate from both arrays
     return getClosestCandidate(rightCandidates.concat(belowCandidates), mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);

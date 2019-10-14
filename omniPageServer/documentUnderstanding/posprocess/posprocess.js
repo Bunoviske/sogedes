@@ -4,6 +4,7 @@ module.exports = {
 
 const bus = require('../../eventBus');
 const keyValPair = require('./keyValuePair');
+const contText = require('./continuousText');
 
 function createListeners() {
     //TODO - Save posprocessing results in json file for communication with contextor. Take a look at TextPosProcessing.js in the pdf2txt project
@@ -40,12 +41,15 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
 /********
 @parameters = {
-    result: {
-    }
+    result =
+        {
+            intent:
+            score:
+            entities: 
+            compositeEntities:
+        }
 }
 ********/
 function getInfoFromContinuousText(parameters) {
-    // console.log(parameters.bestResults);
-
-    //TODO - implement function
+    contText.findInfoFromContinuousText(parameters);
 }
