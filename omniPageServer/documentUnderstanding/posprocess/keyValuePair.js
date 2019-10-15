@@ -30,7 +30,7 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     let jsonResult = [];
 
     parameters.bestResults.forEach(result => {
-        let label = result.label;
+        let label = result.type;
         let mapObject = result.mapObject;
 
         let value = searchValueInSameTextZone(label, mapObject);

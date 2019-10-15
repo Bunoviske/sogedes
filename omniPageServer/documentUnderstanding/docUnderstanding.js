@@ -13,14 +13,14 @@ function run(xmlResult) {
 
     preproc.extractDocumentData(xmlResult.document.page[0].zones[0].textZone, xmlResult.document.page[0].zones[0].tableZone);
     posproc.createListeners();
-    createrResultsSaverListener();
+    createResultsSaverListener();
     luis.extractLabels(preproc.getLuisSentences(), preproc.getLuisSentencesMap());
     luis.extractContinuousText(preproc.getContinuousTextLuisSentences(), preproc.getContinuousTextMap());
 
 }
 
 //results are saved async, so every time this listener is called, it push the new data in the output json file
-function createrResultsSaverListener() {
+function createResultsSaverListener() {
 
     /********
     @parameters = {

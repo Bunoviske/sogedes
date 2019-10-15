@@ -13,7 +13,7 @@ const continuousTextLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/lu
 let bestResults = [];
 let responseCounter = 0; //this is just used for counting the response from the key value pair app
 
-let DEBUG_POSPROCESSING = false;
+let DEBUG_POSPROCESSING = true;
 
 function extractLabels(luisSentences, luisSentencesMap) {
 
