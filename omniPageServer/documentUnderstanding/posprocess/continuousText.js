@@ -17,6 +17,7 @@ module.exports = {
 
 function findInfoFromContinuousText(parameters) {
     let result = parameters.result;
+    let jsonResult;
 
     if (result.intent == "FirmaAngaben") {
         result.entities.forEach(element => {
@@ -30,6 +31,11 @@ function findInfoFromContinuousText(parameters) {
                     }
                 });
                 console.log("Address: " + address);
+
+                jsonResult = {
+                    "Firma name": element.entity,
+                    "Address": address
+                };
             }
         });
     }
@@ -45,7 +51,12 @@ function findInfoFromContinuousText(parameters) {
                     }
                 });
                 console.log("Address: " + address);
+                jsonResult = {
+                    "Person name": element.entity,
+                    "Address": address
+                };
             }
         });
     }
+    return jsonResult;
 }

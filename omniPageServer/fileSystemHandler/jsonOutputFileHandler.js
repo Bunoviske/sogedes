@@ -31,9 +31,11 @@ let jsonOutputFileHandler = {
     },
 
     writeJsonFile(data) {
+
         fs.writeFile(jsonFile, JSON.stringify(data), (err) => {
             if (err) throw err;
         });
+        
     }
 }
 

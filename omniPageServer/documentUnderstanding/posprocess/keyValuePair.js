@@ -27,6 +27,8 @@ mapObject = { //maps a word with the documentData structure
 
 function findKeyValuePairs(parameters) { //for now, the results are coming from textZones
 
+    let jsonResult = [];
+
     parameters.bestResults.forEach(result => {
         let label = result.label;
         let mapObject = result.mapObject;
@@ -34,9 +36,15 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
         let value = searchValueInSameTextZone(label, mapObject);
         if (value == null) //if no value is found in the same zone, search nearby
             value = searchValueInNearbyTextZones(label, mapObject);
-        if (value != null)
+        if (value != null){
             console.log("Label: " + label + "      Value: " + value.text);
+            jsonResult.push({
+               [label]: value.text
+            });
+        }
     });
+
+    return jsonResult;
 }
 
 

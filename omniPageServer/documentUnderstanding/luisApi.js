@@ -13,14 +13,14 @@ const continuousTextLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/lu
 let bestResults = [];
 let responseCounter = 0; //this is just used for counting the response from the key value pair app
 
-let DEBUG_POSPROCESSING = true;
+let DEBUG_POSPROCESSING = false;
 
 function extractLabels(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
         if (DEBUG_POSPROCESSING) {
             // console.log(luisSentence);
-            let searchVariable = "Gesamt";
+            let searchVariable = "Auszahlung";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1) {
                 bus.notifyEvent("posprocessLuisResponse", {
@@ -56,7 +56,7 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
     continuousTextSentences.forEach((luisSentence, idx) => {
 
         if (DEBUG_POSPROCESSING) {
-            console.log(luisSentence);
+            // console.log(luisSentence);
             return;
         }
 
@@ -72,7 +72,6 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
     });
 }
 
-let luisCallCont = 0;
 function callLuis(urlLuis, query, listenerFunction) {
 
     if (DEBUG_POSPROCESSING) {

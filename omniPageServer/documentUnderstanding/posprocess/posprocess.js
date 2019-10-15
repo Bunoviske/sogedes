@@ -1,12 +1,20 @@
 module.exports = {
-    createListeners: createListeners
+    createListeners: createListeners,
+    getPosProcessingResult: getPosProcessingResult
 }
 
 const bus = require('../../eventBus');
 const keyValPair = require('./keyValuePair');
 const contText = require('./continuousText');
-const sysHandler = require('../../fileSystemHandler/fileSystemHandler');
 
+let posProcessingJsonResult = {
+    keyValPairs: [],
+    continuousTextInfo: []
+}
+
+function getPosProcessingResult(){
+    return posProcessingJsonResult;
+}
 
 function createListeners() {
     bus.addEventListener("posprocessLuisResponse", findKeyValuePairs);
@@ -37,8 +45,9 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     console.log("Finding key value pairs...");
 
     //algorithm: given a label, first search for values in the same textZone/cellZone/tableZone. If no value is found, search in the nearby zones on the right and on the bottom
-    keyValPair.findKeyValuePairs(parameters);
-    // sysHandler.getFileSystemHandler("jsonHandler").writeJsonFile("data");
+    let keyValuePairs = keyValPair.findKeyValuePairs(parameters);
+    posProcessingJsonResult.keyValPairs = keyValuePairs;
+    bus.notifyEvent("finishedPosProcessingStep", {step: "keyValuePairs"});
 
 }
 
@@ -54,6 +63,8 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 }
 ********/
 function getInfoFromContinuousText(parameters) {
-    contText.findInfoFromContinuousText(parameters);
-    // sysHandler.getFileSystemHandler("jsonHandler").writeJsonFile("data");
+    let continuousTextInfo = contText.findInfoFromContinuousText(parameters);
+    if (continuousTextInfo != null)
+        posProcessingJsonResult.continuousTextInfo.push(continuousTextInfo);
+    bus.notifyEvent("finishedPosProcessingStep", {step: "continuousText"});
 }
