@@ -118,6 +118,8 @@ function analyseLabelExtraction(jsonRes, luisSentenceMap) {
             if (element.type == "TotalBrutto" || element.type == "TotalNetto" || element.type == "SV-nummer" || element.type == "Steuer-ID" ||
                 element.type == "Geburtstag") {
                 // console.log(arr);
+                
+                // let validEntity = checkRepeatedEntity(); //TODO
                 bestResults.push(
                     {
                         label: element.entity,
