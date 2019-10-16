@@ -39,35 +39,40 @@ tableDocumentData = {
 
 function extractTableZones(tableZones) {
 
-    tableZones.forEach( (table, tableIdx) => {
+    if (typeof tableZones == "undefined")
+        return; //no tables detected in this document
+
+    tableZones.forEach((table, tableIdx) => {
 
         addTableZoneData(table, tableDocumentData);
         // console.log(table);
 
-        table.cellZone.forEach(cellZone => {
-            // console.log(cellZone);
+        if (typeof table.cellZone != "undefined")
 
-            //the second argument is the zone array to push cell zone informations. Each table has an array of cell zones
-            zoneHandler.addTextZoneData(cellZone, tableDocumentData[tableIdx].cellZones); //for now, add cellZone as text zone (it may change on the future)
+            table.cellZone.forEach(cellZone => {
+                // console.log(cellZone);
 
-            if (typeof cellZone.ln != "undefined")
-                cellZone.ln.forEach((line, lineIdx) => {
-                    // console.log(line);
-                    zoneHandler.addLineData(line, tableDocumentData[tableIdx].cellZones);
+                //the second argument is the zone array to push cell zone informations. Each table has an array of cell zones
+                zoneHandler.addTextZoneData(cellZone, tableDocumentData[tableIdx].cellZones); //for now, add cellZone as text zone (it may change on the future)
 
-                    if (typeof line.space != "undefined")
-                        line.space.forEach((space) => {
-                            // console.log(space);
-                            zoneHandler.addSpaceData(space, tableDocumentData[tableIdx].cellZones);
-                        });
+                if (typeof cellZone.ln != "undefined")
+                    cellZone.ln.forEach((line, lineIdx) => {
+                        // console.log(line);
+                        zoneHandler.addLineData(line, tableDocumentData[tableIdx].cellZones);
 
-                    if (typeof line.wd != "undefined")
-                        line.wd.forEach((word, wordIdx) => {
-                            // console.log(word);
-                            zoneHandler.addWordData(word, tableDocumentData[tableIdx].cellZones);
-                        });
-                });
-        });
+                        if (typeof line.space != "undefined")
+                            line.space.forEach((space) => {
+                                // console.log(space);
+                                zoneHandler.addSpaceData(space, tableDocumentData[tableIdx].cellZones);
+                            });
+
+                        if (typeof line.wd != "undefined")
+                            line.wd.forEach((word, wordIdx) => {
+                                // console.log(word);
+                                zoneHandler.addWordData(word, tableDocumentData[tableIdx].cellZones);
+                            });
+                    });
+            });
     });
     // console.log(tableDocumentData[0].cellZones[0].lines[0].words);
 }
@@ -88,21 +93,21 @@ function addTableZoneData(table, tableDocumentData) {
     });
 }
 
-function getColsGrid(gridCol){
+function getColsGrid(gridCol) {
     let cols = [];
-    gridCol.forEach( col => {
+    gridCol.forEach(col => {
         cols.push({
-            colSize: parseInt(col) 
+            colSize: parseInt(col)
         })
     });
     return cols;
 }
 
-function getRowsGrid(gridRow){
+function getRowsGrid(gridRow) {
     let rows = [];
-    gridRow.forEach( row => {
+    gridRow.forEach(row => {
         rows.push({
-            rowSize: parseInt(row) 
+            rowSize: parseInt(row)
         })
     });
     return rows;
