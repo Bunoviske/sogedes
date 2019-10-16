@@ -10,12 +10,12 @@ module.exports = {
 
 }
 
-function getPositionObject(l, t, r, b) {
+function getPositionObject(l, t, r, b) { // the coordinate system is at (top, left)
     return {
-        left: parseInt(l),
-        right: parseInt(r),
-        top: parseInt(t),
-        bottom: parseInt(b)
+        left: parseInt(l), //left of the object regarding the Y axis
+        right: parseInt(r), //right of the object regarding the Y axis
+        top: parseInt(t), //top of the object regarding the X axis
+        bottom: parseInt(b) //bottom of the object regarding the X axis
     }
 }
 
