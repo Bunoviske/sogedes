@@ -26,7 +26,6 @@ mapObject = { //maps a word with the documentData structure
 ********/
 function findTables(parameters){
     
-    console.log("Posprocess table");
     console.log(parameters.bestResults);
 
     // let jsonResult = [];

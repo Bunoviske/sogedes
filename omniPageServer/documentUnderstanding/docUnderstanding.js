@@ -3,7 +3,7 @@ module.exports = {
 }
 const preproc = require('./preprocess/preprocess');
 const posproc = require('./posprocess/posprocess');
-const luis = require('./luisApi');
+const luis = require('./luisApi/luisApiHandler');
 const bus = require('../eventBus');
 const sysHandler = require('../fileSystemHandler/fileSystemHandler');
 

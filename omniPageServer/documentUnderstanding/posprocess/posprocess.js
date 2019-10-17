@@ -19,9 +19,9 @@ function getPosProcessingResult(){
 }
 
 function createListeners() {
-    bus.addEventListener("posprocessKeyValuesLuisResponse", findKeyValuePairs);
-    bus.addEventListener("posprocessContinuousTextLuisResponse", getInfoFromContinuousText);
-    bus.addEventListener("posprocessTablesLuisResponse", findTables);
+    bus.addEventListener("ParsedKeyValuePairs", findKeyValuePairs);
+    bus.addEventListener("ParsedContinuousText", getInfoFromContinuousText);
+    bus.addEventListener("ParsedTableHeaders", findTables);
 }
 
 /********
