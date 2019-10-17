@@ -1,29 +1,34 @@
 module.exports = {
-    extractLabels: extractLabels,
-    extractContinuousText: extractContinuousText
+    extractEntitiesFromGenericText: extractEntitiesFromGenericText,
+    extractIntentsFromContinuousText: extractIntentsFromContinuousText
 }
 
 const https = require('https');
 const querystring = require("querystring");
 const bus = require('../eventBus');
 const { _, performance } = require('perf_hooks');
+const tableDef = require('./luisDefinitions/tablesDefinition')
+const keyValDef = require('./luisDefinitions/keyValPairsDefinition')
+const contTextDef = require('./luisDefinitions/continuousTextDefinition')
 
-const keyValueLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/1e35ceda-dfc9-4a94-8535-85a788a63a64?verbose=true&timezoneOffset=0&subscription-key=21ddb7c530d841c59feb5f7d8b8d28e1&q=';
+const genericSentenceLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/1e35ceda-dfc9-4a94-8535-85a788a63a64?verbose=true&timezoneOffset=0&subscription-key=21ddb7c530d841c59feb5f7d8b8d28e1&q=';
 const continuousTextLuisUrl = 'https://westeurope.api.cognitive.microsoft.com/luis/v2.0/apps/7a89d70d-fb31-48b0-b6e0-0a330757dd10?verbose=true&timezoneOffset=0&subscription-key=21ddb7c530d841c59feb5f7d8b8d28e1&q=';
-let bestResults = [];
+
+let bestLabelResults = [];
+let bestTableHeaderResults = [];
 let responseCounter = 0; //this is just used for counting the response from the key value pair app
 
 let DEBUG_POSPROCESSING = true;
 
-function extractLabels(luisSentences, luisSentencesMap) {
+function extractEntitiesFromGenericText(luisSentences, luisSentencesMap) {
 
     luisSentences.forEach((luisSentence, idx) => {
         if (DEBUG_POSPROCESSING) {
             // console.log(luisSentence);
-            let searchVariable = "Auszahlung";
+            let searchVariable = "Betrag";
             let foundElem = luisSentence.search(searchVariable);
             if (foundElem != -1) {
-                bus.notifyEvent("posprocessLuisResponse", {
+                bus.notifyEvent("posprocessTablesLuisResponse", {
                     bestResults: [{
                         label: searchVariable,
                         score: "element.score",
@@ -42,14 +47,14 @@ function extractLabels(luisSentences, luisSentencesMap) {
             responseCounter++;
             let t1 = performance.now();
             // console.log("LUIS response for sentence number " + idx + " in " + (t1 - t0) + " milliseconds.");
-            analyseLabelExtraction(parameters.data, luisSentencesMap[idx]);
+            analyseEntitiesExtraction(parameters.data, luisSentencesMap[idx]);
             checkIfReceivedAllResponses(luisSentences.length);
         };
-        callLuis(keyValueLuisUrl, luisSentence, thisSentenceListener);
+        callLuis(genericSentenceLuisUrl, luisSentence, thisSentenceListener);
     });
 }
 
-function extractContinuousText(continuousTextSentences, continuousTextMap) {
+function extractIntentsFromContinuousText(continuousTextSentences, continuousTextMap) {
     // console.log(continuousTextSentences);
     // console.log(continuousTextMap);
 
@@ -66,18 +71,13 @@ function extractContinuousText(continuousTextSentences, continuousTextMap) {
         let thisSentenceListener = function (parameters) {
             let t1 = performance.now();
             // console.log("LUIS response for continuous text number " + idx + " in " + (t1 - t0) + " milliseconds.");
-            analyseContinuousTextExtraction(parameters.data, continuousTextMap[idx]);
+            analyseIntentsExtraction(parameters.data, continuousTextMap[idx]);
         };
         callLuis(continuousTextLuisUrl, luisSentence, thisSentenceListener);
     });
 }
 
 function callLuis(urlLuis, query, listenerFunction) {
-
-    if (DEBUG_POSPROCESSING) {
-        listenerFunction({ data: "{\"data\": \"data OLA OI\"}" });
-        return;
-    }
     httpRequest(urlLuis, query, listenerFunction);
 }
 
@@ -101,26 +101,37 @@ function httpRequest(urlLuis, query, listenerFunction) {
     });
 }
 
-function checkIfReceivedAllResponses(numCalls) { //call posprocessing step for key value pairs when you have all the results. it is important to know all entities before posprocessing
+function checkIfReceivedAllResponses(numCalls) { //call posprocessing step for generic sentences when you have all the results. it is important to know all entities before posprocessing
     if (responseCounter == numCalls) {
         responseCounter = 0;
         // console.log("Calling posprocessing step for these best results: " + bestResults);
-        bus.notifyEvent("posprocessLuisResponse", { bestResults: bestResults });
+        bus.notifyEvent("posprocessKeyValuesLuisResponse", { bestResults: bestLabelResults });
+        bus.notifyEvent("posprocessTablesLuisResponse", { bestResults: bestTableHeaderResults });
     }
 }
 
-function analyseLabelExtraction(jsonRes, luisSentenceMap) {
+function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
 
     let arr = JSON.parse(jsonRes);
 
     if (typeof arr.entities != "undefined") {
         arr.entities.forEach(element => {
-            if (element.type == "TotalBrutto" || element.type == "TotalNetto" || element.type == "SV-nummer" || element.type == "Steuer-ID" ||
-                element.type == "Geburtstag") {
+            if ( keyValDef.isDefinedEntity(element.type) ) {
                 // console.log(arr);
-                
-                // let validEntity = checkRepeatedEntity(); //TODO
-                bestResults.push(
+
+                bestLabelResults.push(
+                    {
+                        label: element.entity,
+                        score: element.score,
+                        type: element.type,
+                        // startIndex: element.startIndex,
+                        // endIndex: element.endIndex,
+                        mapObject: getLuisSentenceMapObject(arr.query, luisSentenceMap, element.startIndex)
+                    }
+                );
+            }
+            else if ( tableDef.isDefinedTableHeader(element.type) ){
+                bestTableHeaderResults.push(
                     {
                         label: element.entity,
                         score: element.score,
@@ -155,7 +166,7 @@ function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     return luisSentenceMap[i];
 }
 
-function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
+function analyseIntentsExtraction(jsonRes, textZoneIdx) {
 
     let arr = JSON.parse(jsonRes);
     // console.log(arr);
@@ -163,7 +174,7 @@ function analyseContinuousTextExtraction(jsonRes, textZoneIdx) {
 
     if (typeof arr.topScoringIntent != "undefined") {
 
-        if (arr.topScoringIntent.intent == "FirmaAngaben" || arr.topScoringIntent.intent == "PersonAngaben") {
+        if (contTextDef.isDefinedIntent(arr.topScoringIntent.intent)) {
             result =
                 {
                     intent: arr.topScoringIntent.intent,

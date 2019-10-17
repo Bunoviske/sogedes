@@ -4,12 +4,14 @@ module.exports = {
 }
 
 const bus = require('../../eventBus');
-const keyValPair = require('./keyValuePair');
-const contText = require('./continuousText');
+const keyValPair = require('./keyValuePairExtraction');
+const contText = require('./continuousTextExtraction');
+const tables = require('./tableExtraction');
 
 let posProcessingJsonResult = {
     keyValPairs: [],
-    continuousTextInfo: []
+    continuousTextInfo: [],
+    tablesDescription: []
 }
 
 function getPosProcessingResult(){
@@ -17,8 +19,9 @@ function getPosProcessingResult(){
 }
 
 function createListeners() {
-    bus.addEventListener("posprocessLuisResponse", findKeyValuePairs);
+    bus.addEventListener("posprocessKeyValuesLuisResponse", findKeyValuePairs);
     bus.addEventListener("posprocessContinuousTextLuisResponse", getInfoFromContinuousText);
+    bus.addEventListener("posprocessTablesLuisResponse", findTables);
 }
 
 /********
@@ -48,6 +51,16 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     let keyValuePairs = keyValPair.findKeyValuePairs(parameters);
     posProcessingJsonResult.keyValPairs = keyValuePairs;
     bus.notifyEvent("finishedPosProcessingStep", {step: "keyValuePairs"});
+}
+
+//same parameters as the function findKeyValuePairs
+function findTables(parameters){
+    console.log("Finding tables...");
+
+    //algorithm: given the headers, search for the items that follow some criteria (zone alignment, words alignment... )
+    let tablesDescription = tables.findTables(parameters);
+    posProcessingJsonResult.tablesDescription = tablesDescription;
+    bus.notifyEvent("finishedPosProcessingStep", {step: "tables"});
 
 }
 

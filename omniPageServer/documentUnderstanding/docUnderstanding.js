@@ -14,8 +14,8 @@ function run(xmlResult) {
     preproc.extractDocumentData(xmlResult.document.page[0].zones[0].textZone, xmlResult.document.page[0].zones[0].tableZone);
     posproc.createListeners();
     createResultsSaverListener();
-    luis.extractLabels(preproc.getLuisSentences(), preproc.getLuisSentencesMap());
-    luis.extractContinuousText(preproc.getContinuousTextLuisSentences(), preproc.getContinuousTextMap());
+    luis.extractEntitiesFromGenericText(preproc.getLuisSentences(), preproc.getLuisSentencesMap());
+    luis.extractIntentsFromContinuousText(preproc.getContinuousTextLuisSentences(), preproc.getContinuousTextMap());
 
 }
 
