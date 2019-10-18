@@ -57,6 +57,8 @@ function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
     }
 }
 
+
+//TODO - this object can only return one word. Sometimes there are multiple words detected by LUIS (endIndex != word.length)
 function getLuisSentenceMapObject(luisSentence, luisSentenceMap, startIndex) {
     let words = luisSentence.split(' ').filter(word => word != ''); //get rid of empty values in the end of the array (split function puts a '' string in the end)
     let i = 0, charAccumulator = 0;

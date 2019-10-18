@@ -16,12 +16,6 @@ const tableCases = {
     else: 23
 };
 
-/**
-tables = [{
-    headers: [result.mapObject]
-}]
- */
-let tables = {};
 
 /********
 @parameters = {
@@ -45,10 +39,10 @@ function findTables(parameters) {
 
     // console.log(parameters.bestResults);
 
-    groupTableHeaders(parameters.bestResults);
+    let tables = groupTableHeaders(parameters.bestResults);
 
     for (const table in tables) {
-        extractTableItems(table.headers);
+        extractTableItems(tables[table].headers);
     }
 
 }
@@ -57,17 +51,30 @@ function groupTableHeaders(bestResults) {
 
     // TODO - check if all the table headers are in the same Y coordinate
 
+    /**
+    tables = [{
+        headers: [result.mapObject]
+    }]
+    */
+    let tables = {};
+
     bestResults.forEach(result => {
-        let tableName = tablesDef.getTableName(result.type);
+        let tableName = tablesDef.getTableName(result.type); //get the table regarding this header
+        if (tableName == null) {
+            console.log("Header is not defined in any table");
+            return;
+        }
         if (tableName in tables) {
             tables[tableName].headers.push(result.mapObject);
         }
         else {
             tables[tableName] = {
-                headers: [result.type]
+                headers: [result.mapObject]
             }
         }
     });
+    // console.log(tables);
+    return tables;
 }
 
 function extractTableItems(headers) {
@@ -87,7 +94,7 @@ function extractTableItems(headers) {
             items: extractHeaderItems(header) //process each header items separately.
         });
     });
-    console.log(tableItems)
+    console.log(tableItems);
     return tableItems;
 }
 
@@ -95,17 +102,18 @@ function extractHeaderItems(header) { //header here is a mapObject
     let documentData = txtHandler.getTextZones();
     let thisTxtZone = documentData[header.zoneIdx];
 
-    if (tableCases.tipicalTable.checkTipicalTable(thisTxtZone)) {
+    if (tableCases.tipicalTable.checkTipicalTable(thisTxtZone, header.text)) {
+        console.log("Processing tipical table");
         return tableCases.tipicalTable.extractItems(thisTxtZone);
     }
     else if (tableCases.headerOutsideTable.checkHeaderOutsideTable(thisTxtZone)) {
         // tableCases.headerOutsideTable.extractItems(thisTxtZone);
     }
-    else{
+    else {
         console.log("Last table case. Unknown");
         tableCases.else;
     }
-    
+
 }
 
 

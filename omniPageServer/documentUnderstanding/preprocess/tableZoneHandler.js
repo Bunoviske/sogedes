@@ -20,6 +20,10 @@ tableDocumentData = {
     }
     cellZones: [{
         zonePos: zonePosition,
+        gridColFrom: ,
+        gridColTill: ,
+        gridRowFrom: ,
+        gridRowTill: ,
         lines: [{ 
             linePos: linePosition,
             lineFont: lineFont,
@@ -53,7 +57,7 @@ function extractTableZones(tableZones) {
                 // console.log(cellZone);
 
                 //the second argument is the zone array to push cell zone informations. Each table has an array of cell zones
-                zoneHandler.addTextZoneData(cellZone, tableDocumentData[tableIdx].cellZones); //for now, add cellZone as text zone (it may change on the future)
+                addCellZoneData(cellZone, tableDocumentData[tableIdx].cellZones); 
 
                 if (typeof cellZone.ln != "undefined")
                     cellZone.ln.forEach((line, lineIdx) => {
@@ -90,6 +94,18 @@ function addTableZoneData(table, tableDocumentData) {
             gridRows: rowsSize
         },
         cellZones: []
+    });
+}
+
+function addCellZoneData(zone, documentData) {
+    let zonePosition = coordHandler.getPositionObject(zone.$.l, zone.$.t, zone.$.r, zone.$.b);
+    documentData.push({
+        zonePos: zonePosition,
+        lines: [],
+        gridColFrom: parseInt(zone.$.gridColFrom), 
+        gridColTill: parseInt(zone.$.gridColTill), 
+        gridRowFrom: parseInt(zone.$.gridRowFrom), 
+        gridRowTill: parseInt(zone.$.gridRowTill)
     });
 }
 
