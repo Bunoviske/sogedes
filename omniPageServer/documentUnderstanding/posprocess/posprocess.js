@@ -6,7 +6,7 @@ module.exports = {
 const bus = require('../../eventBus');
 const keyValPair = require('./keyValuePairExtraction');
 const contText = require('./continuousTextExtraction');
-const tables = require('./tableExtraction');
+const tables = require('./tableExtraction/tableExtraction');
 
 let posProcessingJsonResult = {
     keyValPairs: [],

@@ -10,7 +10,8 @@
  */
 
 module.exports = {
-    isDefinedTableHeader: isDefinedTableHeader
+    isDefinedTableHeader: isDefinedTableHeader,
+    getTableName: getTableName
 }
 
 let documentTables = {
@@ -33,4 +34,17 @@ function isDefinedTableHeader(headerToCheck) {
         }
     }
     return false;
+}
+
+function getTableName(header){
+
+    //same header maybe in multiple tables - TODO. have to return an array of table names
+
+    for (let table in documentTables) {
+        for (let index = 0; index < documentTables[table].headers.length; index++) {
+            if (documentTables[table].headers[index] == header) {
+                return table;
+            }
+        }
+    }
 }

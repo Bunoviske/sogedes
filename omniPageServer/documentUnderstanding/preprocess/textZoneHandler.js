@@ -10,6 +10,11 @@ const zoneHandler = require('./zoneHandler');
 let documentData = []; //main data structure that contains each text zone, line, words and attributes
 /********
 documentData = {
+    cellZoneInfo: (optional, only for cell zones added as text zones)
+    {
+        tableIdx: idx,
+        cellZoneIdx: idx
+    }
     zonePos: zonePosition,
     lines: [{ 
         linePos: linePosition,

@@ -13,7 +13,7 @@ function debugWithoutApi(luisSentence, luisSentencesMap, idx) {
             bestResults: [{
                 label: searchVariable,
                 score: "element.score",
-                type: "element.type",
+                type: searchVariable,
                 mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)
             }]
         });
