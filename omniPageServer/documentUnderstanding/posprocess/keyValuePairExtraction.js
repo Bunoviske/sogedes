@@ -29,19 +29,21 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
     let jsonResult = [];
 
-    parameters.bestResults.forEach(result => {
+    let filteredBestResults = getBestEntities(parameters.bestResults); //if more than one entity is defined as the same type, take the one that has higher score
+
+    filteredBestResults.forEach(result => {
         let label = result.type;
 
         //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
-        let mapObject = result.mapObjects[0]; 
+        let mapObject = result.mapObjects[0];
 
         let value = searchValueInSameTextZone(label, mapObject);
         if (value == null) //if no value is found in the same zone, search nearby
             value = searchValueInNearbyTextZones(label, mapObject);
-        if (value != null){
+        if (value != null) {
             console.log("Label: " + label + "      Value: " + value.text);
             jsonResult.push({
-               [label]: value.text
+                [label]: value.text
             });
         }
     });
@@ -49,6 +51,31 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     return jsonResult;
 }
 
+function getBestEntities(bestResults) {
+    let filteredResults = [];
+    let resultsObject = {};
+    bestResults.forEach((label, i) => { //create an object with the label type as key
+        (resultsObject[label.type] = resultsObject[label.type] || []).push(label);
+    });
+
+    Object.keys(resultsObject).forEach(labelType => {
+
+        let bestScore = -1.0, highestScoreLabel;
+        resultsObject[labelType].forEach(label => {
+            // console.log(label.label + " " + label.score)
+            if (label.score > bestScore) {
+                bestScore = label.score;
+                highestScoreLabel = label;
+            }
+        });
+        filteredResults.push(highestScoreLabel);
+
+    });
+
+    // console.log("Filtered results:");
+    // console.log(filteredResults);
+    return filteredResults;
+}
 
 function searchValueInSameTextZone(label, mapObject) {
 

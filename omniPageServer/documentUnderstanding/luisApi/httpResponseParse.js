@@ -33,7 +33,7 @@ function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
                 bestLabelResults.push(
                     {
                         label: element.entity,
-                        score: element.score,
+                        score: parseFloat(element.score),
                         type: element.type,
                         // startIndex: element.startIndex,
                         // endIndex: element.endIndex,
@@ -45,7 +45,7 @@ function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
                 bestTableHeaderResults.push(
                     {
                         label: element.entity,
-                        score: element.score,
+                        score: parseFloat(element.score),
                         type: element.type,
                         // startIndex: element.startIndex,
                         // endIndex: element.endIndex,
@@ -98,7 +98,7 @@ function analyseIntentsExtraction(jsonRes, textZoneIdx) {
             result =
                 {
                     intent: arr.topScoringIntent.intent,
-                    score: arr.topScoringIntent.score,
+                    score: parseFloat(arr.topScoringIntent.score),
                     entities: typeof arr.entities != "undefined" ? arr.entities : [],
                     compositeEntities: typeof arr.compositeEntities != "undefined" ? arr.compositeEntities : [],
                 }

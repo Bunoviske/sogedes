@@ -18,7 +18,7 @@ function extractEntitiesFromGenericText(luisSentences, luisSentencesMap) {
 function extractIntentsFromContinuousText(continuousTextSentences, continuousTextMap) {
 
     createContTextResponseListener(continuousTextSentences, continuousTextMap);
-    httpReq.sendContinuousTextSentences(continuousTextSentences, continuousTextMap, DEBUG_POSPROCESSING)
+    // httpReq.sendContinuousTextSentences(continuousTextSentences, continuousTextMap, DEBUG_POSPROCESSING)
 }
 
 function createGenericResponseListener(luisSentences, luisSentencesMap) {

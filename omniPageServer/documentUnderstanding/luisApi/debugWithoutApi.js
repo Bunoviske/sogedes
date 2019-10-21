@@ -6,13 +6,13 @@ const bus = require('../../eventBus');
 
 function debugWithoutApi(luisSentence, luisSentencesMap, idx) {
 
-    let searchVariable = "Personal - Nr .";
+    let searchVariable = "Gesamt";
     let foundElem = luisSentence.search(searchVariable);
     if (foundElem != -1) {
         bus.notifyEvent("ParsedKeyValuePairs", { //ParsedKeyValuePairs  ParsedTableHeaders
             bestResults: [{
-                label: "Personal - Nr .",
-                score: "element.score",
+                label: searchVariable,
+                score: 0.8,
                 type: searchVariable,
                 // startIndex: foundElem,
                 // endIndex: foundElem + searchVariable.length,
