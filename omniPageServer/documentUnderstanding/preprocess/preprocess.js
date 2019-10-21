@@ -61,7 +61,6 @@ function convertCellZonesInTextZones(){
     let tableDocumentData = getTableZones();
     let textZones = [];
     
-    //For now, every cell and text zones are the same, but in the future it may change, so it will be necessary to convert the cell zone to text zone    
     tableDocumentData.forEach( (table, tableIdx) => {
         table.cellZones.forEach( (cellZone, cellIdx) =>{
             cellZone["cellZoneInfo"] = { //add some extra information about the cellZone, so further processing can access the cell zone inside de tableDocumentData

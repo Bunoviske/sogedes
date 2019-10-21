@@ -14,15 +14,15 @@ const utils = require('../commonUtils');
         type: type,
         //startIndex: startIndex,
         //endIndex: endIndex,
-        mapObject: luisSentenceMapObject
+        mapObjects: luisSentenceMapObject
     }]
 }
-mapObject = { //maps a word with the documentData structure
+mapObjects = [{ //maps a word with the documentData structure. An entity detected may contain more than one word, so mapObjects is an array
     zoneIdx: zoneIdx,
     lineIdx: lineIdx,
     wordIdx: wordIdx,
     text: text            
-}
+}]
 ********/
 
 function findKeyValuePairs(parameters) { //for now, the results are coming from textZones
@@ -31,7 +31,9 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
     parameters.bestResults.forEach(result => {
         let label = result.type;
-        let mapObject = result.mapObject;
+
+        //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
+        let mapObject = result.mapObjects[0]; 
 
         let value = searchValueInSameTextZone(label, mapObject);
         if (value == null) //if no value is found in the same zone, search nearby

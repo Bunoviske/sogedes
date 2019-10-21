@@ -32,15 +32,15 @@ function createListeners() {
         type: type,
         //startIndex: startIndex,
         //endIndex: endIndex,
-        mapObject: luisSentenceMapObject
+        mapObjects: luisSentenceMapObject
     }]
 }
-mapObject = { //maps a word with the documentData structure
+mapObjects = [{ //maps a word with the documentData structure. An entity detected may contain more than one word, so mapObjects is an array
     zoneIdx: zoneIdx,
     lineIdx: lineIdx,
     wordIdx: wordIdx,
     text: text            
-}
+}]
 ********/
 
 function findKeyValuePairs(parameters) { //for now, the results are coming from textZones

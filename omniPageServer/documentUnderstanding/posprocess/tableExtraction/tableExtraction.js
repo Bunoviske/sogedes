@@ -25,10 +25,10 @@ const tableCases = {
         type: type,
         //startIndex: startIndex,
         //endIndex: endIndex,
-        mapObject: luisSentenceMapObject
+        mapObjects: luisSentencemapObjects
     }]
 }
-mapObject = { //maps a word with the documentData structure
+mapObjects = { //maps a word with the documentData structure
     zoneIdx: zoneIdx,
     lineIdx: lineIdx,
     wordIdx: wordIdx,
@@ -53,7 +53,7 @@ function groupTableHeaders(bestResults) {
 
     /**
     tables = [{
-        headers: [result.mapObject]
+        headers: [result.mapObjects]
     }]
     */
     let tables = {};
@@ -66,11 +66,11 @@ function groupTableHeaders(bestResults) {
         }
         //each table is composed of header objects that contains the objectMap and entityType
         if (tableName in tables) {
-            tables[tableName].headers.push({ map: result.mapObject, entityType: result.type});
+            tables[tableName].headers.push({ map: result.mapObjects[0], entityType: result.type});
         }
         else {
             tables[tableName] = {
-                headers: [{ map: result.mapObject, entityType: result.type}]
+                headers: [{ map: result.mapObjects[0], entityType: result.type}]
             }
         }
     });
