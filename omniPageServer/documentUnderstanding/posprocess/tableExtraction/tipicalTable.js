@@ -41,13 +41,11 @@ function extractItems(txtZone) {
     return items;
 }
 
-function checkTipicalTable(thisTxtZone, headerName) {
+function checkTipicalTable(thisTxtZone, headerEntityName) {
     //best scenario, when header is alone in the table cell
     let isTipicalTable = false;
-
-    console.log(tablesDef.getHeaderNumWords(headerName))
-
-    if (isCellZone(thisTxtZone) && thisTxtZone.lines.length == 1 && thisTxtZone.lines[0].words.length <= tablesDef.getHeaderNumWords(headerName)) {
+  
+    if (isCellZone(thisTxtZone) && thisTxtZone.lines.length == 1 && thisTxtZone.lines[0].words.length <= tablesDef.getHeaderNumWords(headerEntityName)) {
         //check if the next zone below is a cell zone and aligned with the header cell (then, it is considered to be a tipical table)
         let tableDocData = tableHandler.getTableZones();
         let table = tableDocData[thisTxtZone.cellZoneInfo.tableIdx];

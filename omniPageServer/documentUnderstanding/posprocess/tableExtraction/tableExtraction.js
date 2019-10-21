@@ -64,12 +64,13 @@ function groupTableHeaders(bestResults) {
             console.log("Header is not defined in any table");
             return;
         }
+        //each table is composed of header objects that contains the objectMap and entityType
         if (tableName in tables) {
-            tables[tableName].headers.push(result.mapObject);
+            tables[tableName].headers.push({ map: result.mapObject, entityType: result.type});
         }
         else {
             tables[tableName] = {
-                headers: [result.mapObject]
+                headers: [{ map: result.mapObject, entityType: result.type}]
             }
         }
     });
@@ -94,15 +95,15 @@ function extractTableItems(headers) {
             items: extractHeaderItems(header) //process each header items separately.
         });
     });
-    console.log(tableItems);
+    // console.log(tableItems);
     return tableItems;
 }
 
 function extractHeaderItems(header) { //header here is a mapObject
     let documentData = txtHandler.getTextZones();
-    let thisTxtZone = documentData[header.zoneIdx];
+    let thisTxtZone = documentData[header.map.zoneIdx];
 
-    if (tableCases.tipicalTable.checkTipicalTable(thisTxtZone, header.text)) {
+    if (tableCases.tipicalTable.checkTipicalTable(thisTxtZone, header.entityType)) {
         console.log("Processing tipical table");
         return tableCases.tipicalTable.extractItems(thisTxtZone);
     }
