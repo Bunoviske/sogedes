@@ -6,15 +6,14 @@ const bus = require('../../eventBus');
 
 function debugWithoutApi(luisSentence, luisSentencesMap, idx) {
 
-    let searchVariable = "UNIT PRICE";
+    let searchVariable = "Lohnart";
     let foundElem = luisSentence.search(searchVariable);
     if (foundElem != -1) {
         bus.notifyEvent("ParsedTableHeaders", {
             bestResults: [{
                 label: searchVariable,
                 score: "element.score",
-                // type: searchVariable,
-                type: "UNIT_PRICE",
+                type: searchVariable,
                 // startIndex: foundElem,
                 // endIndex: foundElem + searchVariable.length,
                 mapObject: getLuisSentenceMapObject(luisSentence, luisSentencesMap[idx], foundElem)

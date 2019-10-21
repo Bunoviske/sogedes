@@ -19,7 +19,7 @@ let documentTables = {
     taxesTable: {
         headers: [
             {
-                name: "Lohnart",
+                name: "Lohnart", //the name here is the entity defined in LUIS app
                 headerNumWords: 1, //while there isnt a luisSentenceMapObject that can return multiple words, each header has this property to define how many words the header can have
                 itemType: "number"
             },
@@ -27,6 +27,11 @@ let documentTables = {
                 name: "Bezeichnung",
                 headerNumWords: 1,
                 itemType: "text"
+            },
+            {
+                name: "Jahreswert",
+                headerNumWords: 1,
+                itemType: "number"
             },
             {
                 name: "Betrag",
@@ -49,6 +54,11 @@ let documentTables = {
             },
             {
                 name: "UNIT_PRICE",
+                headerNumWords: 2,
+                itemType: "number"
+            },
+            {
+                name: "LIST_PRICE",
                 headerNumWords: 2,
                 itemType: "number"
             },
