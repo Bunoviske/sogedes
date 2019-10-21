@@ -62,7 +62,7 @@ function getBestEntities(bestResults) {
 
         let bestScore = -1.0, highestScoreLabel;
         resultsObject[labelType].forEach(label => {
-            // console.log(label.label + " " + label.score)
+            console.log(label.label + " " + label.score)
             if (label.score > bestScore) {
                 bestScore = label.score;
                 highestScoreLabel = label;
@@ -206,13 +206,17 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordId
     return bestCandidate;
 }
 
-//get the first text zone that is on the right
+//get the first text zone that is not empty and that is on the right
 function findRightZone(labelZoneIdx) {
     let documentData = txtHandler.getTextZones();
     let zonePos = documentData[labelZoneIdx].zonePos;  //get label position
     let bestZoneIdx = -1, bestZoneDistance = 2000000;
 
     documentData.forEach((zone, zoneIdx) => {
+        if (zone.lines.length == 0)
+            return; //skip zones that are empty. (only possible in cell zones that were converted to txt zones)
+
+
         let candidateZonePos = zone.zonePos;
         if (coordHandler.isValidRightZone(zonePos, candidateZonePos)) { //check if this zone is at the right and if intersect in the height direction
             let distance = coordHandler.horizontalZoneDistance(zonePos, candidateZonePos); //get the zone that is closest to the label zone
@@ -226,7 +230,7 @@ function findRightZone(labelZoneIdx) {
 
 }
 
-//get the first text zone that is below
+//get the first text zone that is not empty and that is below
 function findZoneBelow(labelZoneIdx) {
     let documentData = txtHandler.getTextZones();
     let zonePos = documentData[labelZoneIdx].zonePos;  //get label position
@@ -234,6 +238,10 @@ function findZoneBelow(labelZoneIdx) {
     let bestZoneIdx = -1, bestZoneDistance = 2000000;
 
     documentData.forEach((zone, zoneIdx) => {
+
+        if (zone.lines.length == 0)
+            return; //skip zones that are empty. (only possible in cell zones that were converted to txt zones)
+
         let candidateZonePos = zone.zonePos;
         if (coordHandler.isValidBelowZone(zonePos, candidateZonePos)) { //check if this zone is at the bottom and if intersect in the width direction
             let distance = coordHandler.verticalZoneDistance(zonePos, candidateZonePos); //get the zone that is closest to the label zone
