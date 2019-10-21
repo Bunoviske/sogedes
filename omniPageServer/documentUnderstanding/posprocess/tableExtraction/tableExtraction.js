@@ -101,14 +101,15 @@ function extractTableItems(headers) {
 
 function extractHeaderItems(header) { //header here is a mapObject
     let documentData = txtHandler.getTextZones();
-    let thisTxtZone = documentData[header.map.zoneIdx];
+    let headerTxtZone = documentData[header.map.zoneIdx];
 
-    if (tableCases.tipicalTable.checkTipicalTable(thisTxtZone, header.entityType)) {
+    if (tableCases.tipicalTable.checkTipicalTable(headerTxtZone, header.entityType)) {
         console.log("Processing tipical table");
-        return tableCases.tipicalTable.extractItems(thisTxtZone);
+        return tableCases.tipicalTable.extractItems(headerTxtZone);
     }
-    else if (tableCases.headerOutsideTable.checkHeaderOutsideTable(thisTxtZone)) {
-        // tableCases.headerOutsideTable.extractItems(thisTxtZone);
+    else if (tableCases.headerOutsideTable.checkHeaderOutsideTable(headerTxtZone, header.entityType)) {
+        console.log("Processing table with header outside it");
+        return tableCases.headerOutsideTable.extractItems(headerTxtZone);
     }
     else {
         console.log("Last table case. Unknown");
