@@ -86,6 +86,7 @@ function httpRequest(urlLuis, query, listenerFunction) {
         // The whole response has been received. Print out the result.
         resp.on('end', () => {
             // console.log(data);
+            sysHandler.getFileSystemHandler("logHandler").appendLogFile("Http response from LUIS: \r\n" + data + "\r\n\r\n");
             // console.log(`statusCode: ${resp.statusCode}`)
             listenerFunction({ data: data }); //call response listener callback
         });
