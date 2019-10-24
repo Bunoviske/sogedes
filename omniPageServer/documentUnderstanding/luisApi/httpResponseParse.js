@@ -8,6 +8,7 @@ const bus = require('../../eventBus');
 const tableDef = require('../luisDefinitions/tablesDefinition')
 const keyValDef = require('../luisDefinitions/keyValPairsDefinition')
 const contTextDef = require('../luisDefinitions/continuousTextDefinition')
+const sysHandler = require('../../fileSystemHandler/fileSystemHandler')
 
 let bestLabelResults = [];
 let bestTableHeaderResults = [];
@@ -29,6 +30,8 @@ function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
         arr.entities.forEach(element => {
             if (keyValDef.isDefinedEntity(element.type)) {
                 // console.log(arr);
+                sysHandler.getFileSystemHandler("logHandler").appendLogFile("\r\n\r\n KeyValEntity: " + "\nlabel :" + element.entity +
+                "\nScore :" + element.score + "\nEntityType :" + element.type + "\r\n\r\n");
 
                 bestLabelResults.push(
                     {
@@ -42,6 +45,9 @@ function analyseEntitiesExtraction(jsonRes, luisSentenceMap) {
                 );
             }
             else if (tableDef.isDefinedTableHeader(element.type)) {
+                sysHandler.getFileSystemHandler("logHandler").appendLogFile("\r\n\r\n KeyValEntity: " + "\nlabel :" + element.entity +
+                "\nScore :" + element.score + "\nEntityType :" + element.type + "\r\n\r\n");
+
                 bestTableHeaderResults.push(
                     {
                         label: element.entity,
@@ -95,6 +101,9 @@ function analyseIntentsExtraction(jsonRes, textZoneIdx) {
     if (typeof arr.topScoringIntent != "undefined") {
 
         if (contTextDef.isDefinedIntent(arr.topScoringIntent.intent)) {
+            sysHandler.getFileSystemHandler("logHandler").appendLogFile("\r\n\r\n ContinuousTextIntent: " + "\nintent :" + arr.topScoringIntent.intent +
+            "\nScore :" + arr.topScoringIntent.score + "\nEntities :" + arr.entities + "\r\n\r\n");
+
             result =
                 {
                     intent: arr.topScoringIntent.intent,

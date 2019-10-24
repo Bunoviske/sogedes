@@ -24,7 +24,7 @@ function findInfoFromContinuousText(parameters) {
             if (element.type == "firma") {
                 console.log("Firma: " + element.entity);
 
-                let address = ""; //just search the address with there is a firma
+                let address = ""; //just search the address if there is a firma
                 result.compositeEntities.forEach(element => {
                     if (element.parentType == "address") {
                         address += element.value + " ";
@@ -44,7 +44,7 @@ function findInfoFromContinuousText(parameters) {
             if (element.type == "personName") {
                 console.log("Person name: " + element.entity);
 
-                let address = ""; //just search the address with there is a name
+                let address = ""; //just search the address if there is a name
                 result.compositeEntities.forEach(element => {
                     if (element.parentType == "address") {
                         address += element.value + " ";

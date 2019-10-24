@@ -32,6 +32,7 @@ const JobStatus = {
 function debugXmlFile(xmlFilePath, pdfFilePath){
     //DEBUG - Parse document directly
     sysHandler.getFileSystemHandler("jsonHandler").createEmptyJsonFile(pdfFilePath ,"-posprocessingResult.json","{\"Result\": \"Nothing\"}");
+    sysHandler.getFileSystemHandler("logHandler").createEmptyLogFile(pdfFilePath ,"-log.txt");
     bus.notifyEvent("parseXml", { xmlFilePath: xmlFilePath});
 }
 
@@ -61,7 +62,7 @@ function convertDocument(fileURI) {
 
     //after converting the document, create a folder and an empty json file where the results are going to be stored
     sysHandler.getFileSystemHandler("jsonHandler").createEmptyJsonFile(fileURI ,"-posprocessingResult.json","{\"Result\": \"Nothing\"}");
-
+    sysHandler.getFileSystemHandler("logHandler").createEmptyLogFile(fileURI ,"-log.txt"); //create log file
 }
 
 function pollJobStatus(fileURI, jobId) {

@@ -62,7 +62,7 @@ function getBestEntities(bestResults) {
 
         let bestScore = -1.0, highestScoreLabel;
         resultsObject[labelType].forEach(label => {
-            console.log(label.label + " " + label.score)
+            // console.log(label.label + " " + label.score)
             if (label.score > bestScore) {
                 bestScore = label.score;
                 highestScoreLabel = label;

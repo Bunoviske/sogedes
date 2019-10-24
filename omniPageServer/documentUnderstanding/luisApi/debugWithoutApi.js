@@ -6,7 +6,7 @@ const bus = require('../../eventBus');
 
 function debugWithoutApi(luisSentence, luisSentencesMap, idx) {
 
-    let searchVariable = "Gesamt";
+    let searchVariable = "Gehaltszahlung";
     let foundElem = luisSentence.search(searchVariable);
     if (foundElem != -1) {
         bus.notifyEvent("ParsedKeyValuePairs", { //ParsedKeyValuePairs  ParsedTableHeaders
