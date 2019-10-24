@@ -1,9 +1,7 @@
 
 const utils = require('./commonUtils');
 const fs = require('fs');
-const path = require('path');
-var rimraf = require("rimraf");
-const utf8 = require('utf8');
+
 //imitation of a class (javascript object)
 let jsonOutputFileHandler = {
 
@@ -25,9 +23,7 @@ let jsonOutputFileHandler = {
 
     createFile(resultDirPath, filename, fileNameExtension, jsonInitialData) {
         jsonFile = resultDirPath + '/' + filename + fileNameExtension;
-        fs.writeFile(jsonFile, jsonInitialData, (err) => { //create a result json file for this pdf document
-            if (err) throw err;
-        });
+        this.writeJsonFile(jsonInitialData); //create a result json file for this pdf document
     },
 
     writeJsonFile(data) {
