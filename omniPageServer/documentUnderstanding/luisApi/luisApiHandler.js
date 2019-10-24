@@ -7,7 +7,7 @@ const bus = require('../../eventBus');
 const httpReq = require('./httpRequest')
 const httpParse = require('./httpResponseParse')
 
-let DEBUG_POSPROCESSING = true;
+let DEBUG_POSPROCESSING = false;
 
 function extractEntitiesFromGenericText(luisSentences, luisSentencesMap) {
 
@@ -18,7 +18,7 @@ function extractEntitiesFromGenericText(luisSentences, luisSentencesMap) {
 function extractIntentsFromContinuousText(continuousTextSentences, continuousTextMap) {
 
     createContTextResponseListener(continuousTextSentences, continuousTextMap);
-    // httpReq.sendContinuousTextSentences(continuousTextSentences, continuousTextMap, DEBUG_POSPROCESSING)
+    httpReq.sendContinuousTextSentences(continuousTextSentences, continuousTextMap, DEBUG_POSPROCESSING)
 }
 
 function createGenericResponseListener(luisSentences, luisSentencesMap) {
