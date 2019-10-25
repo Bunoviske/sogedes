@@ -35,7 +35,7 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
     Object.keys(sortedResults).forEach(labelType => {
 
-        for (let i = 0; i < sortedResults[labelType].length; i++) {
+        for (let i = 0; i < sortedResults[labelType].length; i++) { //iterate through each label.type
             let result = sortedResults[labelType][i];
             let label = result.type;
 
