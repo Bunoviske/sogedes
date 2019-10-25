@@ -21,21 +21,21 @@ let logFileHandler = {
     },
 
     createFile(resultDirPath, filename, fileNameExtension) {
-        logFile = resultDirPath + '/' + filename + fileNameExtension;
-        fs.writeFile(logFile, "Log for the document " + filename + '\n\n', (err) => { //create a result json file for this pdf document
+        this.logFile = resultDirPath + '/' + filename + fileNameExtension;
+        fs.writeFile(this.logFile, "Log for the document " + filename + '\n\n', (err) => { //create a result json file for this pdf document
             if (err) throw err;
         });
     },
 
     writeLogFile(data) {
-        fs.writeFile(logFile, data, (err) => {
+        fs.writeFile(this.logFile, data, (err) => {
             if (err) throw err;
         });        
     },
 
     appendLogFile(data) {
 
-        fs.appendFile(logFile, data, (err) => {
+        fs.appendFile(this.logFile, data, (err) => {
             if (err) throw err;
         });
         
