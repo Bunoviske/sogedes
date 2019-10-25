@@ -28,7 +28,7 @@ function isValueBelow(labelPos, valuePos) {
 
 //this function returns values that are at the right of the label and a little bit above it. If they are a little bit below, the function isBelow will return this value
 //TODO - make the tolerance relative to the size of the document if necessary
-function isValueRight(labelPos, valuePos, upperMarginTolerance = 250) {
+function isValueRight(labelPos, valuePos, upperMarginTolerance = 125) {
     if (labelPos.top - upperMarginTolerance <= valuePos.top && labelPos.right < valuePos.left)
         return true;
     return false;
