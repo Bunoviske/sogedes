@@ -5,6 +5,7 @@ module.exports = {
 const txtHandler = require('../preprocess/textZoneHandler');
 const coordHandler = require('../coordinatesHandler');
 const utils = require('../commonUtils');
+const resultsParser = require('./keyValResultsParser');
 
 /********
 @parameters = {
@@ -29,53 +30,34 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
 
     let jsonResult = [];
 
-    let filteredBestResults = getBestEntities(parameters.bestResults); //if more than one entity is defined as the same type, take the one that has higher score
+    //if more than one entity is defined as the same type, sort them in descending order based on the score
+    let sortedResults = resultsParser.sortResultsByScore(parameters.bestResults);
 
-    filteredBestResults.forEach(result => {
-        let label = result.type;
+    Object.keys(sortedResults).forEach(labelType => {
 
-        //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
-        let mapObject = result.mapObjects[0];
+        for (let i = 0; i < sortedResults[labelType].length; i++) {
+            let result = sortedResults[labelType][i];
+            let label = result.type;
 
-        let value = searchValueInSameTextZone(label, mapObject);
-        if (value == null) //if no value is found in the same zone, search nearby
-            value = searchValueInNearbyTextZones(label, mapObject);
-        if (value != null) {
-            console.log("Label: " + label + "      Value: " + value.text);
-            jsonResult.push({
-                [label]: value.text
-            });
+            //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
+            let mapObject = result.mapObjects[0];
+
+            let value = searchValueInSameTextZone(label, mapObject);
+            if (value == null) //if no value is found in the same zone, search nearby
+                value = searchValueInNearbyTextZones(label, mapObject);
+            if (value != null) {
+                console.log("Label: " + label + "      Value: " + value.text);
+                jsonResult.push({
+                    [label]: value.text
+                });
+                break; //just iterate through the next result with this type with higher score has not any value detected
+            }
         }
     });
-
     return jsonResult;
 }
 
-function getBestEntities(bestResults) {
-    let filteredResults = [];
-    let resultsObject = {};
-    bestResults.forEach((label, i) => { //create an object with the label type as key
-        (resultsObject[label.type] = resultsObject[label.type] || []).push(label);
-    });
 
-    Object.keys(resultsObject).forEach(labelType => {
-
-        let bestScore = -1.0, highestScoreLabel;
-        resultsObject[labelType].forEach(label => {
-            // console.log(label.label + " " + label.score)
-            if (label.score > bestScore) {
-                bestScore = label.score;
-                highestScoreLabel = label;
-            }
-        });
-        filteredResults.push(highestScoreLabel);
-
-    });
-
-    // console.log("Filtered results:");
-    // console.log(filteredResults);
-    return filteredResults;
-}
 
 function searchValueInSameTextZone(label, mapObject) {
 
