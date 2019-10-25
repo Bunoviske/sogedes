@@ -12,7 +12,7 @@ console.log("Fetching " + filePath);
 xmlParse.init();
 
 
-let DEBUG_CONVERTED_XML_DOCUMENT = false;
+let DEBUG_CONVERTED_XML_DOCUMENT = true;
 
 if (DEBUG_CONVERTED_XML_DOCUMENT) {
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\scan1\\745aa6f7-1cb4-4484-b408-4fbb15400000.xml";
@@ -23,7 +23,7 @@ if (DEBUG_CONVERTED_XML_DOCUMENT) {
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\scan8\\a3ea9193-f7d1-46d6-be48-82c14b300000.xml";  
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\scanSap\\44481cad-0455-4886-ac15-ba3610600000.xml"; 
 
-    /*SHOW CASE DOCUMENTS*/
+    /*SHOWCASE DOCUMENTS*/
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned1\\5150209d-8bc3-40c3-8690-12fa0ba00000.xml";
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned2\\58945c20-68b7-40fc-b3b8-bb147aa00000.xml";
     // let debugFile = "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned3\\838f35c2-e2bf-42ef-8ebe-af2bb2000000.xml";
@@ -38,7 +38,6 @@ if (DEBUG_CONVERTED_XML_DOCUMENT) {
 
 
 
-    
 
     /*Invoices*/
     // let debugFile = "C:/Users/Carvalko/Documents/sogedes projects/pdfAnalysis/pdfToText/invoiceTest/2964cb2f-f807-4908-b5c1-fcc0e0c00000.xml"; 
@@ -47,9 +46,29 @@ if (DEBUG_CONVERTED_XML_DOCUMENT) {
     /*Bruno pc path*/
     // let debugFile = "/home/bruno/Documentos/sogedes/sogedes/omniPageServer/OPS/scan1/745aa6f7-1cb4-4484-b408-4fbb15400000.xml";
 
-    OPS.debugXmlFile(debugFile, filePath);
+    // OPS.debugXmlFile(debugFile, filePath);
+    debugShowCase(filePath);
+
+
 }
 else
     OPS.convertDocument(filePath);
 
 return;
+
+function debugShowCase(filePath) {
+    debugFile = {
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned1.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned1\\5150209d-8bc3-40c3-8690-12fa0ba00000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned2.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned2\\58945c20-68b7-40fc-b3b8-bb147aa00000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned3.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\datevScanned3\\838f35c2-e2bf-42ef-8ebe-af2bb2000000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\excelScanned.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\excelScanned\\242cd270-c220-4b05-b97b-b6a09ad00000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned1.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned1\\e0df5c24-27bc-4300-855d-8eaeb9700000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned2.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned2\\684af9e4-eed5-4b5f-a73a-3dfdc2300000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned3.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned3\\37b9f960-21ad-4663-930e-da3fbe800000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned4.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lexwareScanned4\\f4a427a9-d487-4f48-9032-592282400000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lohnexperteScanned.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\lohnexperteScanned\\ef607e94-4b26-4f0b-bda0-dd7828a00000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\sageScanned.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\sageScanned\\702af788-1d25-4f6c-8334-683649100000.xml",
+        "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\sapGehalta.pdf": "C:\\Users\\Carvalko\\Documents\\sogedes projects\\pdfAnalysis\\sogedes\\omniPageServer\\OPS\\documentsForTheRobot\\sapGehalta\\44481cad-0455-4886-ac15-ba3610600000.xml"
+    }
+    OPS.debugXmlFile(debugFile[filePath], filePath);
+}
