@@ -31,11 +31,11 @@ function findInfoFromContinuousText(parameters) {
                     }
                 });
                 console.log("Address: " + address);
-
-                jsonResult = {
-                    "Firma name": element.entity,
-                    "Address": address
-                };
+                if (address != "") //just add complete information! If address is not defined, dont add
+                    jsonResult = {
+                        "Firma name": element.entity,
+                        "Address": address
+                    };
             }
         });
     }
@@ -51,10 +51,11 @@ function findInfoFromContinuousText(parameters) {
                     }
                 });
                 console.log("Address: " + address);
-                jsonResult = {
-                    "Person name": element.entity,
-                    "Address": address
-                };
+                if (address != "") //just add complete information! If address is not defined, dont add
+                    jsonResult = {
+                        "Person name": element.entity,
+                        "Address": address
+                    };
             }
         });
     }
