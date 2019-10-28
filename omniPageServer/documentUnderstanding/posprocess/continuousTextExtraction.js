@@ -15,6 +15,8 @@ module.exports = {
 }
 ********/
 
+//TODO - there is no criteria to select multiple results for the same information
+
 function findInfoFromContinuousText(parameters) {
     let result = parameters.result;
     let jsonResult;
@@ -33,8 +35,8 @@ function findInfoFromContinuousText(parameters) {
                 console.log("Address: " + address);
                 if (address != "") //just add complete information! If address is not defined, dont add
                     jsonResult = {
-                        "Firma name": element.entity,
-                        "Address": address
+                        "FirmaName": element.entity,
+                        "FirmaAddress": address
                     };
             }
         });
@@ -53,8 +55,8 @@ function findInfoFromContinuousText(parameters) {
                 console.log("Address: " + address);
                 if (address != "") //just add complete information! If address is not defined, dont add
                     jsonResult = {
-                        "Person name": element.entity,
-                        "Address": address
+                        "PersonName": element.entity,
+                        "PersonAddress": address
                     };
             }
         });
