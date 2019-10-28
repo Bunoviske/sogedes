@@ -76,8 +76,10 @@ function findTables(parameters){
 }
 ********/
 function getInfoFromContinuousText(parameters) {
+    console.log("Getting info from continuous text...");
+
     let continuousTextInfo = contText.findInfoFromContinuousText(parameters);
-    if (continuousTextInfo != null)
-        posProcessingJsonResult.continuousTextInfo.push(continuousTextInfo);
+    if (continuousTextInfo != null) //each continuous text is processed separately, so you have to push the results instead of receiving all results in an array
+        posProcessingJsonResult.continuousTextInfo.push(continuousTextInfo); 
     bus.notifyEvent("finishedPosProcessingStep", {step: "continuousText"});
 }

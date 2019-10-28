@@ -38,12 +38,15 @@ mapObjects = { //maps a word with the documentData structure
 function findTables(parameters) {
 
     // console.log(parameters.bestResults);
+    let jsonResult = [];
 
     let tables = groupTableHeaders(parameters.bestResults);
 
     for (const table in tables) {
         extractTableItems(tables[table].headers);
     }
+
+    return jsonResult;
 
 }
 
@@ -66,11 +69,11 @@ function groupTableHeaders(bestResults) {
         }
         //each table is composed of header objects that contains the objectMap and entityType
         if (tableName in tables) {
-            tables[tableName].headers.push({ map: result.mapObjects[0], entityType: result.type});
+            tables[tableName].headers.push({ map: result.mapObjects[0], entityType: result.type });
         }
         else {
             tables[tableName] = {
-                headers: [{ map: result.mapObjects[0], entityType: result.type}]
+                headers: [{ map: result.mapObjects[0], entityType: result.type }]
             }
         }
     });
