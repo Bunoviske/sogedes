@@ -40,11 +40,12 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
             let label = result.type;
 
             //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
-            let mapObject = result.mapObjects[0];
+            let labelMapObject = result.mapObjects[0];
 
-            let value = searchValueInSameTextZone(label, mapObject);
-            if (value == null) //if no value is found in the same zone, search nearby
-                value = searchValueInNearbyTextZones(label, mapObject);
+            let sameZoneValue = searchValueInSameTextZone(label, labelMapObject);
+            let nearbyZoneValue = searchValueInNearbyTextZones(label, labelMapObject);
+            let value = chooseBestValue(labelMapObject, sameZoneValue, nearbyZoneValue);
+
             if (value != null) {
                 console.log("Label: " + label + "      Value: " + value.text);
                 jsonResult.push({
@@ -57,50 +58,80 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     return jsonResult;
 }
 
+function chooseBestValue(labelMapObject, sameZoneValue, nearbyZoneValue){
+    //no value was found
+    if (sameZoneValue == null && nearbyZoneValue == null) return null;
+    
+    //when just one value is found, return it immediately
+    if (sameZoneValue != null && nearbyZoneValue == null) return sameZoneValue;
+    if (sameZoneValue == null && nearbyZoneValue != null) return nearbyZoneValue;
 
+    // console.log(sameZoneValue.text);
+    // console.log(nearbyZoneValue.text);
 
-function searchValueInSameTextZone(label, mapObject) {
+    //return the value that is closest to the label
+    let candidates = [sameZoneValue, nearbyZoneValue];
+    //TODO - get the closest only if the sameZoneValue is too far compared to the nearbyValue
+    return getClosestCandidate(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+}
+
+function searchValueInSameTextZone(label, labelMapObject) {
 
     // console.log("Searching in the same zone...");
 
     //for now, all labels have numbers as values
-    let valueCandidates = searchForNumberValues(mapObject.zoneIdx);
+    let valueCandidates = searchForNumberValues(labelMapObject.zoneIdx);
 
     //take the values and filter the ones on the right and below
-    let rightCandidates = getSameLineRightCandidates(valueCandidates, mapObject.lineIdx, mapObject.wordIdx);
-    let belowCandidates = getCandidatesBelow(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
+    let rightCandidates = getSameLineRightCandidates(valueCandidates, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    let belowCandidates = getCandidatesBelow(valueCandidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
 
     // console.log(valueCandidates);
     // console.log(rightCandidates);
     // console.log(belowCandidates);
 
     //return the closest candidate from both arrays
-    return getClosestCandidate(rightCandidates.concat(belowCandidates), mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
+    return getClosestCandidate(rightCandidates.concat(belowCandidates), labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
 }
 
-function searchValueInNearbyTextZones(label, mapObject) {
+function searchValueInNearbyTextZones(label, labelMapObject) {
 
     // console.log("Searching in the nearby zones...");
 
     //extract nearby zones
-    let rightZoneIdx = findRightZone(mapObject.zoneIdx); //return -1 if there isnt a valid zone
-    let belowZoneIdx = findZoneBelow(mapObject.zoneIdx); //return -1 if there isnt a valid zone
+    let rightZoneIdx = findRightZone(labelMapObject.zoneIdx); //return -1 if there isnt a valid zone
+    let belowZoneIdx = findZoneBelow(labelMapObject.zoneIdx); //return -1 if there isnt a valid zone
+    let insideZonesIdx = findAllZonesInside(labelMapObject.zoneIdx); //return [] if there arent zones inside. this function returns an array
 
-    //for now, all labels have numbers as values
-    let rightZoneValues = rightZoneIdx != -1 ? searchForNumberValues(rightZoneIdx) : []; //only search for values if there is a zone
-    let belowZoneValues = belowZoneIdx != -1 ? searchForNumberValues(belowZoneIdx) : []; //only search for values if there is a zone
-    let valueCandidates = rightZoneValues.concat(belowZoneValues); //all candidates in the same array
+    let candidates = getCandidatesFromZones(rightZoneIdx, belowZoneIdx, insideZonesIdx);
 
     //take the values and filter the ones on the right and below
-    let rightCandidates = getRightCandidates(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
-    let belowCandidates = getCandidatesBelow(valueCandidates, mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
+    let rightCandidates = getRightCandidates(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    let belowCandidates = getCandidatesBelow(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
 
-    // console.log(valueCandidates);
+    // console.log(candidates);
     // console.log(rightCandidates);
     // console.log(belowCandidates);
 
     //return the closest candidate from both arrays
-    return getClosestCandidate(rightCandidates.concat(belowCandidates), mapObject.zoneIdx, mapObject.lineIdx, mapObject.wordIdx);
+    return getClosestCandidate(rightCandidates.concat(belowCandidates), labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+}
+
+function getCandidatesFromZones(rightZoneIdx, belowZoneIdx, insideZonesIdx){
+    //for now, all labels have numbers as values
+    let rightZoneValues = rightZoneIdx != -1 ? searchForNumberValues(rightZoneIdx) : []; //only search for values if there is a zone
+    let belowZoneValues = belowZoneIdx != -1 ? searchForNumberValues(belowZoneIdx) : []; //only search for values if there is a zone
+    let insideZoneValues = getInsideZoneValues(insideZonesIdx);
+
+    return rightZoneValues.concat(belowZoneValues).concat(insideZoneValues); //all candidates in the same array
+}
+
+function getInsideZoneValues(insideZonesIdx){
+    let insideZoneValues = [];
+    insideZonesIdx.forEach( zoneIdx => {
+        insideZoneValues.push(searchForNumberValues(zoneIdx));
+    });
+    return insideZoneValues;
 }
 
 //this function search for number values inside a zone
@@ -186,6 +217,11 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordId
         }
     });
     return bestCandidate;
+}
+
+function findAllZonesInside(labelZoneIdx){
+    let insideZones = [];
+    return insideZones; 
 }
 
 //get the first text zone that is not empty and that is on the right
