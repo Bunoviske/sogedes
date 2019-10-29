@@ -6,7 +6,8 @@ module.exports = {
     horizontalZoneDistance: horizontalZoneDistance,
     verticalZoneDistance: verticalZoneDistance,
     isValidRightZone: isValidRightZone,
-    isValidBelowZone: isValidBelowZone
+    isValidBelowZone: isValidBelowZone,
+    isValidOverlappedZone: isValidOverlappedZone
 
 }
 
@@ -52,37 +53,49 @@ function euclideanDistance(x1, x2, y1, y2) {
 /***************************
 //these methods are specific for finding nearby zones (at the right and below)
 ***************************/
-function horizontalZoneDistance(labelZonePos, zoneCandidatePos){
+function horizontalZoneDistance(labelZonePos, zoneCandidatePos) {
     return Math.abs(labelZonePos.right - zoneCandidatePos.left);
 }
 
-function verticalZoneDistance(labelZonePos, zoneCandidatePos){
+function verticalZoneDistance(labelZonePos, zoneCandidatePos) {
     return Math.abs(labelZonePos.bottom - zoneCandidatePos.top);
 }
 
+function isValidOverlappedZone(zone1Pos, zone2Pos) {
+    let x_overlap = Math.max(0, Math.min(zone1Pos.right, zone2Pos.right) - Math.max(zone1Pos.left, zone2Pos.left));
+    let y_overlap = Math.max(0, Math.min(zone1Pos.bottom, zone2Pos.bottom) - Math.max(zone1Pos.top, zone2Pos.top));
+    
+    let overlapArea = x_overlap * y_overlap;
+    let zone1Area = (zone1Pos.bottom - zone1Pos.top) * (zone1Pos.right - zone1Pos.left);
+    let zone2Area = (zone2Pos.bottom - zone2Pos.top) * (zone2Pos.right - zone2Pos.left);
+    let smallestZone = zone1Area <= zone2Area ? zone1Area : zone2Area;
+
+    return overlapArea/smallestZone >= 0.5; //if at least 50% of the smallest zone is inside the largest zone, return true
+}
+
 //check if the candidate zone as at the right of the label. also check if there is a intersection in the height direction
-function isValidRightZone(labelZonePos, zoneCandidatePos){
+function isValidRightZone(labelZonePos, zoneCandidatePos) {
     if (zoneCandidatePos.left >= labelZonePos.right && heightDirectionIntersection(labelZonePos, zoneCandidatePos))
         return true;
     return false;
 }
 
 //check if the candidate zone as at the bottom of the label. also check if there is a intersection in the width direction
-function isValidBelowZone(labelZonePos, zoneCandidatePos){
+function isValidBelowZone(labelZonePos, zoneCandidatePos) {
     if (zoneCandidatePos.top >= labelZonePos.bottom && widthDirectionIntersection(labelZonePos, zoneCandidatePos))
         return true;
     return false;
 }
 
-function heightDirectionIntersection(labelZonePos, zoneCandidatePos){
-    return ((zoneCandidatePos.top < labelZonePos.bottom && zoneCandidatePos.top > labelZonePos.top) || 
-            (zoneCandidatePos.bottom < labelZonePos.bottom && zoneCandidatePos.bottom > labelZonePos.top) || 
-            (zoneCandidatePos.top <= labelZonePos.top && zoneCandidatePos.bottom >= labelZonePos.bottom))
+function heightDirectionIntersection(labelZonePos, zoneCandidatePos) {
+    return ((zoneCandidatePos.top < labelZonePos.bottom && zoneCandidatePos.top > labelZonePos.top) ||
+        (zoneCandidatePos.bottom < labelZonePos.bottom && zoneCandidatePos.bottom > labelZonePos.top) ||
+        (zoneCandidatePos.top <= labelZonePos.top && zoneCandidatePos.bottom >= labelZonePos.bottom))
 }
 
-function widthDirectionIntersection(labelZonePos, zoneCandidatePos){
-    return ((zoneCandidatePos.right < labelZonePos.right && zoneCandidatePos.right > labelZonePos.left) || 
-            (zoneCandidatePos.left < labelZonePos.right && zoneCandidatePos.left > labelZonePos.left) || 
-            (zoneCandidatePos.left <= labelZonePos.left && zoneCandidatePos.right >= labelZonePos.right))
+function widthDirectionIntersection(labelZonePos, zoneCandidatePos) {
+    return ((zoneCandidatePos.right < labelZonePos.right && zoneCandidatePos.right > labelZonePos.left) ||
+        (zoneCandidatePos.left < labelZonePos.right && zoneCandidatePos.left > labelZonePos.left) ||
+        (zoneCandidatePos.left <= labelZonePos.left && zoneCandidatePos.right >= labelZonePos.right))
 }
 

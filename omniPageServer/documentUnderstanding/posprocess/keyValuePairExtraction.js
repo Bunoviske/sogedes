@@ -58,10 +58,10 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     return jsonResult;
 }
 
-function chooseBestValue(labelMapObject, sameZoneValue, nearbyZoneValue){
+function chooseBestValue(labelMapObject, sameZoneValue, nearbyZoneValue) {
     //no value was found
     if (sameZoneValue == null && nearbyZoneValue == null) return null;
-    
+
     //when just one value is found, return it immediately
     if (sameZoneValue != null && nearbyZoneValue == null) return sameZoneValue;
     if (sameZoneValue == null && nearbyZoneValue != null) return nearbyZoneValue;
@@ -101,9 +101,9 @@ function searchValueInNearbyTextZones(label, labelMapObject) {
     //extract nearby zones
     let rightZoneIdx = findRightZone(labelMapObject.zoneIdx); //return -1 if there isnt a valid zone
     let belowZoneIdx = findZoneBelow(labelMapObject.zoneIdx); //return -1 if there isnt a valid zone
-    let insideZonesIdx = findAllZonesInside(labelMapObject.zoneIdx); //return [] if there arent zones inside. this function returns an array
+    let overlappedZonesIdx = findAllZonesOverlapped(labelMapObject.zoneIdx); //return [] if there arent zones overlapped. this function returns an array
 
-    let candidates = getCandidatesFromZones(rightZoneIdx, belowZoneIdx, insideZonesIdx);
+    let candidates = getCandidatesFromZones(rightZoneIdx, belowZoneIdx, overlappedZonesIdx);
 
     //take the values and filter the ones on the right and below
     let rightCandidates = getRightCandidates(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
@@ -117,21 +117,24 @@ function searchValueInNearbyTextZones(label, labelMapObject) {
     return getClosestCandidate(rightCandidates.concat(belowCandidates), labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
 }
 
-function getCandidatesFromZones(rightZoneIdx, belowZoneIdx, insideZonesIdx){
+function getCandidatesFromZones(rightZoneIdx, belowZoneIdx, overlappedZonesIdx) {
     //for now, all labels have numbers as values
     let rightZoneValues = rightZoneIdx != -1 ? searchForNumberValues(rightZoneIdx) : []; //only search for values if there is a zone
     let belowZoneValues = belowZoneIdx != -1 ? searchForNumberValues(belowZoneIdx) : []; //only search for values if there is a zone
-    let insideZoneValues = getInsideZoneValues(insideZonesIdx);
+    let overlappedZoneValues = getOverlappedZoneValues(overlappedZonesIdx);
 
-    return rightZoneValues.concat(belowZoneValues).concat(insideZoneValues); //all candidates in the same array
+    console.log("Overlapped values: ");
+    console.log(overlappedZoneValues);
+
+    return rightZoneValues.concat(belowZoneValues).concat(overlappedZoneValues); //all candidates in the same array
 }
 
-function getInsideZoneValues(insideZonesIdx){
-    let insideZoneValues = [];
-    insideZonesIdx.forEach( zoneIdx => {
-        insideZoneValues.push(searchForNumberValues(zoneIdx));
+function getOverlappedZoneValues(overlappedZonesIdx) {
+    let overlappedZoneValues = [];
+    overlappedZonesIdx.forEach(zoneIdx => {
+        overlappedZoneValues = overlappedZoneValues.concat(searchForNumberValues(zoneIdx));
     });
-    return insideZoneValues;
+    return overlappedZoneValues;
 }
 
 //this function search for number values inside a zone
@@ -219,9 +222,23 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordId
     return bestCandidate;
 }
 
-function findAllZonesInside(labelZoneIdx){
-    let insideZones = [];
-    return insideZones; 
+function findAllZonesOverlapped(labelZoneIdx) {
+    let overlappedZones = [];
+    let documentData = txtHandler.getTextZones();
+    let labelZonePos = documentData[labelZoneIdx].zonePos;  //get label position
+
+    documentData.forEach((zone, zoneIdx) => {
+        if (zone.lines.length == 0)
+            return; //skip zones that are empty. (only possible in cell zones that were converted to txt zones)
+
+        let candidateZonePos = zone.zonePos;
+        if (coordHandler.isValidOverlappedZone(labelZonePos, candidateZonePos) && labelZoneIdx != zoneIdx){
+            // console.log("Overlapped zone idx: " + zoneIdx);
+            overlappedZones.push(zoneIdx);
+        }
+    });
+
+    return overlappedZones;
 }
 
 //get the first text zone that is not empty and that is on the right
@@ -233,7 +250,6 @@ function findRightZone(labelZoneIdx) {
     documentData.forEach((zone, zoneIdx) => {
         if (zone.lines.length == 0)
             return; //skip zones that are empty. (only possible in cell zones that were converted to txt zones)
-
 
         let candidateZonePos = zone.zonePos;
         if (coordHandler.isValidRightZone(zonePos, candidateZonePos)) { //check if this zone is at the right and if intersect in the height direction
