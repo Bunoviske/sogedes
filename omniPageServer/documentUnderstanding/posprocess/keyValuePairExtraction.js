@@ -72,7 +72,7 @@ function chooseBestValue(labelMapObject, sameZoneValue, nearbyZoneValue) {
     //return the value that is closest to the label
     let candidates = [sameZoneValue, nearbyZoneValue];
     //TODO - get the closest only if the sameZoneValue is too far compared to the nearbyValue
-    return getClosestCandidate(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    return getClosestCandidate(candidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx).candidate;
 }
 
 function searchValueInSameTextZone(label, labelMapObject) {
@@ -90,8 +90,8 @@ function searchValueInSameTextZone(label, labelMapObject) {
     // console.log(rightCandidates);
     // console.log(belowCandidates);
 
-    //return the closest candidate from both arrays
-    return getClosestCandidate(rightCandidates.concat(belowCandidates), labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    //return the best candidate from both arrays
+    return getBestCandidate(rightCandidates, belowCandidates, labelMapObject);
 }
 
 function searchValueInNearbyTextZones(label, labelMapObject) {
@@ -113,8 +113,8 @@ function searchValueInNearbyTextZones(label, labelMapObject) {
     // console.log(rightCandidates);
     // console.log(belowCandidates);
 
-    //return the closest candidate from both arrays
-    return getClosestCandidate(rightCandidates.concat(belowCandidates), labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    //return the best candidate from both arrays
+    return getBestCandidate(rightCandidates, belowCandidates, labelMapObject);
 }
 
 function getCandidatesFromZones(rightZoneIdx, belowZoneIdx, overlappedZonesIdx) {
@@ -123,8 +123,8 @@ function getCandidatesFromZones(rightZoneIdx, belowZoneIdx, overlappedZonesIdx) 
     let belowZoneValues = belowZoneIdx != -1 ? searchForNumberValues(belowZoneIdx) : []; //only search for values if there is a zone
     let overlappedZoneValues = getOverlappedZoneValues(overlappedZonesIdx);
 
-    console.log("Overlapped values: ");
-    console.log(overlappedZoneValues);
+    // console.log("Overlapped values: ");
+    // console.log(overlappedZoneValues);
 
     return rightZoneValues.concat(belowZoneValues).concat(overlappedZoneValues); //all candidates in the same array
 }
@@ -201,10 +201,30 @@ function getRightCandidates(candidates, labelZoneIdx, labelLineIdx, labelWordIdx
     });
     return rightCandidates;
 }
+function getBestCandidate(rightCandidates, belowCandidates, labelMapObject){
+
+    //return the closest candidate from both arrays
+    let closestRightCandidate = getClosestCandidate(rightCandidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+    let closestBelowCandidate = getClosestCandidate(belowCandidates, labelMapObject.zoneIdx, labelMapObject.lineIdx, labelMapObject.wordIdx);
+
+    if (closestRightCandidate.candidate == null && closestBelowCandidate.candidate == null) return null;
+    if (closestRightCandidate.candidate != null && closestBelowCandidate.candidate == null) return closestRightCandidate.candidate;
+    if (closestRightCandidate.candidate == null && closestBelowCandidate.candidate != null) return closestBelowCandidate.candidate;
+    
+    //logic to give priority to a value that is on the right
+    let distanceDiff = Math.abs(closestBelowCandidate.distance - closestRightCandidate.distance);
+    let CLOSE_DISTANCES_THRESHOLD = 250;
+    if (distanceDiff < CLOSE_DISTANCES_THRESHOLD){ //if the distances are close, means that the algorithm is confused about it. Give preference to the value at the right
+        console.log("Priority given to the candidate at the right");
+        return closestRightCandidate.candidate;
+    }
+    else
+        return closestRightCandidate.distance <= closestBelowCandidate.distance ? closestRightCandidate.candidate : closestBelowCandidate.candidate;
+}
 
 function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordIdx) {
     if (candidates.length == 0)
-        return null;
+        return {candidate: null, distance: null};
 
     let bestCandidate, bestCandidateDistance = 2000000.0;
     let documentData = txtHandler.getTextZones();
@@ -219,7 +239,7 @@ function getClosestCandidate(candidates, labelZoneIdx, labelLineIdx, labelWordId
             bestCandidate = candidate;
         }
     });
-    return bestCandidate;
+    return {candidate: bestCandidate, distance: bestCandidateDistance};
 }
 
 function findAllZonesOverlapped(labelZoneIdx) {
