@@ -50,7 +50,7 @@ function addContinuousTextLuisSentence(documentData, zoneIdx) { //check if the t
     let zone = documentData[zoneIdx];
     //at least two lines and regular space between words
     let zoneText = getZoneText(zone);
-    if (getLinesCount(zone) >= 2 && isContinuousText(zone) /*&& !utils.hasManyNumbers(zoneText)*/) {
+    if (isContinuousText(zone) /*&& !utils.hasManyNumbers(zoneText)*/) {
         continuousTextLuisSentences.push(zoneText);
         continuousTextMap.push(zoneIdx);
         // console.log(zoneText);
@@ -127,12 +127,14 @@ function isContinuousText(zone) { //check if the space between the words in the 
         linesWithPattern += checkSpacePattern(spacesWidth);
     });
 
-    //all lines must have the pattern and at least one space in the text zone (if there isnt one single space, probably is not a continuous text)
-    if (linesWithPattern == zone.lines.length && numOfSpaces > 0)
-        return true;
+    let linesCount = getLinesCount(zone);
 
-    return false;
+    //if there are more than 2 lines, must exist at least one space in all the lines. if there is just one line, must exist at least 3 spaces to be continuous text
+    let numOfSpacesThres = linesCount >= 2 ? 1 : 3; 
 
+    //all lines must have the pattern and match the numOfSpaces threshold
+    return (linesWithPattern == linesCount && numOfSpaces >= numOfSpacesThres);
+        
 }
 
 //returns 1 with there is a pattern and 0 with there isnt
