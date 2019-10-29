@@ -22,17 +22,13 @@ function getPositionObject(l, t, r, b) { // the coordinate system is at (top, le
 
 //if the label starts after the value ends, it is not consider as a below value (key value pairs shouldnt have a value before the label)
 function isValueBelow(labelPos, valuePos) {
-    if (labelPos.top < valuePos.top && labelPos.left < valuePos.right)
-        return true;
-    return false;
+    return (labelPos.bottom <= valuePos.top && labelPos.left < valuePos.right);
 }
 
 //this function returns values that are at the right of the label and a little bit above it. If they are a little bit below, the function isBelow will return this value
 //TODO - make the tolerance relative to the size of the document if necessary
 function isValueRight(labelPos, valuePos, upperMarginTolerance = 125) {
-    if (labelPos.top - upperMarginTolerance <= valuePos.top && labelPos.right < valuePos.left)
-        return true;
-    return false;
+    return (labelPos.top - upperMarginTolerance <= valuePos.top && labelPos.bottom > valuePos.top && labelPos.right < valuePos.left);
 }
 
 //calculate euclidean distance from the center of each word
