@@ -11,7 +11,8 @@ module.exports = {
 
 let intents = [
     "FirmaAngaben",
-    "PersonAngaben"
+    "PersonAngaben",
+    "FirmaUndPersonAngaben"
 ]
 
 function isDefinedIntent(intentToCheck) {
