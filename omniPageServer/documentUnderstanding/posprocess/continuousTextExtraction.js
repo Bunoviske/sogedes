@@ -16,34 +16,30 @@ module.exports = {
 ********/
 
 //TODO - there is no criteria to select multiple results for the same information
-let jsonResult;
 
-function getJsonResult(){
-    return jsonResult;
-}
 
 function findInfoFromContinuousText(parameters) {
     let result = parameters.result;
 
     if (result.intent == "FirmaAngaben") {
-        parseFirmaAngaben(result);
+        return [parseFirmaAngaben(result)]; //return in array format
     }
     else if (result.intent == "PersonAngaben") {
-        parsePersonAngaben(result)
+        return [parsePersonAngaben(result)]; //return in array format
     }
     else if (result.intent == "FirmaUndPersonAngaben") {
-        parseFirmaUndPersonAngaben(result);
+        return parseFirmaUndPersonAngaben(result); //already is returned as an array
     }
-
-    return getJsonResult();
+    
+    return [null];
 }
 
-function parseFirmaUndPersonAngaben(result) {
+function parseFirmaUndPersonAngaben(result, jsonResult) {
 
     //the addresses inside composite entities are always in the right order, so I have to search if person or firma appears first and then split the composite entities
     let splittedResults = splitAddresses(result);
-    parseFirmaAngaben(splittedResults.firmaResults);
-    parsePersonAngaben(splittedResults.personResults);
+    //return both jsonResults in an array format
+    return [parseFirmaAngaben(splittedResults.firmaResults, jsonResult), parsePersonAngaben(splittedResults.personResults, jsonResult)];
 
 }
 
@@ -75,11 +71,11 @@ function splitCompositeEntitiesAddresses(result, firstEntity) {
         firmaResults.compositeEntities = firstCompositeEntities;
         personResults.compositeEntities = secondCompositeEntities;
     }
-    else if(firstEntity == "personName") {
+    else if (firstEntity == "personName") {
         personResults.compositeEntities = firstCompositeEntities;
         firmaResults.compositeEntities = secondCompositeEntities;
     }
-    return {firmaResults, personResults}; //return the results without modification in case firma or personName werent detected
+    return { firmaResults, personResults }; //return the results without modification in case firma or personName werent detected
 }
 
 function getFirstAppearanceEntity(startIndexes) {
@@ -109,6 +105,8 @@ function findFirmaUndPersonStartIndex(result) {
 }
 
 function parseFirmaAngaben(result) {
+    let jsonResult;
+
     result.entities.forEach(element => {
         if (element.type == "firma") {
             console.log("Firma: " + element.entity);
@@ -127,9 +125,13 @@ function parseFirmaAngaben(result) {
                 };
         }
     });
+
+    return jsonResult;
 }
 
 function parsePersonAngaben(result) {
+    let jsonResult;
+
     result.entities.forEach(element => {
         if (element.type == "personName") {
             console.log("Person name: " + element.entity);
@@ -148,4 +150,6 @@ function parsePersonAngaben(result) {
                 };
         }
     });
+
+    return jsonResult;
 }

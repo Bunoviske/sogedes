@@ -14,7 +14,7 @@ let posProcessingJsonResult = {
     tablesDescription: []
 }
 
-function getPosProcessingResult(){
+function getPosProcessingResult() {
     return posProcessingJsonResult;
 }
 
@@ -50,17 +50,17 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
     //algorithm: given a label, first search for values in the same textZone/cellZone/tableZone. If no value is found, search in the nearby zones on the right and on the bottom
     let keyValuePairs = keyValPair.findKeyValuePairs(parameters);
     posProcessingJsonResult.keyValPairs = keyValuePairs;
-    bus.notifyEvent("finishedPosProcessingStep", {step: "keyValuePairs"});
+    bus.notifyEvent("finishedPosProcessingStep", { step: "keyValuePairs" });
 }
 
 //same parameters as the function findKeyValuePairs
-function findTables(parameters){
+function findTables(parameters) {
     console.log("Finding tables...");
 
     //algorithm: given the headers, search for the items that follow some criteria (zone alignment, words alignment... )
     let tablesDescription = tables.findTables(parameters);
     posProcessingJsonResult.tablesDescription = tablesDescription;
-    bus.notifyEvent("finishedPosProcessingStep", {step: "tables"});
+    bus.notifyEvent("finishedPosProcessingStep", { step: "tables" });
 
 }
 
@@ -78,8 +78,11 @@ function findTables(parameters){
 function getInfoFromContinuousText(parameters) {
     console.log("Getting info from continuous text...");
 
-    let continuousTextInfo = contText.findInfoFromContinuousText(parameters);
-    if (continuousTextInfo != null) //each continuous text is processed separately, so you have to push the results instead of receiving all results in an array
-        posProcessingJsonResult.continuousTextInfo.push(continuousTextInfo); 
-    bus.notifyEvent("finishedPosProcessingStep", {step: "continuousText"});
+    let continuousTextInfos = contText.findInfoFromContinuousText(parameters);
+    //each continuous text is processed separately, so you have to push the results instead of receiving all results in an array
+    continuousTextInfos.forEach(info => { //may be more than one continuousTextInfo in the case of FirmaUndPersonAngaben
+        if (info != null)
+            posProcessingJsonResult.continuousTextInfo.push(info);
+    });
+    bus.notifyEvent("finishedPosProcessingStep", { step: "continuousText" });
 }
