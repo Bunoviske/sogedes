@@ -16,10 +16,14 @@ module.exports = {
 ********/
 
 //TODO - there is no criteria to select multiple results for the same information
+let jsonResult;
+
+function getJsonResult(){
+    return jsonResult;
+}
 
 function findInfoFromContinuousText(parameters) {
     let result = parameters.result;
-    let jsonResult;
 
     if (result.intent == "FirmaAngaben") {
         parseFirmaAngaben(result);
@@ -30,7 +34,8 @@ function findInfoFromContinuousText(parameters) {
     else if (result.intent == "FirmaUndPersonAngaben") {
         parseFirmaUndPersonAngaben(result);
     }
-    return jsonResult;
+
+    return getJsonResult();
 }
 
 function parseFirmaUndPersonAngaben(result) {
