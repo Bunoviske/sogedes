@@ -1,9 +1,9 @@
 module.exports = {
     init: init
 }
-const bus = require('./eventBus');
-const sysHandler = require('./fileSystemHandler/fileSystemHandler');
-const documentUnderstanding = require('./documentUnderstanding/docUnderstanding');
+const bus = require('../eventBus');
+const sysHandler = require('./fileSystemHandler');
+const documentUnderstanding = require('../documentUnderstanding/docUnderstanding');
 
 function init() {
     bus.addEventListener("parseXml", xmlParser);

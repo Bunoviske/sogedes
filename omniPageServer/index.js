@@ -6,7 +6,7 @@ if (typeof filePath == "undefined") {
 }
 
 const OPS = require("./omniServer");
-const xmlParse = require("./xmlParser");
+const xmlParse = require("./fileSystemHandler/xmlFileParser");
 
 console.log("Fetching " + filePath);
 xmlParse.init();
