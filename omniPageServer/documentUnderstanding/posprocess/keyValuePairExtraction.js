@@ -39,8 +39,9 @@ function findKeyValuePairs(parameters) { //for now, the results are coming from 
             let result = sortedResults[labelType][i];
             let label = result.type;
 
-            //for key value pair extraction, it is important to know the zone that the words are into. So I can take just the first word map from the array
-            let labelMapObject = result.mapObjects[0];
+            //for key value pair extraction, it is important to know the zone that the words are into. 
+            //besides that, it is important to take the last word from the array so I dont recognize some number inside the label as a value
+            let labelMapObject = result.mapObjects[ result.mapObjects.length-1 ];
 
             let sameZoneValue = searchValueInSameTextZone(label, labelMapObject);
             let nearbyZoneValue = searchValueInNearbyTextZones(label, labelMapObject);
