@@ -97,6 +97,10 @@ function getConversionParameters(){
     </ConversionParameters>";
 }
 
+// <ImageQuality>Good</ImageQuality> \
+// <LayoutTradeOff>Accuracy</LayoutTradeOff> \
+// <Tradeoff>Accuracy</Tradeoff> \
+
 function getXmlFilePath(fileURI, jobId){
     let filePath = sysHandler.getFileSystemHandler("xmlHandler").getXmlFilePath(fileURI, jobId);
     return filePath;
