@@ -3,6 +3,12 @@ module.exports = {
     debugXmlFile: debugXmlFile
 }
 
+/****************
+ * 
+ *  To encode german letters, use Central Europe (CP852) or DOS (CP437)
+ * 
+ *****************/
+
 const request = require('request');
 const bus = require('./eventBus');
 const sysHandler = require('./fileSystemHandler/fileSystemHandler');
@@ -16,7 +22,8 @@ const JobTypeId = {
     "xmlPage": 26,
     "xmlDoc": 25,
     "excelDoc": 14,
-    "wordDoc": 13
+    "wordDoc": 13,
+    "text": 6
 }
 const JobStatus = {
     "Unknown": -1,
@@ -47,7 +54,7 @@ function convertDocument(fileURI) {
             "Metadata": "",
             "InputURIs": fileURI,
             "TimeToLiveSec": 20,
-            "ConversionParameters": getConversionParameters() //just add the language
+            "ConversionParameters": getConversionParameters() 
         }
     }, (error, res, body) => {
         if (error) {
