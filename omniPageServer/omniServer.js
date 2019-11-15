@@ -38,7 +38,7 @@ function debugXmlFile(xmlFilePath, pdfFilePath){
 
 function convertDocument(fileURI) {
 
-    request.post('http://bruno-pc/Nuance.OmniPage.Server.Service/api/Job/CreateLocalJob', {
+    request.post('http://brunoSogedes/Nuance.OmniPage.Server.Service/api/Job/CreateLocalJob', {
         json: {
             "JobTypeId": JobTypeId.xmlPage,
             "Priority": "2", //maximum priority
@@ -69,7 +69,7 @@ function pollJobStatus(fileURI, jobId) {
     console.log("Polling OmniPage Server every 2 seconds");
     let pollInterval = 2000;
     let intervalObject = setInterval(function () {
-        request.get('http://bruno-pc/Nuance.OmniPage.Server.Service/api/Job/GetJobsStatus?jobIds=' + jobId,
+        request.get('http://brunoSogedes/Nuance.OmniPage.Server.Service/api/Job/GetJobsStatus?jobIds=' + jobId,
             { json: true },
             (err, res, body) => {
                 if (err) { return console.log(err); }
@@ -94,13 +94,15 @@ function getConversionParameters(){
     return "<?xml version=\"1.0\" encoding=\"utf-16\"?> \
     <ConversionParameters xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.nuance.com/2008/ConversionParameters\"> \
     <Language>LANG_GER</Language> \
-    <ImageQuality>Good</ImageQuality> \
+    <ImageQuality>Better</ImageQuality> \
+    <LayoutTradeOff>Accuracy</LayoutTradeOff> \
+    <Tradeoff>Accuracy</Tradeoff> \
     </ConversionParameters>";
 }
 
-// <ImageQuality>Good</ImageQuality> \
-// <LayoutTradeOff>Accuracy</LayoutTradeOff> \
-// <Tradeoff>Accuracy</Tradeoff> \
+// <ImageQuality>Good,Better,Best</ImageQuality> \
+// <LayoutTradeOff>Speed,Balanced,Accuracy</LayoutTradeOff> \
+// <Tradeoff>Speed,Balanced,Accuracy</Tradeoff> \
 
 function getXmlFilePath(fileURI, jobId){
     let filePath = sysHandler.getFileSystemHandler("xmlHandler").getXmlFilePath(fileURI, jobId);
